@@ -1,23 +1,33 @@
 // Style Guide Helpers
-.section-padding {
+.wireframe-section {
   padding-bottom: 60px;
   padding-top: 60px;
+  text-align: center;
 }
 
 // Logo
 .logo {
-  width: 120px;
+  width: 125px;
   display: inline-block;
 }
 
-// ._gradient-purple {
-//   background-image: linear-gradient(40deg, $purple, $magenta);
-// }
+._gradient-purple {
+  background-image: linear-gradient(90deg, $purple, $magenta);
+}
 
-// ._gradient-purple-dark {
-//   background-image: linear-gradient(40deg, transparent 0%, $black 100%);
-//   background-color: $purple-dark;
-// }
+._gradient-purple-40 {
+  background-image: linear-gradient(40deg, $purple, $magenta);
+}
+
+._gradient-purple-dark {
+  background-image: linear-gradient(90deg, transparent 0%, $black 100%);
+  background-color: $purple-dark;
+}
+
+._gradient-purple-dark-40 {
+  background-image: linear-gradient(40deg, transparent 0%, $black 100%);
+  background-color: $purple-dark;
+}
 
 // ._gradient-purple-dark--reverse {
 //   background-image: linear-gradient(40deg, transparent 0%, $purple-dark 100%);
@@ -191,3 +201,15 @@
 // .modal-dialog {
 //   @extend .box-shadow;
 // }
+
+// Nav
+.navbar-nav {
+  font-size: .95rem;
+}
+
+.navbar {
+  .logo {
+    transform: translateY(-.75rem)
+  }
+}
+

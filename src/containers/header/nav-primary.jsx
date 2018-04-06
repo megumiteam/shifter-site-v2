@@ -9,13 +9,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Button,
-  ButtonToolbar,
-  ButtonGroup
 } from "reactstrap";
 
 class PrimaryNav extends Component {
@@ -34,40 +27,33 @@ class PrimaryNav extends Component {
   }
 
   render() {
-    return <div className="bg-gray-100">
-        <Navbar expand="md">
-          <Container>
-            <NavbarBrand href="/">
-              <Logo LogoStyle="primary-color-black" />
-            </NavbarBrand>
-            <NavbarToggler onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto mr-4" navbar>
-                <NavItem>
-                  <NavLink href="/features/">Features</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/pricing/">Pricing</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/blog/">Blog</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/support/">Support</NavLink>
-                </NavItem>
-              </Nav>
-              <Nav>
-                <Button color="primary" className="mr-2" href="https://go.getshifter.io/">
-                  Log In
-                </Button>
-                <Button outline href="https://go.getshifter.io/register/">
-                  Sign Up
-                </Button>
-              </Nav>
-            </Collapse>
-          </Container>
-        </Navbar>
-      </div>;
+    return <Navbar expand="md" className="_gradient-purple-dark navbar-dark navbar-expand-sm" toggleable>
+        <Container>
+          <NavbarBrand href="/">
+            <Logo LogoStyle="primary-color-white" />
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="mr-auto ml-5" navbar>
+              <NavItem>
+                <NavLink href="/features/">Features</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/pricing/">Pricing</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/blog/">Blog</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink target="_blank" href="https://support.getshifter.io">Support</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">Contact</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Container>
+      </Navbar>;
   }
 }
 

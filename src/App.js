@@ -5,6 +5,8 @@ import PrimaryNav from './containers/header/nav-primary';
 
 import Home from "./pages/Home";
 import Features from "./pages/Features";
+import Pricing from "./pages/Pricing";
+import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
 class App extends Component {
@@ -18,8 +20,8 @@ class App extends Component {
             <Switch>
               <Route exact component={Home} path="/" />
               <Route component={Features} path="/features/" />
-              <Route component={Features} path="/pricing/" />
-              <Route component={Features} path="/blog/" />
+              <Route component={Pricing} path="/pricing/" />
+              <Route component={Blog} path="/blog/" />
               <Route path="*" component={NotFound} />
             </Switch>
           </main>

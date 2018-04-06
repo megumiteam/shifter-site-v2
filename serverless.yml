@@ -9,5 +9,5 @@ plugins:
 
 custom:
   client:
-    bucketName: shifter-style-guide
+    bucketName: shifter-site-v2
     distributionFolder: build

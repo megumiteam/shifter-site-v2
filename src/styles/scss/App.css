@@ -1653,7 +1653,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .btn {
   display: inline-block;
-  font-weight: 200;
+  font-weight: 300;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -4869,7 +4869,8 @@ button.bg-gray-100:focus {
 .align-self-end {
   align-self: flex-end !important; }
 
-.align-self-center {
+.align-self-center, .navbar .nav-item,
+.navbar .navbar-nav {
   align-self: center !important; }
 
 .align-self-baseline {
@@ -6448,7 +6449,7 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   width: 125px;
   display: inline-block; }
 
-._gradient-purple {
+._gradient-purple, .btn.btn-primary, .btn-gradient-primary, .btn-gradient-secondary, .btn-gradient-success, .btn-gradient-info, .btn-gradient-warning, .btn-gradient-danger, .btn-gradient-light, .btn-gradient-dark, .btn-gradient-white, .btn-gradient-black, .btn-gradient-purple-dark, .btn-gradient-gray-100 {
   background-image: linear-gradient(90deg, #bc4e9c, #f80759); }
 
 ._gradient-purple-40 {
@@ -6462,8 +6463,51 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   background-image: linear-gradient(40deg, transparent 0%, #000 100%);
   background-color: #451D39; }
 
-.navbar-nav {
-  font-size: .95rem; }
+.btn {
+  border-width: 0;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-radius: 100px; }
+
+.btn-outline-primary {
+  box-shadow: inset 0px 0px 0px 2px #bc4e9c; }
+
+.btn-outline-secondary {
+  box-shadow: inset 0px 0px 0px 2px #451D39; }
+
+.btn-outline-success {
+  box-shadow: inset 0px 0px 0px 2px #bc4e9c; }
+
+.btn-outline-info {
+  box-shadow: inset 0px 0px 0px 2px #451D39; }
+
+.btn-outline-warning {
+  box-shadow: inset 0px 0px 0px 2px #FFBF3F; }
+
+.btn-outline-danger {
+  box-shadow: inset 0px 0px 0px 2px #ff6362; }
+
+.btn-outline-light {
+  box-shadow: inset 0px 0px 0px 2px #ecf0f1; }
+
+.btn-outline-dark {
+  box-shadow: inset 0px 0px 0px 2px #7b8a8b; }
+
+.btn-outline-white {
+  box-shadow: inset 0px 0px 0px 2px #fff; }
+
+.btn-outline-black {
+  box-shadow: inset 0px 0px 0px 2px #000; }
+
+.btn-outline-purple-dark {
+  box-shadow: inset 0px 0px 0px 2px #451D39; }
+
+.btn-outline-gray-100 {
+  box-shadow: inset 0px 0px 0px 2px #f8f9fa; }
+
+.navbar * {
+  font-size: .9rem; }
 
 .navbar .logo {
   transform: translateY(-0.75rem); }

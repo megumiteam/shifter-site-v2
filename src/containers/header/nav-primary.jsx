@@ -45,10 +45,21 @@ class PrimaryNav extends Component {
                 <NavLink href="/blog/">Blog</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink target="_blank" href="https://support.getshifter.io">Support</NavLink>
+                <NavLink target="_blank" href="https://support.getshifter.io">
+                  Support
+                </NavLink>
+              </NavItem>
+            </Nav>
+            <Nav navbar>
+              <NavItem>
+                <NavLink href="https://go.getshifter.io">
+                  Login
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Contact</NavLink>
+                <NavLink className="btn btn-gradient-primary" href="https://go.getshifter.io">
+                  Sign Up &rarr;
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>

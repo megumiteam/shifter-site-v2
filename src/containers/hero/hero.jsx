@@ -8,9 +8,8 @@ import {
 class Hero extends Component {
 
   render() {
-    return <Container className="wireframe-section">
+    return <Container>
         <Row>
-          <Col>Hero</Col>
         </Row>
       </Container>;
   }

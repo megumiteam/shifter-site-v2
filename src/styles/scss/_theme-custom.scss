@@ -60,24 +60,29 @@
 //   }
 // }
 
-// // Buttons
-// .btn {
-//   transition: all 0.3s ease-out;
-//   font-family: $font-family-monospace;
-//   font-size: 70%;
+// Buttons
+.btn {
+  border-width: 0;
+  @include button-size($btn-padding-y, $btn-padding-x, .95rem, $btn-line-height, $btn-border-radius);
 
-//   &.btn-primary {
-//     @extend ._gradient-purple;
-//   }
+  &.btn-primary {
+    @extend ._gradient-purple;
+  }
+}
 
-//   &.btn-success {
-//     @extend ._gradient-purple;
-//   }
+@each $color,
+$value in $theme-colors {
+  .btn-gradient-#{$color} {
+    @extend ._gradient-purple;
+  }
+}
 
-//   &.btn-info {
-//     @extend ._gradient-purple-dark;
-//   }
-// }
+@each $color,
+$value in $theme-colors {
+  .btn-outline-#{$color} {
+    box-shadow: inset 0px 0px 0px $btn-border-width $value;
+  }
+}
 
 // // Dropdown
 // .dropdown-menu {
@@ -203,13 +208,19 @@
 // }
 
 // Nav
-.navbar-nav {
-  font-size: .95rem;
-}
-
 .navbar {
+  
+  * {
+    font-size: .9rem;
+  }  
+
   .logo {
     transform: translateY(-.75rem)
+  }
+
+  .nav-item,
+  .navbar-nav {
+    @extend .align-self-center;
   }
 }
 

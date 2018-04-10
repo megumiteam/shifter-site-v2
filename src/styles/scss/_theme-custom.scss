@@ -64,16 +64,13 @@
 .btn {
   border-width: 0;
   @include button-size($btn-padding-y, $btn-padding-x, .95rem, $btn-line-height, $btn-border-radius);
-
-  &.btn-primary {
-    @extend ._gradient-purple;
-  }
 }
 
 @each $color,
 $value in $theme-colors {
   .btn-gradient-#{$color} {
     @extend ._gradient-purple;
+    color: $white;
   }
 }
 

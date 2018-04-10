@@ -98,6 +98,21 @@ $body-color:                $black !default;
 
 $link-color:                $success !default;
 
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 711px,
+  md: 903px,
+  lg: 1227px,
+  xl: 1335px) !default;
+
+// Grid containers
+$container-max-widths: (
+  sm: 675px,
+  md: 855px,
+  lg: 1095px,
+  xl: 1275px) !default;
+
 // Fonts
 
 $montserrat: 'Montserrat';

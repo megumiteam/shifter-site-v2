@@ -27,7 +27,7 @@ class PrimaryNav extends Component {
   }
 
   render() {
-    return <Navbar expand="md" className="_gradient-purple-dark navbar-dark navbar-expand-md text-uppercase" expand>
+    return <Navbar expand="md" className="_gradient-purple-dark navbar-dark navbar-expand-md text-uppercase">
         <Container>
           <NavbarBrand href="/">
             <Logo LogoStyle="primary-color-white" />

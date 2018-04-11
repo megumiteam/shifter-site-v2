@@ -42,7 +42,7 @@ class HomeOverview extends Component {
         <Container>
           {data.map(function(post) {
             return <Row className="justify-content-md-center" key={post.id}>
-                <Col md="10" className="text-center mt-10">
+                <Col md="8" className="text-center mt-10">
                   <h4>{post.acf.data[0].text_field}</h4>
                 </Col>
               </Row>;

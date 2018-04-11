@@ -11,6 +11,10 @@
   margin-top: 100px;
 }
 
+.pb-20 {
+  padding-bottom: 175px;
+}
+
 // Logo
 .logo {
   width: 120px;
@@ -237,10 +241,13 @@ $value in $theme-colors {
 
 
 // Hero
-.hero {
-  padding-bottom: 200px;
-}
 
 .hero__title {
   margin-top: 130px;
+}
+
+// Section Angles
+
+.section-angle {
+  clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
 }

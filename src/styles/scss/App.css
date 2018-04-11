@@ -6449,6 +6449,9 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 .mt-10 {
   margin-top: 100px; }
 
+.pb-20 {
+  padding-bottom: 175px; }
+
 .logo {
   width: 120px;
   display: inline-block; }
@@ -6579,8 +6582,8 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 .navbar .nav-link {
   font-weight: 500; }
 
-.hero {
-  padding-bottom: 200px; }
-
 .hero__title {
   margin-top: 130px; }
+
+.section-angle {
+  clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%); }

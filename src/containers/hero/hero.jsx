@@ -38,7 +38,7 @@ class Hero extends Component {
 
     console.log(this.state.data);
     
-    return <section className="_gradient-purple-dark text-white hero">
+    return <section className="_gradient-purple-dark text-white hero section-angle pb-20">
         <Container>
           {data.map(function(post) {
             return <Row key={post.id}>

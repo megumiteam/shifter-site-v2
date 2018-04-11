@@ -1,13 +1,15 @@
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
 // Style Guide Helpers
-.wireframe-section {
-  padding-bottom: 60px;
-  padding-top: 60px;
-  text-align: center;
+.mt-10 {
+  margin-top: 130px;
 }
 
 // Logo
 .logo {
-  width: 125px;
+  width: 120px;
   display: inline-block;
 }
 
@@ -71,6 +73,10 @@ $value in $theme-colors {
   .btn-gradient-#{$color} {
     @extend ._gradient-purple;
     color: $white;
+
+    &:hover {
+      color: $gray-200;
+    }
   }
 }
 
@@ -206,13 +212,17 @@ $value in $theme-colors {
 
 // Nav
 .navbar {
-  
-  * {
-    font-size: .9rem;
-  }  
 
-  .logo {
-    transform: translateY(-.75rem)
+  * {
+    font-size: .85rem;
+  }
+
+  .navbar-collapse {
+    transform: translateY(14px);
+  }
+
+  .nav-link {
+    font-weight: $font-weight-bold;
   }
 
   .nav-item,
@@ -221,3 +231,12 @@ $value in $theme-colors {
   }
 }
 
+
+// Hero
+.hero {
+  padding-bottom: 200px;
+}
+
+.hero__title {
+  margin-top: 130px;
+}

@@ -27,7 +27,7 @@ class PrimaryNav extends Component {
   }
 
   render() {
-    return <Navbar expand="md" className="_gradient-purple-dark navbar-dark navbar-expand-md" toggleable>
+    return <Navbar expand="md" className="_gradient-purple-dark navbar-dark navbar-expand-md text-uppercase" expand>
         <Container>
           <NavbarBrand href="/">
             <Logo LogoStyle="primary-color-white" />
@@ -55,13 +55,13 @@ class PrimaryNav extends Component {
                 <NavLink href="https://go.getshifter.io">Login</NavLink>
               </NavItem>
               <NavItem className="d-none d-lg-block">
-                <NavLink className="px-0" href="https://go.getshifter.io">
-                  Or
+                <NavLink className="px-0 text-lowercase" href="https://go.getshifter.io">
+                  or
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className="pr-0">
-                  <a href="https://go.getshifter.io" className="btn btn-gradient-primary">
+                  <a href="https://go.getshifter.io" className="btn btn-gradient-primary text-uppercase">
                     Sign Up &rarr;
                   </a>
                 </NavLink>

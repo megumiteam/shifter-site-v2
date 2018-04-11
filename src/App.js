@@ -12,8 +12,8 @@ import NotFound from "./pages/NotFound";
 class App extends Component {
 
   render() {
-
-    return <Router>
+    return (
+      <Router>
         <div>
           <PrimaryNav />
           <main>
@@ -26,7 +26,8 @@ class App extends Component {
             </Switch>
           </main>
         </div>
-      </Router>;
+      </Router>
+    );
   }
 }
 

@@ -43,7 +43,7 @@ class Cards extends Component {
     )
 
     const cardExamplesPrimary = (
-      <div>
+      <CardDeck>
         <Card className="mb-4">
           <CardBody>
             <CardTitle>Card Title</CardTitle>
@@ -63,7 +63,7 @@ class Cards extends Component {
               </div>
           </CardFooter>
         </Card>
-      </div>
+      </CardDeck>
     )
 
     return (<div>

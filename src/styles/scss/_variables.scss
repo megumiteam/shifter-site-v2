@@ -292,7 +292,7 @@ $alert-color-level:                 6 !default;
 // Cards
 
 $card-spacer-y:                     .75rem !default;
-$card-spacer-x:                     3.2rem !default;
+$card-spacer-x:                     2.2rem 3.3rem !default;
 $card-border-width:                 0 !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
@@ -316,8 +316,8 @@ $input-btn-padding-y-sm:      .25rem !default;
 $input-btn-padding-x-sm:      .5rem !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 
-$input-btn-padding-y-lg:      .5rem !default;
-$input-btn-padding-x-lg:      1rem !default;
+$input-btn-padding-y-lg:      .75rem !default;
+$input-btn-padding-x-lg:      2rem !default;
 $input-btn-line-height-lg:    $line-height-lg !default;
 
 $input-btn-border-width:      $border-width !default;

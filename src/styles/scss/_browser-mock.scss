@@ -8,9 +8,9 @@
   flex: 1;
   padding: 10px;
   border-top: 2em solid fade-out($white, .9);
-  box-shadow: 0 0.1em 1em 0 fade-out($black, .4);
   position: relative;
   border-radius: $border-radius;
+  @extend .box-shadow;
 
   &:before {
     display: block;

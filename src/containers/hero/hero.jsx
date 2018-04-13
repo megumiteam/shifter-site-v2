@@ -5,7 +5,7 @@ import { Container, Row, Col } from "reactstrap";
 const Hero = props => (
   <section className="_gradient-purple-dark text-white hero section-angle pb-20">
     <Container>
-      <Row>
+      <Row className="justify-content-md-center">
         <Col md={{ size: 9, offset: 1 }}>
           <h2 className="mt-10">{props.title}</h2>
           <div className="mt-3">{props.subtitle}</div>
@@ -35,8 +35,8 @@ Hero.propTypes = {
 };
 
 Hero.defaultProps = {
-  title: "test",
-  subtitle: "test"
+  title: "",
+  subtitle: ""
 };
 
 export default Hero;

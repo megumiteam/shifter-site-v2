@@ -8,11 +8,11 @@ import {
   CardBody,
   CardTitle,
   CardText,
-  CardDeck
+  CardDeck,
 } from "reactstrap";
-  
-const HeroOverview = props => (
-  <section className="home-overview py-10 section-angle">
+
+const Learn = props => (
+  <section className="home-overview bg-gray-100 py-10 section-angle">
     <Container>
       <Row className="justify-content-md-center">
         <Col md="8" className="text-center">
@@ -24,32 +24,20 @@ const HeroOverview = props => (
           <CardDeck className="mt-5">
             <Card className="box-shadow">
               <CardBody>
-                <img
-                  src="//placehold.it/75"
-                  alt="..."
-                  className="rounded-circle mb-4"
-                />
-                <CardTitle>Serverless Architecture</CardTitle>
+                <CardTitle>Blog</CardTitle>
                 <CardText>
-                  Static web pages are nearly maintenance-free and load at
-                  lightining speed. But they require outside development
-                  resources and don’t offer the functionality of a dynamic web
-                  page.
+                  Get the latest and greatest updates from team Shifter. And
+                  make sure to check back often to learn what’s new and exciting
+                  in our world.
                 </CardText>
               </CardBody>
             </Card>
             <Card className="box-shadow">
               <CardBody>
-                <img
-                  src="//placehold.it/75"
-                  alt="..."
-                  class="rounded-circle mb-4"
-                />
-                <CardTitle>Built for WordPress</CardTitle>
+                <CardTitle>Support</CardTitle>
                 <CardText>
-                  WordPress makes building a website easy and cost effective for
-                  almost any user. But it needs regular updates and security can
-                  be a concern.
+                  Advice and answers from the Shifter . Advice and answers from
+                  the Shifter Team. Advice and answers from the Shifter.
                 </CardText>
               </CardBody>
             </Card>
@@ -70,12 +58,12 @@ const HeroOverview = props => (
   </section>
 );
 
-HeroOverview.propTypes = {
-  title: PropTypes.string,
+Learn.propTypes = {
+  title: PropTypes.string
 };
 
-HeroOverview.defaultProps = {
-  title: '',
+Learn.defaultProps = {
+  title: ""
 };
 
-export default HeroOverview;
+export default Learn;

@@ -6511,7 +6511,11 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   background-color: #451D39; }
 
 .box-shadow, .browser-mockup {
-  box-shadow: 0 0.8rem 2rem 0 rgba(62, 57, 107, 0.2), 0 0.1rem 9px 0 rgba(62, 57, 107, 0.06); }
+  box-shadow: 0 0.8rem 2rem 0 rgba(62, 57, 107, 0.2), 0 0.1rem 9px 0 rgba(62, 57, 107, 0.06);
+  transition: all .4s; }
+  .box-shadow:hover, .browser-mockup:hover {
+    transform: translateY(-1px);
+    transition: all .2s; }
 
 .btn {
   border-width: 0;
@@ -6637,6 +6641,8 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 .section-angle {
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%); }
 
-p {
-  widows: 3;
-  orphans: 3; }
+.slick-slider {
+  overflow: hidden; }
+
+.slick-slide {
+  padding-right: 10px; }

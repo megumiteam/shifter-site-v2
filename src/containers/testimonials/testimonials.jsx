@@ -1,96 +1,49 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  CardDeck
-} from "reactstrap";
+import { Tweet } from "react-twitter-widgets";
+import Slider from "react-slick";
+import { Container, Row, Col, Card, CardDeck } from "reactstrap";
+
+var settings = {
+  className: "center",
+  centerMode: true,
+  infinite: true,
+  centerPadding: "60px",
+  slidesToShow: 3,
+  autoplaySpeed: 5000,
+  autoplay: false
+};
 
 const Testimonials = props => (
-  <section className="testimonials py-10 _gradient-purple-dark section-angle">
+  <section className="testimonials py-10 _gradient-purple-dark">
     <Container>
       <Row className="justify-content-md-center">
-        <Col md="8" className="text-center text-white">
+        <Col md="8" className="text-center text-white mb-4">
           <h4>{props.title}</h4>
         </Col>
       </Row>
-      <Row className="justify-content-md-center">
-        <Col md="12">
-          <CardDeck className="mt-5">
-            <Card className="box-shadow p-4">
-              <p>
-                Shifter built a docker based system, deploying Wordpress to
-                Netlify - awesome!
-              </p>
-              <div class="media mt-auto">
-                <img
-                  class="rounded-circle align-self-start mr-3"
-                  src="https://pbs.twimg.com/profile_images/560874041452408833/a8obZPqr_normal.jpeg"
-                  alt=""
-                />
-                <div class="media-body">
-                  <h5 className="mb-0">
-                    <small>
-                      <b> Twitter User</b>
-                    </small>
-                  </h5>
-                  <small>
-                    <p>@example</p>
-                  </small>
-                </div>
-              </div>
-            </Card>
-            <Card className="box-shadow p-4">
-              <p>
-                Shifter built a docker based system, deploying Wordpress to
-                Netlify - awesome!
-              </p>
-              <div class="media mt-auto">
-                <img
-                  class="rounded-circle align-self-start mr-3"
-                  src="https://pbs.twimg.com/profile_images/560874041452408833/a8obZPqr_normal.jpeg"
-                  alt=""
-                />
-                <div class="media-body">
-                  <h5 className="mb-0">
-                    <small>
-                      <b> Twitter User</b>
-                    </small>
-                  </h5>
-                  <small>
-                    <p>@example</p>
-                  </small>
-                </div>
-              </div>
-            </Card>
-            <Card className="box-shadow p-4">
-              <p>
-                Shifter built a docker based system, deploying Wordpress to
-                Netlify - awesome!
-              </p>
-              <div class="media mt-auto">
-                <img
-                  class="rounded-circle align-self-start mr-3"
-                  src="https://pbs.twimg.com/profile_images/560874041452408833/a8obZPqr_normal.jpeg"
-                  alt=""
-                />
-                <div class="media-body">
-                  <h5 className="mb-0">
-                    <small>
-                      <b> Twitter User</b>
-                    </small>
-                  </h5>
-                  <small>
-                    <p>@example</p>
-                  </small>
-                </div>
-              </div>
-            </Card>
-          </CardDeck>
-        </Col>
-      </Row>
+    </Container>
+    <Slider {...settings}>
+      <div>
+        <Tweet className="box-shadow p-4 card" tweetId="822127402851581953" />
+      </div>
+      <div>
+        <Tweet className="box-shadow p-4 card" tweetId="982998258468442113" />
+      </div>
+      <div>
+        <Tweet className="box-shadow p-4 card" tweetId="822357134725812224" />
+      </div>
+      <div>
+        <Tweet className="box-shadow p-4 card" tweetId="789180722049196033" />
+      </div>
+      <div>
+        <Tweet className="box-shadow p-4 card" tweetId="834087318298333185" />
+      </div>
+      <div>
+        <Tweet className="box-shadow p-4 card" tweetId="925062079773585411" />
+      </div>
+    </Slider>
+    <Container>
       <Row className="justify-content-md-center">
         <Col md="8" className="text-center mt-5">
           <a

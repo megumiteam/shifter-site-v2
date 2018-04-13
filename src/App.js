@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import PrimaryNav from './containers/header/nav-primary';
+import Footer from "./containers/footer/footer";
 
 import Home from "./pages/Home";
 import Features from "./pages/Features";
@@ -12,8 +13,7 @@ import NotFound from "./pages/NotFound";
 class App extends Component {
 
   render() {
-    return (
-      <Router>
+    return <Router>
         <div>
           <PrimaryNav />
           <main>
@@ -25,9 +25,9 @@ class App extends Component {
               <Route path="*" component={NotFound} />
             </Switch>
           </main>
+          <Footer />
         </div>
-      </Router>
-    );
+      </Router>;
   }
 }
 

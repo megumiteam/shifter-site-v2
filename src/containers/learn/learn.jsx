@@ -17,6 +17,7 @@ const Learn = props => (
       <Row className="justify-content-md-center">
         <Col md="8" className="text-center">
           <h4>{props.title}</h4>
+          <div className="mt-3">{props.subtitle}</div>
         </Col>
       </Row>
       <Row className="justify-content-md-center">

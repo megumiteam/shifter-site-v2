@@ -20,6 +20,7 @@ const Testimonials = props => (
       <Row className="justify-content-md-center">
         <Col md="8" className="text-center text-white mb-4">
           <h4>{props.title}</h4>
+          <div className="mt-3">{props.subtitle}</div>
         </Col>
       </Row>
     </Container>

@@ -15,7 +15,7 @@ class GetStarted extends Component {
     const layout = this.props.layout;
 
     if (layout === "centered") {
-      return <section className="home-overview py-15 _gradient-purple-dark text-white">
+      return <section className="home-overview py-10 _gradient-purple-dark text-white">
           <Container>
             <Row className="justify-content-md-center text-center">
               <Col md="10">

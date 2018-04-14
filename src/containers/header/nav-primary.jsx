@@ -61,8 +61,8 @@ class PrimaryNav extends Component {
               </NavItem>
               <NavItem>
                 <NavLink className="pr-0">
-                  <a href="https://go.getshifter.io" className="btn btn-gradient-primary text-uppercase">
-                    Sign Up &rarr;
+                  <a href="https://go.getshifter.io" className="btn btn-gradient-primary text-uppercase btn-arrow">
+                    Sign Up
                   </a>
                 </NavLink>
               </NavItem>

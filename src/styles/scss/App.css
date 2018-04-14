@@ -6499,6 +6499,9 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 ._gradient-purple, .btn-gradient-primary, .btn-gradient-secondary, .btn-gradient-success, .btn-gradient-info, .btn-gradient-warning, .btn-gradient-danger, .btn-gradient-light, .btn-gradient-dark, .btn-gradient-white, .btn-gradient-black, .btn-gradient-purple-dark, .btn-gradient-gray-100 {
   background-image: linear-gradient(90deg, #bc4e9c, #f80759); }
 
+._gradient-purple--reverse {
+  background-image: linear-gradient(90deg, #f80759, #bc4e9c); }
+
 ._gradient-purple-40 {
   background-image: linear-gradient(40deg, #bc4e9c, #f80759); }
 
@@ -6529,6 +6532,10 @@ a.text-gray-100:hover, a.text-gray-100:focus {
   font-size: 0.95rem;
   line-height: 1.5;
   border-radius: 100px; }
+
+.btn-arrow:after {
+  content: " \2192";
+  display: inline; }
 
 .btn-gradient-primary {
   color: #fff; }

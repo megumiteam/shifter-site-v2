@@ -12,15 +12,15 @@ const Hero = props => (
           <div className="hero__links mt-5">
             <a
               href="https://go.getshifter.io"
-              className="btn btn-gradient-primary text-uppercase"
+              className="btn btn-gradient-primary text-uppercase btn-arrow"
             >
-              Free Trial &rarr;
+              Free Trial
             </a>{" "}
             <a
               href="https://go.getshifter.io"
-              className="btn btn-outline-white text-uppercase"
+              className="btn btn-outline-white text-uppercase btn-arrow"
             >
-              Sign Up &rarr;
+              Sign Up
             </a>
           </div>
         </Col>

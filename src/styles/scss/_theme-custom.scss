@@ -39,6 +39,10 @@
   background-image: linear-gradient(90deg, $purple, $magenta);
 }
 
+._gradient-purple--reverse {
+  background-image: linear-gradient(90deg, $magenta, $purple);
+}
+
 ._gradient-purple-40 {
   background-image: linear-gradient(40deg, $purple, $magenta);
 }
@@ -94,18 +98,37 @@
 // Buttons
 .btn {
   border-width: 0;
-  @include button-size($btn-padding-y, $btn-padding-x, .95rem, $btn-line-height, $btn-border-radius);
+  @include button-size(
+    $btn-padding-y,
+    $btn-padding-x,
+    .95rem,
+    $btn-line-height,
+    $btn-border-radius
+  );
 }
 
 .btn-lg {
-  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, .95rem, $btn-line-height-lg, $btn-border-radius);
+  @include button-size(
+    $btn-padding-y-lg,
+    $btn-padding-x-lg,
+    .95rem,
+    $btn-line-height-lg,
+    $btn-border-radius
+  );
+}
+
+.btn-arrow {
+  &:after {
+    content: " \2192";
+    display: inline;
+  }
 }
 
 @each $color,
 $value in $theme-colors {
   .btn-gradient-#{$color} {
-    @extend ._gradient-purple;
     color: $white;
+    @extend ._gradient-purple;
 
     &:hover {
       color: $gray-200;

@@ -7,18 +7,18 @@ class Footer extends Component {
     return <footer class="py-5" role="contentinfo">
         <Container>
           <Row className="justify-content-md-center">
-            <Col md="10">
+            <Col xl="10">
               <Row>
-                <Col md="3">
+                <Col sm="12" lg="3" className="mb-sm-5 mb-lg-0">
                   <Row>
-                    <Col md="3" sm="6">
+                    <Col>
                       <Logo LogoStyle="primary-color-black" />
                     </Col>
                   </Row>
                 </Col>
-                <Col md="9">
+                <Col sm="12" lg="9">
                   <Row>
-                    <Col md="3" sm="6">
+                    <Col sm="12" md="3" className="mb-5">
                       <h6 className="text-uppercase mb-3">Product</h6>
                       <Nav vertical className="small">
                         <NavLink href="#" className="p-0 mb-3 text-black">
@@ -32,7 +32,7 @@ class Footer extends Component {
                         </NavLink>
                       </Nav>
                     </Col>
-                    <Col md="3" sm="6">
+                    <Col sm="12" md="3" className="mb-5">
                       <h6 className="text-uppercase mb-3">
                         Expand &amp; Learn
                       </h6>
@@ -48,7 +48,7 @@ class Footer extends Component {
                         </NavLink>
                       </Nav>
                     </Col>
-                    <Col md="3" sm="6">
+                    <Col sm="12" md="3" className="mb-5">
                       <h6 className="text-uppercase mb-3">Company</h6>
                       <Nav vertical className="small">
                         <NavLink href="#" className="p-0 mb-3 text-black">
@@ -62,7 +62,7 @@ class Footer extends Component {
                         </NavLink>
                       </Nav>
                     </Col>
-                    <Col md="3" sm="6">
+                    <Col sm="12" md="3" className="mb-5">
                       <h6 className="text-uppercase mb-3">Stay In Touch</h6>
                       <Nav vertical className="small">
                         <NavLink href="#" className="p-0 mb-3 text-black">

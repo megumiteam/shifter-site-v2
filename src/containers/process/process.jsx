@@ -39,10 +39,12 @@ const Process = props => (
                 class="rounded-circle mb-4"
               />
               <CardTitle>Create</CardTitle>
-              <CardText className="small">
-                Choose your plan based on storage, bandwidth, number of users,
-                or Perfered CDN.
-              </CardText>
+              <small>
+                <CardText>
+                  Choose your plan based on storage, bandwidth, number of users,
+                  or Perfered CDN.
+                </CardText>
+              </small>
             </CardBody>
           </Card>
         </Col>
@@ -55,10 +57,12 @@ const Process = props => (
                 class="rounded-circle mb-4"
               />
               <CardTitle>Customize</CardTitle>
-              <CardText className="small">
-                Choose your plan based on storage, bandwidth, number of users,
-                or Perfered CDN.
-              </CardText>
+              <small>
+                <CardText>
+                  Choose your plan based on storage, bandwidth, number of users,
+                  or Perfered CDN.
+                </CardText>
+              </small>
             </CardBody>
           </Card>
         </Col>
@@ -71,10 +75,12 @@ const Process = props => (
                 class="rounded-circle mb-4"
               />
               <CardTitle>Generate</CardTitle>
-              <CardText className="small">
-                Choose your plan based on storage, bandwidth, number of users,
-                or Perfered CDN.
-              </CardText>
+              <small>
+                <CardText>
+                  Choose your plan based on storage, bandwidth, number of users,
+                  or Perfered CDN.
+                </CardText>
+              </small>
             </CardBody>
           </Card>
         </Col>
@@ -87,10 +93,12 @@ const Process = props => (
                 class="rounded-circle mb-4"
               />
               <CardTitle>Deploy</CardTitle>
-              <CardText className="small">
-                Choose your plan based on storage, bandwidth, number of users,
-                or Perfered CDN.
-              </CardText>
+              <small>
+                <CardText>
+                  Choose your plan based on storage, bandwidth, number of users,
+                  or Perfered CDN.
+                </CardText>
+              </small>
             </CardBody>
           </Card>
         </Col>

@@ -26,20 +26,24 @@ const Learn = props => (
             <Card className="box-shadow">
               <CardBody>
                 <CardTitle>Blog</CardTitle>
-                <CardText>
-                  Get the latest and greatest updates from team Shifter. And
-                  make sure to check back often to learn what’s new and exciting
-                  in our world.
-                </CardText>
+                <small>
+                  <CardText>
+                    Get the latest and greatest updates from team Shifter. And
+                    make sure to check back often to learn what’s new and
+                    exciting in our world.
+                  </CardText>
+                </small>
               </CardBody>
             </Card>
             <Card className="box-shadow">
               <CardBody>
                 <CardTitle>Support</CardTitle>
-                <CardText>
-                  Advice and answers from the Shifter . Advice and answers from
-                  the Shifter Team. Advice and answers from the Shifter.
-                </CardText>
+                <small>
+                  <CardText>
+                    Advice and answers from the Shifter . Advice and answers
+                    from the Shifter Team. Advice and answers from the Shifter.
+                  </CardText>
+                </small>
               </CardBody>
             </Card>
           </CardDeck>

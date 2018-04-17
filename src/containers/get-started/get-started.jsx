@@ -21,7 +21,7 @@ class GetStarted extends Component {
               <Col md="10">
                 <h3>{this.props.title}</h3>
                 <div className="mt-3 mb-5">{this.props.subtitle}</div>
-                <a href="https:go.getshifter.io" className="btn btn-gradient-primary text-uppercase btn-arrow">
+                <a href="https:go.getshifter.io" className="btn btn-gradient-primary text-uppercase btn-arrow mr-2">
                   Free Trial
                 </a> <a href="https:go.getshifter.io" className="btn btn-outline-white text-uppercase btn-arrow">
                   Sign Up
@@ -32,8 +32,7 @@ class GetStarted extends Component {
         </section>;
     }
 
-    return (
-      <section className="home-overview py-10 section-angle">
+    return <section className="home-overview py-10 section-angle">
         <Container>
           <Row className="justify-content-md-center">
             <Col md="10">
@@ -44,16 +43,10 @@ class GetStarted extends Component {
                 </Col>
                 <Col md="5" className="d-flex align-items-end">
                   <div className="hero__links">
-                    <a
-                      href="https:go.getshifter.io"
-                      className="btn btn-gradient-primary text-uppercase btn-arrow"
-                    >
+                    <a href="https:go.getshifter.io" className="btn btn-gradient-primary text-uppercase btn-arrow mr-2">
                       Free Trial
-                    </a>{" "}
-                    <a
-                      href="https:go.getshifter.io"
-                      className="btn btn-secondary text-uppercase btn-arrow"
-                    >
+                    </a>
+                    <a href="https:go.getshifter.io" className="btn btn-secondary text-uppercase btn-arrow">
                       Sign Up
                     </a>
                   </div>
@@ -62,8 +55,7 @@ class GetStarted extends Component {
             </Col>
           </Row>
         </Container>
-      </section>
-    );
+      </section>;
   }
 }
 

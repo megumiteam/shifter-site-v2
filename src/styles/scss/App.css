@@ -306,7 +306,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.5;
   color: inherit; }
 
 h1, .h1 {
@@ -334,22 +334,22 @@ h6, .h6 {
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.5; }
 
 .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.5; }
 
 .display-3 {
   font-size: 4.5rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.5; }
 
 .display-4 {
   font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.5; }
 
 hr {
   margin-top: 1rem;
@@ -5291,7 +5291,7 @@ button.bg-gray-100:focus {
 .my-2 {
   margin-top: 0.5rem !important; }
 
-.mr-2,
+.mr-2, .blog-archive-header__tag:not(:last-child),
 .mx-2 {
   margin-right: 0.5rem !important; }
 
@@ -5753,7 +5753,7 @@ button.bg-gray-100:focus {
   .mt-md-5,
   .my-md-5 {
     margin-top: 3rem !important; }
-  .mr-md-5,
+  .mr-md-5, .blog-archive-header__tag:not(:last-child),
   .mx-md-5 {
     margin-right: 3rem !important; }
   .mb-md-5,
@@ -6517,6 +6517,9 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 .box-shadow, .browser-mockup {
   box-shadow: 0 0.8rem 2rem 0 rgba(62, 57, 107, 0.2), 0 0.1rem 9px 0 rgba(62, 57, 107, 0.06); }
 
+.box-shadow-light {
+  box-shadow: 0 0 10px 0 rgba(183, 183, 183, 0.5); }
+
 .btn {
   border-width: 0;
   padding: 0.5rem 1.5rem;
@@ -6684,3 +6687,17 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 
 .accordian {
   cursor: pointer; }
+
+.post-img {
+  height: 200px; }
+
+.card-img-top--fill {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.blog-archive {
+  transform: translateY(-100px); }
+
+.text-decoration-none {
+  text-decoration: none !important; }

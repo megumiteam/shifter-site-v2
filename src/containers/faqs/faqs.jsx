@@ -9,7 +9,7 @@ import {
 
 class Faqs extends Component {
   render() {
-    return <section className="pricing-plans py-10 bg-gray-100">
+    return <section className="py-10 bg-gray-100">
         <Container>
           <Row className="justify-content-md-center mb-5">
             <Col md="8" className="text-center">

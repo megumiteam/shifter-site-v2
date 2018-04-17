@@ -45,7 +45,7 @@ function PlansOverviewItem(props) {
 
 class PlansTable extends Component {
   render() {
-    return <section className="pricing-plans py-10">
+    return <section className="py-10">
         <Container>
           <Row className="justify-content-md-center mb-5">
             <Col md="8" className="text-center">

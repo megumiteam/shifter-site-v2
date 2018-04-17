@@ -67,7 +67,7 @@ class FeaturesOverview extends Component {
             </Col>
           </Row>
           <Row className="justify-content-md-center">
-            <Col md="8" className="text-center mt-5">
+            <Col className="text-center mt-5">
               <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow">
                 Learn More
               </a>

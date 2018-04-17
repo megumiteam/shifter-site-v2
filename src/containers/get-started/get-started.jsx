@@ -68,11 +68,13 @@ class GetStarted extends Component {
 }
 
 GetStarted.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
+  subtitle: PropTypes.string
 };
 
 GetStarted.defaultProps = {
-  title: ""
+  title: "Let’s get started!",
+  subtitle: "Follow these simple steps and you’ll have a brand new site in no time."
 };
 
 export default GetStarted;

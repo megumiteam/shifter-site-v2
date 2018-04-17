@@ -357,3 +357,8 @@ $value in $theme-colors {
     @extend .small;
   }
 }
+
+// Accordian
+.accordian {
+  cursor: pointer;
+}

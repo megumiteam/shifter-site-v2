@@ -66,7 +66,7 @@ class Plans extends Component {
         </Container>
         <Container>
           <Row className="justify-content-md-center">
-            <Col md="10">
+            <Col xl="10">
               <Slider className="plans" {...settings}>
                 <PlansItem />
                 <PlansItem />

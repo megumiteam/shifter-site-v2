@@ -6681,3 +6681,6 @@ a.text-gray-100:hover, a.text-gray-100:focus {
 .plans-table thead th {
   font-weight: 500;
   text-transform: uppercase; }
+
+.accordian {
+  cursor: pointer; }

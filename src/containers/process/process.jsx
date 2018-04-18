@@ -21,7 +21,7 @@ const Process = props => (
       </Row>
       <Row className="justify-content-md-center">
         <Col md="10">
-          <div class="browser-mockup">
+          <div className="browser-mockup">
             <pre>
               <code className="language-css">{`p { content: 'code' }`}</code>
             </pre>
@@ -35,7 +35,7 @@ const Process = props => (
               <img
                 src="//placehold.it/75"
                 alt="..."
-                class="rounded-circle mb-4"
+                className="rounded-circle mb-4"
               />
               <CardTitle>Create</CardTitle>
               <small>
@@ -53,7 +53,7 @@ const Process = props => (
               <img
                 src="//placehold.it/75"
                 alt="..."
-                class="rounded-circle mb-4"
+                className="rounded-circle mb-4"
               />
               <CardTitle>Customize</CardTitle>
               <small>
@@ -71,7 +71,7 @@ const Process = props => (
               <img
                 src="//placehold.it/75"
                 alt="..."
-                class="rounded-circle mb-4"
+                className="rounded-circle mb-4"
               />
               <CardTitle>Generate</CardTitle>
               <small>
@@ -89,7 +89,7 @@ const Process = props => (
               <img
                 src="//placehold.it/75"
                 alt="..."
-                class="rounded-circle mb-4"
+                className="rounded-circle mb-4"
               />
               <CardTitle>Deploy</CardTitle>
               <small>

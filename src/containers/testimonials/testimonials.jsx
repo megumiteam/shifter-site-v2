@@ -58,7 +58,7 @@ Testimonials.propTypes = {
   subtitle: PropTypes.string
 };
 
-Testimonials.propTypes = {
+Testimonials.defaultProps = {
   title: "",
   subtitle: ""
 };

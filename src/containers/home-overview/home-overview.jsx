@@ -43,7 +43,7 @@ const HeroOverview = props => (
                 <img
                   src="//placehold.it/75"
                   alt="..."
-                  class="rounded-circle mb-4"
+                  className="rounded-circle mb-4"
                 />
                 <CardTitle>Built for WordPress</CardTitle>
                 <CardText>

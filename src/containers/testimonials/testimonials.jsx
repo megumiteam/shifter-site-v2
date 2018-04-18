@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import styles from "./../../styles/scss/_theme-custom.scss";
 import PropTypes from "prop-types";
 import { Tweet } from "react-twitter-widgets";
-import $ from "jquery";
 import Slider from "react-slick";
 import { Container, Row, Col } from "reactstrap";
 

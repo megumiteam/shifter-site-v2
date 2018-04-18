@@ -1,17 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import {
-  Container,
-  Row,
   Col,
-  Card,
   CardBody,
   CardImg,
-  Button,
-  CardSubtitle,
   CardTitle,
   CardText,
-  CardColumns
 } from "reactstrap";
 
 class BlogArchivePost extends Component {
@@ -27,9 +22,9 @@ class BlogArchivePost extends Component {
                 <time>April 1, 2018</time>
               </div>
               <CardTitle className="h5">
-                <a className="text-black text-decoration-none" href="#">
+                <Link className="text-black text-decoration-none" to={`/blog/${this.props.slug}`}>
                   {this.props.title}
-                </a>
+                </Link>
               </CardTitle>
             </header>
             <CardText className="sr-only">{this.props.excerpt}</CardText>

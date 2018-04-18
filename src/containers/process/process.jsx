@@ -7,12 +7,11 @@ import {
   Card,
   CardBody,
   CardTitle,
-  CardText,
-  CardDeck
+  CardText
 } from "reactstrap";
   
 const Process = props => (
-  <section className="get-started bg-gray-100 py-10">
+  <section className="get-started bg-gray-100 py-10 section-angle">
     <Container>
       <Row className="justify-content-md-center">
         <Col md="8" className="text-center mb-4">

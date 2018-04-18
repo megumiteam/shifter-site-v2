@@ -4,13 +4,7 @@ import {
   Container,
   Row,
   Col,
-  Card,
-  CardBody,
-  CardTitle,
-  CardText,
-  Media,
   Table,
-  Tooltip
 } from "reactstrap";
 
 function PlansTableFeature(props) {

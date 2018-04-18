@@ -3,11 +3,7 @@ import PropTypes from "prop-types";
 import {
   Container,
   Row,
-  Col,
-  Card,
-  CardBody,
-  CardTitle,
-  CardText
+  Col
 } from "reactstrap";
 
 class GetStarted extends Component {

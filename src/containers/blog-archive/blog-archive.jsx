@@ -1,32 +1,25 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import $ from "jquery";
+import BlogArchiveHeader from "./../../containers/blog-archive-header/blog-archive-header";
 import BlogArchivePost from "./../../components/blog-archive-post/blog-archive-post";
+import { Config } from "./../../config"
 import {
   Container,
   Row,
-  Col,
-  Card,
-  CardBody,
-  CardImg,
-  Button,
-  CardSubtitle,
-  CardTitle,
-  CardText,
-  CardColumns
+  Col
 } from "reactstrap";
 
 class BlogArchive extends Component {
   
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       posts: []
     };
   }
 
   componentDidMount() {
-    let dataURL = "https://getshifter.io/wp-json/wp/v2/posts?_embed&per_page=100";
+    let dataURL = `${Config.apiUrl}/wp-json/wp/v2/posts?_embed&per_page=100`
     fetch(dataURL)
       .then(res => res.json())
       .then(res => {
@@ -39,23 +32,26 @@ class BlogArchive extends Component {
   render() {
 
     let posts = this.state.posts.map((post, index) => {
-      return <BlogArchivePost key={index} title={post.title.rendered} excerpt={$(post.excerpt.rendered).text()} date={new Date(post.date).toUTCString()} />;
+      return <BlogArchivePost key={index} slug={post.slug} title={post.title.rendered} excerpt={$(post.excerpt.rendered).text()} date={new Date(post.date).toUTCString()} />;
     });
     
-    return <section className="py-5 bg-gray-100">
-        <Container>
-          <Row className="d-flex flex-wrap">
-            {posts}
-          </Row>
-          <Row>
-            <Col className="text-center m-5">
-              <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-primary btn-lg">
-                Read More
-              </a>
-            </Col>
-          </Row>
-        </Container>
-      </section>;
+    return <div>
+        <BlogArchiveHeader title="Blog" subtitle="Get the latest and greatest updates from team Shifter. And make sure to check back often to learn what’s new and exciting in our world." />
+        <section className="py-5 bg-gray-100">
+          <Container>
+            <Row className="d-flex flex-wrap">
+              {posts}
+            </Row>
+            <Row>
+              <Col className="text-center m-5">
+                <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-primary btn-lg">
+                  Read More
+                </a>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+      </div>;
   }
 }
 

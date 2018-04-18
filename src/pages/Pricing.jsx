@@ -4,7 +4,6 @@ import PlansTable from "./../containers/plans-table/plans-table";
 import PlansOverview from "./../containers/plans-overview/plans-overview";
 import Faqs from "./../containers/faqs/faqs";
 import GetStarted from "./../containers/get-started/get-started";
-import Slider from "react-slick";
 
 class Pricing extends Component {
   render() {

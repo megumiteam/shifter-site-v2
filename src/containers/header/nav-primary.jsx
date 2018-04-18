@@ -46,7 +46,12 @@ class PrimaryNav extends Component {
               </NavItem>
               <NavItem>
                 <NavLink target="_blank" href="https://support.getshifter.io">
-                  Docs
+                  Support
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink target="_blank">
+                  Contact
                 </NavLink>
               </NavItem>
             </Nav>

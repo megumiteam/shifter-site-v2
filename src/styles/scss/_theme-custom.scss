@@ -151,6 +151,22 @@ $value in $theme-colors {
 
 .section-angle {
   clip-path: polygon( 0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
+  padding-bottom: 10vw;
+
+  &--overlap {
+    @extend .section-angle;
+    margin-bottom: -5vw;
+  }
+
+  + section {
+    transform: translateY(-5vw);
+    z-index: -1;
+    position: relative;
+    
+    > div:first-of-type {
+      padding-top: 5vw;
+    }
+  }
 }
 
 // Twitter
@@ -248,4 +264,31 @@ $value in $theme-colors {
 
 .text-decoration-none {
   text-decoration: none !important;
+}
+
+// Blog Post
+.blog-single__header {
+  padding-bottom: 30vw;
+}
+
+.blog-single__content {
+  transform: translateY(-22.5vw);
+
+  img {
+    @extend .img-fluid;
+  }
+}
+
+
+
+// Social media icons
+.element {
+  position: relative;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  padding-top: 100%;
+  background: white;
+  max-width: 80px;
+  max-height: auto;
 }

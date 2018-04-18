@@ -4,7 +4,7 @@ import { Container, Row, Col, Nav, NavLink } from "reactstrap";
 
 class Footer extends Component {
   render() {
-    return <footer class="py-5" role="contentinfo">
+    return <footer className="py-5" role="contentinfo">
         <Container>
           <Row className="justify-content-md-center">
             <Col xl="10">

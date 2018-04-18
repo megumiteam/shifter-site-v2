@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Slider from "react-slick";
-import $ from "jquery"
 import {
   Container,
   Row,
@@ -9,8 +8,7 @@ import {
   Card,
   CardBody,
   CardTitle,
-  CardText,
-  Media
+  CardText
 } from "reactstrap";
 
 var settings = {

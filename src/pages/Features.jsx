@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import Hero from "./../containers/hero/hero";
 import FeaturesOverview from "./../containers/features-overview/features-overview";
 import FeaturesHighlights from "./../containers/features-highlights/features-highlights";
-import Testimonials from "./../containers/testimonials/testimonials";
-import Learn from "./../containers/learn/learn";
 import GetStarted from "./../containers/get-started/get-started";
-import Process from "./../containers/process/process";
 
 class Features extends Component {
   render() {

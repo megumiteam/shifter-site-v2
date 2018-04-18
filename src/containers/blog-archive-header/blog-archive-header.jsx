@@ -17,8 +17,8 @@ class BlogArchiveHeader extends Component {
             </Col>
           </Row>
           <Row>
-            <Col className="text-center text-uppercase font-weight-bold h6 small">
-              <ul class="list-inline blog-archive-header__tags">
+            <Col>
+              <ul class="text-center text-uppercase font-weight-bold h6 small list-inline blog-archive-header__tags">
                 <li class="list-inline-item blog-archive-header__tag">
                   <a className="text-white text-decoration-none" href="">
                     #Blog

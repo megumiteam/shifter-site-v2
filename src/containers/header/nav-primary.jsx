@@ -9,6 +9,7 @@ import {
   Nav,
   NavItem,
   NavLink,
+  Button
 } from "reactstrap";
 
 class PrimaryNav extends Component {
@@ -50,9 +51,7 @@ class PrimaryNav extends Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink target="_blank">
-                  Contact
-                </NavLink>
+                <NavLink target="_blank">Contact</NavLink>
               </NavItem>
             </Nav>
             <Nav navbar>
@@ -65,10 +64,10 @@ class PrimaryNav extends Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className="pr-0">
-                  <a href="https://go.getshifter.io" className="btn btn-gradient-primary text-uppercase btn-arrow">
+                <NavLink className="pr-0" href="#">
+                  <Button className="btn btn-gradient-primary text-uppercase btn-arrow">
                     Sign Up
-                  </a>
+                  </Button>
                 </NavLink>
               </NavItem>
             </Nav>

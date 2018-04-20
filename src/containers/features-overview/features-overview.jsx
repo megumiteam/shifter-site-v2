@@ -8,29 +8,34 @@ import {
   Media
 } from "reactstrap";
 
-function FeatureOverviewItem(props) {
-  return <Media top>
-      <Media href="#">
-        <Media className="rounded-circle mb-4" object src="//placehold.it/75" alt="" />
+let FeatureOverviewItem = props => (
+  <Col className="align-items-stretch icon-card">
+    <Media top>
+      <Media
+        className="icon-card__header d-flex align-items-center"
+        href="#"
+      >
+        <IconSet icon={props.icon} className="mb-4" />
       </Media>
       <Media body>
         <Media heading tag="h5">
-          Media heading
+          {props.title}
         </Media>
         <small>
-          <p>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-            scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum
-            in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-            nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </p>
+          <p>{props.subtitle}</p>
         </small>
       </Media>
-    </Media>;
-}
+    </Media>
+  </Col>
+);
 
 class FeaturesOverview extends Component {
   render() {
+
+    let features = this.props.featureOverviewItems.map((props, index) => {
+      return <FeatureOverviewItem title={props.title} subtitle={props.subtitle} icon={props.icon} />;
+    });
+
     return <section className="features-overview section-angle--gray pt-10 pb-8 bg-gray-100">
         <Container>
           <Row className="justify-content-md-center">
@@ -49,15 +54,7 @@ class FeaturesOverview extends Component {
           <Row className="justify-content-md-center">
             <Col md="10">
               <Row>
-                <Col>
-                  <FeatureOverviewItem />
-                </Col>
-                <Col>
-                  <FeatureOverviewItem />
-                </Col>
-                <Col>
-                  <FeatureOverviewItem />
-                </Col>
+                {features}
               </Row>
             </Col>
           </Row>
@@ -78,9 +75,22 @@ FeaturesOverview.propTypes = {
   subtitle: PropTypes.string
 };
 
-FeaturesOverview.propTypes = {
+FeaturesOverview.defaultProps = {
+  title: "",
+  subtitle: "",
+  featureOverviewItems: PropTypes.array
+};
+
+FeatureOverviewItem.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string
+};
+
+FeatureOverviewItem.defaultProps = {
   title: "",
   subtitle: ""
 };
+
+
 
 export default FeaturesOverview;

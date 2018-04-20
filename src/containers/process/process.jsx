@@ -20,10 +20,10 @@ let ProcessItem = props => (
     className="mb-sm-4 mb-lg-0 d-flex align-items-stretch"
   >
     <Card className="box-shadow text-center icon-card">
-      <CardHeader>
+      <CardHeader className="icon-card__header d-flex justify-content-center align-items-center">
         <IconSet icon={props.icon} />
       </CardHeader>
-      <CardBody>
+      <CardBody className="icon-card__body">
         <CardTitle>{props.title}</CardTitle>
         <small>
           <CardText>
@@ -54,9 +54,9 @@ const Process = props => (
       </Row>
       <Row className="process__items">
         <ProcessItem icon="create" title="Create" />
-        <ProcessItem icon="login" title="Customize" />
+        <ProcessItem icon="blog-alt" title="Customize" />
         <ProcessItem icon="power" title="Generate" />
-        <ProcessItem icon="power" title="Deploy" />
+        <ProcessItem icon="globe" title="Deploy" />
       </Row>
       <Row className="justify-content-md-center">
         <Col md="8" className="text-center mt-5">

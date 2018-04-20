@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import IconSet from "./../../components/icons/icons";
 import {
   Container,
   Row,
@@ -7,29 +8,29 @@ import {
   Media
 } from "reactstrap";
 
-function FeatureHighlightItem(props) {
-  return <Media className="mb-5">
-      <Media href="#">
-        <Media className="rounded mr-5" object src="//placehold.it/150" alt="" />
+let FeatureHighlightItem = props => (
+  <Media className="mb-5">
+    <Media href="#">
+      <IconSet className="mr-5 icon icon-lg" icon={props.icon} />
+    </Media>
+    <Media body>
+      <Media heading tag="h5" className="mb-4">
+        {props.title}
       </Media>
-      <Media body>
-        <Media heading tag="h5" className="mb-4">
-          Media heading
-        </Media>
-        <small>
-          <p>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-            scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum
-            in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-            nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </p>
-        </small>
-      </Media>
-    </Media>;
-}
+      <small>
+        <p>{props.subtitle}</p>
+      </small>
+    </Media>
+  </Media>
+);
 
 class FeaturesHighlights extends Component {
   render() {
+
+    let features = this.props.featureHilightItems.map((props, index) => {
+      return <FeatureHighlightItem title={props.title} subtitle={props.subtitle} icon={props.icon} />;
+    });
+
     return <section className="home-overview py-10 section-angle">
         <Container>
           <Row className="justify-content-md-center mb-5">
@@ -41,11 +42,7 @@ class FeaturesHighlights extends Component {
           <Row className="justify-content-md-center">
             <Col md="8">
               <Row>
-                <FeatureHighlightItem />
-                <FeatureHighlightItem />
-                <FeatureHighlightItem />
-                <FeatureHighlightItem />
-                <FeatureHighlightItem />
+                {features}
               </Row>
             </Col>
           </Row>
@@ -66,9 +63,10 @@ FeaturesHighlights.propTypes = {
   subtitle: PropTypes.string
 };
 
-FeaturesHighlights.propTypes = {
+FeaturesHighlights.defaultProps = {
   title: "",
-  subtitle: ""
+  subtitle: "",
+  featureHilightItems: PropTypes.array
 };
 
 export default FeaturesHighlights;

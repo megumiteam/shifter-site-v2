@@ -7700,22 +7700,29 @@ a.text-gray-300:hover, a.text-gray-300:focus {
     width: 70px !important; }
   .icon-create {
     width: 47px !important; }
-  .icon-blog {
+  .icon-blog, .icon-blog-alt {
     width: 69px !important; }
   .icon-support {
+    width: 63px !important; }
+  .icon-globe {
     width: 63px !important; }
   .icon-100 {
     width: 100% !important; }
 
-.icon-card .card-header {
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .icon-card .card-header + .card-body {
-    padding-top: 50%; }
+.icon-card .icon-card__header {
+  max-height: 125px; }
+  .icon-card .icon-card__header:after {
+    padding-top: 50%;
+    content: '';
+    display: block; }
+
+.icon-card .icon-card__body {
+  padding-top: 0; }
+
+.process .browser-mockup {
+  height: 400px;
+  overflow-y: hidden;
+  z-index: 1; }
 
 .process__items {
   position: relative;

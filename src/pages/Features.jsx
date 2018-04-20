@@ -3,22 +3,25 @@ import Hero from "./../containers/hero/hero";
 import FeaturesOverview from "./../containers/features-overview/features-overview";
 import FeaturesHighlights from "./../containers/features-highlights/features-highlights";
 import GetStarted from "./../containers/get-started/get-started";
+import { content } from "./../content";
 
 class Features extends Component {
   render() {
     return (
       <div>
         <Hero
-          title="Features"
-          subtitle="Shifter is a full-service WordPress hosting solution that brings serverless architecture to the world’s most popular CMS. It transforms WordPress to static so you can create secure sites that scale and end downtime."
+          title={content.features.hero.title}
+          subtitle={content.features.hero.subtitle}
         />
         <FeaturesOverview
-          title="WordPress hosting, reimagined."
-          subtitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+          title={content.features.overview.title}
+          subtitle={content.features.overview.subtitle}
+          featureOverviewItems={content.features.overview.overview_items}
         />
         <FeaturesHighlights
-          title="WordPress hosting, reimagined."
-          subtitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+          title={content.features.highlights.title}
+          subtitle={content.features.highlights.subtitle}
+          featureHilightItems={content.features.highlights.highlight_items}
         />
         <GetStarted
           layout="centered"

@@ -7,7 +7,7 @@ const Hero = props => (
     <Container>
       <Row className="justify-content-md-center">
         <Col md={{ size: 9, offset: 1 }}>
-          <h2>{props.title}</h2>
+          <h1 className="h2">{props.title}</h1>
           <div className="mt-3">{props.subtitle}</div>
           <div className="hero__links mt-5">
             <a

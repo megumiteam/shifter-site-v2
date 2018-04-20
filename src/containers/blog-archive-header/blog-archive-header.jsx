@@ -18,23 +18,23 @@ class BlogArchiveHeader extends Component {
           </Row>
           <Row>
             <Col>
-              <ul class="text-center text-uppercase font-weight-bold h6 small list-inline blog-archive-header__tags">
-                <li class="list-inline-item blog-archive-header__tag">
+              <ul className="text-center text-uppercase font-weight-bold h6 small list-inline blog-archive-header__tags">
+                <li className="list-inline-item blog-archive-header__tag">
                   <a className="text-white text-decoration-none" href="">
                     #Blog
                   </a>
                 </li>
-                <li class="list-inline-item blog-archive-header__tag">
+                <li className="list-inline-item blog-archive-header__tag">
                   <a className="text-white text-decoration-none" href="">
                     #Events
                   </a>
                 </li>
-                <li class="list-inline-item blog-archive-header__tag">
+                <li className="list-inline-item blog-archive-header__tag">
                   <a className="text-white text-decoration-none" href="">
                     #Integration
                   </a>
                 </li>
-                <li class="list-inline-item blog-archive-header__tag">
+                <li className="list-inline-item blog-archive-header__tag">
                   <a className="text-white text-decoration-none" href="">
                     #Media
                   </a>
@@ -52,7 +52,7 @@ BlogArchiveHeader.propTypes = {
   subtitle: PropTypes.string
 };
 
-BlogArchiveHeader.propTypes = {
+BlogArchiveHeader.defaultProps = {
   title: "",
   subtitle: ""
 };

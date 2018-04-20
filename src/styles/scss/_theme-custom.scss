@@ -305,11 +305,16 @@ $value in $theme-colors {
     width: 47px !important;
   }
 
-  &-blog {
+  &-blog,
+  &-blog-alt {
     width: 69px !important;
   }
 
   &-support {
+    width: 63px !important;
+  }
+  
+  &-globe {
     width: 63px !important;
   }
 
@@ -320,17 +325,18 @@ $value in $theme-colors {
 
 .icon-card {
 
-  .card-header {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .icon-card__header {
+    max-height: 125px;
 
-    +.card-body {
+    &:after {
       padding-top: 50%;
+      content: '';
+      display: block;
     }
+  }
+
+  .icon-card__body {
+    padding-top: 0;
   }
 }
 
@@ -348,11 +354,11 @@ $value in $theme-colors {
   //   z-index: 0;
   // }
 
-  // .browser-mockup {
-  //   height: 400px;
-  //   overflow-y: hidden;
-  //   z-index: 1;
-  // }
+  .browser-mockup {
+    height: 400px;
+    overflow-y: hidden;
+    z-index: 1;
+  }
 }
 
 .process__items {

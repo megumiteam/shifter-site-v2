@@ -10,11 +10,14 @@ import Pricing from "./pages/Pricing";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
+import SEO from "./components/seo/seo";
+
 class App extends Component {
 
   render() {
     return <Router>
         <div>
+          <SEO />
           <PrimaryNav />
           <main>
             <Switch>

@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import IconSet from "./../../components/icons/icons";
 import {
   Container,
   Row,
@@ -7,11 +8,36 @@ import {
   Card,
   CardBody,
   CardTitle,
-  CardText
+  CardText,
+  CardHeader
 } from "reactstrap";
-  
+
+let ProcessItem = props => (
+  <Col
+    sm="12"
+    md="6"
+    lg="3"
+    className="mb-sm-4 mb-lg-0 d-flex align-items-stretch"
+  >
+    <Card className="box-shadow text-center icon-card">
+      <CardHeader>
+        <IconSet icon={props.icon} />
+      </CardHeader>
+      <CardBody>
+        <CardTitle>{props.title}</CardTitle>
+        <small>
+          <CardText>
+            Choose your plan based on storage, bandwidth, number of users, or
+            Perfered CDN.
+          </CardText>
+        </small>
+      </CardBody>
+    </Card>
+  </Col>
+);
+
 const Process = props => (
-  <section className="get-started bg-gray-100 py-10 section-angle">
+  <section className="process bg-gray-100 pt-10 pb-8 section-angle--gray">
     <Container>
       <Row className="justify-content-md-center">
         <Col md="8" className="text-center mb-4">
@@ -21,86 +47,16 @@ const Process = props => (
       </Row>
       <Row className="justify-content-md-center">
         <Col md="10">
-          <div className="browser-mockup">
-            <pre>
-              <code className="language-css">{`p { content: 'code' }`}</code>
-            </pre>
+          <div className="browser-mockup section-angle--gray _gradient-purple-dark">
+            <IconSet icon="code-editor" className="icon-100" />
           </div>
         </Col>
       </Row>
-      <Row className="mt-5">
-        <Col sm="12" md="6" lg="3" className="mb-sm-4 mb-lg-0">
-          <Card className="box-shadow text-center">
-            <CardBody>
-              <img
-                src="//placehold.it/75"
-                alt="..."
-                className="rounded-circle mb-4"
-              />
-              <CardTitle>Create</CardTitle>
-              <small>
-                <CardText>
-                  Choose your plan based on storage, bandwidth, number of users,
-                  or Perfered CDN.
-                </CardText>
-              </small>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col md="6" lg="3" className="mb-sm-4 mb-lg-0">
-          <Card className="box-shadow text-center">
-            <CardBody>
-              <img
-                src="//placehold.it/75"
-                alt="..."
-                className="rounded-circle mb-4"
-              />
-              <CardTitle>Customize</CardTitle>
-              <small>
-                <CardText>
-                  Choose your plan based on storage, bandwidth, number of users,
-                  or Perfered CDN.
-                </CardText>
-              </small>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col sm="12" md="6" lg="3" className="mb-sm-4 mb-lg-0">
-          <Card className="box-shadow text-center">
-            <CardBody>
-              <img
-                src="//placehold.it/75"
-                alt="..."
-                className="rounded-circle mb-4"
-              />
-              <CardTitle>Generate</CardTitle>
-              <small>
-                <CardText>
-                  Choose your plan based on storage, bandwidth, number of users,
-                  or Perfered CDN.
-                </CardText>
-              </small>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col md="6" lg="3">
-          <Card className="box-shadow text-center">
-            <CardBody>
-              <img
-                src="//placehold.it/75"
-                alt="..."
-                className="rounded-circle mb-4"
-              />
-              <CardTitle>Deploy</CardTitle>
-              <small>
-                <CardText>
-                  Choose your plan based on storage, bandwidth, number of users,
-                  or Perfered CDN.
-                </CardText>
-              </small>
-            </CardBody>
-          </Card>
-        </Col>
+      <Row className="process__items">
+        <ProcessItem icon="create" title="Create" />
+        <ProcessItem icon="login" title="Customize" />
+        <ProcessItem icon="power" title="Generate" />
+        <ProcessItem icon="power" title="Deploy" />
       </Row>
       <Row className="justify-content-md-center">
         <Col md="8" className="text-center mt-5">
@@ -122,8 +78,18 @@ Process.propTypes = {
 };
 
 Process.defaultProps = {
-  title: '',
-  subtitle: ''
+  title: "",
+  subtitle: ""
 };
+
+ProcessItem.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string
+};
+
+ProcessItem.defaultProps = {
+  title: "",
+  subtitle: ""
+}
 
 export default Process;

@@ -2,33 +2,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-// Style Guide Helpers
-.mt-15 {
-  margin-top: 125px;
-}
-
-.mb-7 {
-  margin-bottom: 50px;
-}
-
-.mt-10 {
-  margin-top: 100px;
-}
-
-.my-10 {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.py-10 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.pb-20 {
-  padding-bottom: 175px;
-}
-
 // Logo
 .logo {
   width: 120px;
@@ -149,23 +122,43 @@ $value in $theme-colors {
 
 // Section Angles
 
-.section-angle {
-  clip-path: polygon( 0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
-  padding-bottom: 10vw;
+.section-angle-base {
+    content: ' ';
+    width: 100%;
+    height: 100px;
+    display: block;
+    position: absolute;
+    opacity: 1;
+    transform: translateY(80px);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+    z-index: 1;
+    transition: all 1s ease;
+    z-index: 1;
+}
 
-  &--overlap {
-    @extend .section-angle;
-    margin-bottom: -5vw;
+.section-angle--white {
+  position: relative;
+
+  &:after {
+    background-color: $white;
+    @extend .section-angle-base;
   }
+}
 
-  + section {
-    transform: translateY(-5vw);
-    z-index: -1;
-    position: relative;
-    
-    > div:first-of-type {
-      padding-top: 5vw;
-    }
+.section-angle--purple-dark {
+  position: relative;
+
+  &:after {
+    @extend ._gradient-purple-dark;
+    @extend .section-angle-base;
+  }
+}
+
+.section-angle--gray {
+  position: relative;
+  &:after {
+    background-color: $gray-100;
+    @extend .section-angle-base;
   }
 }
 
@@ -281,14 +274,89 @@ $value in $theme-colors {
 
 
 
-// Social media icons
-.element {
+// Custom Icons
+.icon {
+  display: inline-flex;
+  width: 50px !important;
+
+  svg {
+    width: 100% !important;
+    height: auto !important;
+    align-self: end;
+  }
+
+  &-serverless {
+    width: 48px !important;
+  }
+
+  &-cms {
+    width: 60px !important;
+  }
+
+  &-wordpress {
+    width: 60px !important;
+  }
+
+  &-login {
+    width: 70px !important;
+  }
+
+  &-create {
+    width: 47px !important;
+  }
+
+  &-blog {
+    width: 69px !important;
+  }
+
+  &-support {
+    width: 63px !important;
+  }
+
+  &-100 {
+    width: 100% !important;
+  }
+}
+
+.icon-card {
+
+  .card-header {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    +.card-body {
+      padding-top: 50%;
+    }
+  }
+}
+
+// Process
+
+.process {
+  // position: relative;
+  // overflow: hidden;
+
+  // &:after {
+  //   @extend .section-angle-base;
+  //   top: -50%;
+  //   background-color: $gray-100;
+  //   height: 100%;
+  //   z-index: 0;
+  // }
+
+  // .browser-mockup {
+  //   height: 400px;
+  //   overflow-y: hidden;
+  //   z-index: 1;
+  // }
+}
+
+.process__items {
   position: relative;
-  border-radius: 50%;
-  width: 100%;
-  height: auto;
-  padding-top: 100%;
-  background: white;
-  max-width: 80px;
-  max-height: auto;
+  z-index: 2;
+  margin-top: -125px;
 }

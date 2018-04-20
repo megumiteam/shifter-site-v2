@@ -1,18 +1,37 @@
 import React from "react";
 import PropTypes from "prop-types";
+import IconSet from "./../../components/icons/icons";
 import {
   Container,
   Row,
   Col,
   Card,
   CardBody,
-  CardTitle,
-  CardText,
-  CardDeck,
+  Media
 } from "reactstrap";
 
+let ResourceItem = props => (
+  <Col className="d-flex align-items-stretch">
+    <Card className="box-shadow">
+      <CardBody>
+        <Media>
+          <Media href="#">
+            <IconSet icon={props.icon} className="mr-4" />
+          </Media>
+          <Media body>
+            <Media heading tag="h5" className="mb-4">
+              {props.title}
+            </Media>
+            <small>{props.body}</small>
+          </Media>
+        </Media>
+      </CardBody>
+    </Card>
+  </Col>
+);
+
 const Learn = props => (
-  <section className="home-overview bg-gray-100 py-10 section-angle">
+  <section className="learn bg-gray-100 pt-10 pb-8 section-angle--gray">
     <Container>
       <Row className="justify-content-md-center">
         <Col md="8" className="text-center">
@@ -22,31 +41,18 @@ const Learn = props => (
       </Row>
       <Row className="justify-content-md-center">
         <Col md="10">
-          <CardDeck className="mt-5">
-            <Card className="box-shadow">
-              <CardBody>
-                <CardTitle>Blog</CardTitle>
-                <small>
-                  <CardText>
-                    Get the latest and greatest updates from team Shifter. And
-                    make sure to check back often to learn what’s new and
-                    exciting in our world.
-                  </CardText>
-                </small>
-              </CardBody>
-            </Card>
-            <Card className="box-shadow">
-              <CardBody>
-                <CardTitle>Support</CardTitle>
-                <small>
-                  <CardText>
-                    Advice and answers from the Shifter . Advice and answers
-                    from the Shifter Team. Advice and answers from the Shifter.
-                  </CardText>
-                </small>
-              </CardBody>
-            </Card>
-          </CardDeck>
+          <Row className="mt-5">
+            <ResourceItem
+              icon="blog"
+              title="Blog"
+              body="Get the latest and greatest updates from team Shifter. And make sure to check back often to learn what’s new and exciting in our world."
+            />
+            <ResourceItem
+              icon="support"
+              title="Support"
+              body="Get the latest and greatest updates from team Shifter. And make sure to check back often to learn what’s new and exciting in our world."
+            />
+          </Row>
         </Col>
       </Row>
       <Row className="justify-content-md-center">
@@ -69,6 +75,18 @@ Learn.propTypes = {
 
 Learn.defaultProps = {
   title: ""
+};
+
+ResourceItem.propTypes = {
+  icon: PropTypes.string,
+  title: PropTypes.string,
+  body: PropTypes.string
+};
+
+ResourceItem.defaultProps = {
+  icon: "",
+  title: "",
+  body: ""
 };
 
 export default Learn;

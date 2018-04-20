@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import IconSet from "./../../components/icons/icons";
 import {
   Container,
   Row,
@@ -7,53 +8,43 @@ import {
   Card,
   CardBody,
   CardTitle,
-  CardText,
-  CardDeck
+  CardText
 } from "reactstrap";
+
+let HomeOverviewItem = props => (
+  <Col xs="12" md="6" className="d-flex align-items-stretch">
+    <Card className="box-shadow">
+      <CardBody>
+        <IconSet icon={props.icon} className="mb-4" />
+        <CardTitle>{props.title}</CardTitle>
+        <CardText>{props.body}</CardText>
+      </CardBody>
+    </Card>
+  </Col>
+);
   
 const HeroOverview = props => (
-  <section className="home-overview py-10 section-angle">
+  <section className="home-overview pt-10 pb-8 section-angle--white">
     <Container>
-      <Row className="justify-content-md-center">
+      <Row className="justify-content-md-center mb-5">
         <Col md="8" className="text-center">
           <h4>{props.title}</h4>
         </Col>
       </Row>
       <Row className="justify-content-md-center">
         <Col md="10">
-          <CardDeck className="mt-5">
-            <Card className="box-shadow">
-              <CardBody>
-                <img
-                  src="//placehold.it/75"
-                  alt="..."
-                  className="rounded-circle mb-4"
-                />
-                <CardTitle>Serverless Architecture</CardTitle>
-                <CardText>
-                  Static web pages are nearly maintenance-free and load at
-                  lightining speed. But they require outside development
-                  resources and don’t offer the functionality of a dynamic web
-                  page.
-                </CardText>
-              </CardBody>
-            </Card>
-            <Card className="box-shadow">
-              <CardBody>
-                <img
-                  src="//placehold.it/75"
-                  alt="..."
-                  className="rounded-circle mb-4"
-                />
-                <CardTitle>Built for WordPress</CardTitle>
-                <CardText>
-                  WordPress makes building a website easy and cost effective for
-                  almost any user. But it needs regular updates and security can
-                  be a concern.
-                </CardText>
-              </CardBody>
-            </Card>
-          </CardDeck>
+          <Row>
+            <HomeOverviewItem
+              icon="serverless"
+              title="Serverless Architecture"
+              body="Host your always-on static pages with unlimited scalability and runs WordPress in a fully-managed container environment that only runs when you need it."
+            />
+            <HomeOverviewItem
+              icon="wordpress"
+              title="Built for WordPress"
+              body="Use the same WordPress themes, Plugins, and tools you know and love without the headaches of hosting and threats from bots or cybervillains."
+            />
+          </Row>
         </Col>
       </Row>
       <Row className="justify-content-md-center">

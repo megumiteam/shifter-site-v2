@@ -5,13 +5,13 @@ import Testimonials from "./../containers/testimonials/testimonials";
 import Learn from "./../containers/learn/learn";
 import GetStarted from "./../containers/get-started/get-started";
 import Process from "./../containers/process/process";
+import { content } from "./../content";
 
 class Home extends Component {
   render() {
     return <div>
-        <Hero title="The new standard in static web hosting" subtitle="Shifter is a full-service WordPress hosting solution that brings serverless architecture to the world’s most popular CMS. It transforms WordPress to static so you can create secure sites that scale and end downtime." />
-        <HomeOverview title="Shifter brings the best of both worlds together—
-so you can build the best website." />
+        <Hero title={content.home.hero.title} subtitle={content.home.hero.subtitle} />
+        <HomeOverview title={content.home.home_overview.title} />
         <Process title="How Shifter Works" subtitle="Follow these simple steps and you’ll have a brand new site in no time." />
         <Testimonials title="What people are saying" subtitle="Follow these simple steps and you’ll have a brand new site in no time." />
         <Learn title="Expand &amp; Learn" subtitle="Follow these simple steps and you’ll have a brand new site in no time." />

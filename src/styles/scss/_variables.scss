@@ -57,7 +57,9 @@ $theme-colors: map-merge((
   "dark":         $dark,
   "black":        $black,
   "purple-dark":  $purple-dark,
-  "gray-100":     $gray-100
+  "gray-100":     $gray-100,
+  "gray-200":     $gray-200,
+  "gray-300":     $gray-300
 ), $theme-colors);
 
 // Options
@@ -86,6 +88,24 @@ $border-radius-sm:            .2rem !default;
 
 $component-active-color:      $white !default;
 $component-active-bg:         map-get($theme-colors, "primary") !default;
+
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 3.5),
+  7: ($spacer * 5),
+  8: ($spacer * 6.5),
+  9: ($spacer * 8),
+  10: ($spacer * 9.5)
+), $spacers);
 
 // Body
 //

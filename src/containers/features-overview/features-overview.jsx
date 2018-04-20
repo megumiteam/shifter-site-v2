@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import IconSet from "./../../components/icons/icons";
 import {
   Container,
   Row,
@@ -30,18 +31,16 @@ function FeatureOverviewItem(props) {
 
 class FeaturesOverview extends Component {
   render() {
-    return <section className="home-overview py-10 section-angle bg-gray-100">
+    return <section className="features-overview section-angle--gray pt-10 pb-8 bg-gray-100">
         <Container>
-          <Row className="justify-content-md-center mb-5">
+          <Row className="justify-content-md-center">
             <Col md="10">
-              <div class="browser-mockup">
-                <pre>
-                  <code className="language-css">{`p { content: 'code' }`}</code>
-                </pre>
+              <div className="browser-mockup _gradient-purple-dark">
+                <IconSet icon="code-editor" className="icon-100" />
               </div>
             </Col>
           </Row>
-          <Row className="justify-content-md-center mb-5">
+          <Row className="justify-content-md-center mt-7 mb-5">
             <Col md="9" className="text-center">
               <h4>{this.props.title}</h4>
               <div className="mt-3 small">{this.props.subtitle}</div>

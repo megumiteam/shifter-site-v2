@@ -7,16 +7,16 @@ import {
   Table,
 } from "reactstrap";
 
-function PlansTableFeature(props) {
-  return <tr>
-      <th scope="row">{props.feature}</th>
-      <td>1GB</td>
-      <td>10GB</td>
-      <td>500GB</td>
-      <td>1TB</td>
-      <td>1TB</td>
-    </tr>;
-}
+let PlansTableFeature = (props) => (
+  <tr>
+    <th scope="row">{props.feature}</th>
+    <td>1GB</td>
+    <td>10GB</td>
+    <td>500GB</td>
+    <td>1TB</td>
+    <td>1TB</td>
+  </tr>
+);
 
 class PlansTable extends Component {
   render() {

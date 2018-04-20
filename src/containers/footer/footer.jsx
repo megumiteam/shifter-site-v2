@@ -83,7 +83,7 @@ class Footer extends Component {
           </Row>
           <Row className="justify-content-md-center">
             <Col md="10">
-              <h6 className="text-uppercase small mt-10">
+              <h6 className="text-uppercase small mt-5">
                 ©2018 Shifter | A DigitalCube Company
               </h6>
             </Col>

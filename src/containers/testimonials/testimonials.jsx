@@ -23,7 +23,7 @@ function Quote(props) {
 class Testimonials extends Component {
   render() {
 
-    return <section className="testimonials py-10 _gradient-purple-dark">
+    return <section className="testimonials pt-10 pb-8 section-angle--purple-dark _gradient-purple-dark">
         <Container>
           <Row className="justify-content-md-center">
             <Col md="8" className="text-center text-white mb-4">

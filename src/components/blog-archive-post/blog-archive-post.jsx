@@ -12,7 +12,7 @@ import {
 class BlogArchivePost extends Component {
   render() {
     return <Col md="6" lg="4" className="d-flex align-items-stretch">
-        <article className="card box-shadow-light mb-4">
+        <article className="card box-shadow-sm mb-4">
           <figure className="post-img m-0">
             <CardImg top className="rounded-top card-img-top--fill" src={this.props.thumbnail} alt="" />
           </figure>

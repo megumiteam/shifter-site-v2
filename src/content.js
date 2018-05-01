@@ -13,6 +13,12 @@ export const content = {
           title: "Serverless Architecture",
           subtitle:
             "Host your always-on static pages with unlimited scalability and run WordPress in a fully-managed container environment that’s only on when you need it."
+        },
+        {
+          icon: "wordpress",
+          title: "Built for WordPress",
+          subtitle:
+            "Use the same WordPress themes, Plugins, and tools you know and love without the headaches of hosting or threats from bots and cybervillains."
         }
       ]
     },
@@ -23,23 +29,40 @@ export const content = {
         {
           icon: "create",
           title: "Create",
-          subtitle: "Choose your plan based on storage, bandwidth, number of users, or Perfered CDN."
+          subtitle:
+            "The famous 5-minute install just got easier! Launch a new WordPress site in seconds from the Shifter Dashboard."
         },
         {
           icon: "blog-alt",
           title: "Customize",
-          subtitle: "Choose your plan based on storage, bandwidth, number of users, or Perfered CDN."
+          subtitle:
+            "Import an existing site or start fresh by adding Themes, Plugins and blog to your heart's content."
         },
         {
           icon: "power",
           title: "Generate",
-          subtitle: "Choose your plan based on storage, bandwidth, number of users, or Perfered CDN."
+          subtitle:
+            "Using Shifters static site generator for WordPress create an HTML, CSS and JS version of your site in one click."
         },
         {
           icon: "globe",
           title: "Depoly",
-          subtitle: "Choose your plan based on storage, bandwidth, number of users, or Perfered CDN."
+          subtitle:
+            "Go live and deploy your static site that loads at lightning speed with our global CDN and nothing to install HTTPS."
         }
+      ]
+    },
+    testimonials: {
+      title: "What people are saying",
+      subtitle:
+        "Drop us a line with #getshifter and let us know what you think",
+      tweets: [
+        { tweetId: "925062079773585411" },
+        { tweetId: "822127402851581953" },
+        { tweetId: "982998258468442113" },
+        { tweetId: "822357134725812224" },
+        { tweetId: "789180722049196033" },
+        { tweetId: "834087318298333185" }
       ]
     }
   },

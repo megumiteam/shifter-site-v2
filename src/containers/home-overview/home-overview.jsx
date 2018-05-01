@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import IconSet from "./../../components/icons/icons";
 import {
@@ -8,7 +8,8 @@ import {
   Card,
   CardBody,
   CardTitle,
-  CardText
+  CardText,
+  CardHeader
 } from "reactstrap";
 
 let HomeOverviewItem = props => (
@@ -17,49 +18,52 @@ let HomeOverviewItem = props => (
       <CardBody>
         <IconSet icon={props.icon} className="mb-4" />
         <CardTitle>{props.title}</CardTitle>
-        <CardText>{props.body}</CardText>
+        <CardText>{props.subtitle}</CardText>
       </CardBody>
     </Card>
   </Col>
 );
-  
-const HomeOverview = props => (
-  <section className="home-overview pt-10 pb-8 section-angle--white">
-    <Container>
-      <Row className="justify-content-md-center mb-5">
-        <Col md="8" className="text-center">
-          <h4>{props.content.title}</h4>
-        </Col>
-      </Row>
-      <Row className="justify-content-md-center">
-        <Col md="10">
-          <Row>
-            <HomeOverviewItem
-              icon="serverless"
-              title="Serverless Architecture"
-              body="Host your always-on static pages with unlimited scalability and runs WordPress in a fully-managed container environment that only runs when you need it."
-            />
-            <HomeOverviewItem
-              icon="wordpress"
-              title="Built for WordPress"
-              body="Use the same WordPress themes, Plugins, and tools you know and love without the headaches of hosting and threats from bots or cybervillains."
-            />
+
+class HomeOverview extends Component {
+  render() {
+    let items = this.props.content.items.map((props, index) => {
+      return (
+        <HomeOverviewItem
+          title={props.title}
+          subtitle={props.subtitle}
+          icon={props.icon}
+        />
+      );
+    });
+
+    return (
+      <section className="home-overview pt-10 pb-8 section-angle--white">
+        <Container>
+          <Row className="justify-content-md-center mb-5">
+            <Col md="8" className="text-center">
+              <h4>{this.props.content.title}</h4>
+            </Col>
           </Row>
-        </Col>
-      </Row>
-      <Row className="justify-content-md-center">
-        <Col md="8" className="text-center mt-5">
-          <a
-            href="/features"
-            className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow"
-          >
-            View More Features
-          </a>
-        </Col>
-      </Row>
-    </Container>
-  </section>
-);
+          <Row className="justify-content-md-center">
+            <Col md="10">
+              <Row>{items}</Row>
+            </Col>
+          </Row>
+          <Row className="justify-content-md-center">
+            <Col md="8" className="text-center mt-5">
+              <a
+                href="/features"
+                className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow"
+              >
+                All The Features
+              </a>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    );
+  }
+}
 
 HomeOverview.propTypes = {
   content: PropTypes.array,
@@ -68,9 +72,19 @@ HomeOverview.propTypes = {
 };
 
 HomeOverview.defaultProps = {
-  title: '',
+  title: "",
   items: false,
   content: null
+};
+
+HomeOverviewItem.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string
+};
+
+HomeOverviewItem.defaultProps = {
+  title: "",
+  subtitle: ""
 };
 
 export default HomeOverview;

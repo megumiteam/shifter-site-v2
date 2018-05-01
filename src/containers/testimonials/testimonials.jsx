@@ -23,23 +23,20 @@ function Quote(props) {
 class Testimonials extends Component {
   render() {
 
+    let tweets = this.props.content.tweets.map((props, index) => {
+      return <Quote tweetId={props.tweetId} />;
+    });
+
     return <section className="testimonials pt-10 pb-8 section-angle--purple-dark _gradient-purple-dark">
         <Container>
           <Row className="justify-content-md-center">
             <Col md="8" className="text-center text-white mb-4">
-              <h4>{this.props.title}</h4>
-              <div className="mt-3">{this.props.subtitle}</div>
+              <h4>{this.props.content.title}</h4>
+              <div className="mt-3">{this.props.content.subtitle}</div>
             </Col>
           </Row>
         </Container>
-        <Slider {...settings}>
-          <Quote tweetId="925062079773585411" />
-          <Quote tweetId="822127402851581953" />
-          <Quote tweetId="982998258468442113" />
-          <Quote tweetId="822357134725812224" />
-          <Quote tweetId="789180722049196033" />
-          <Quote tweetId="834087318298333185" />
-        </Slider>
+        <Slider {...settings}>{tweets}</Slider>
         <Container>
           <Row className="justify-content-md-center">
             <Col md="8" className="text-center mt-5">
@@ -54,13 +51,11 @@ class Testimonials extends Component {
 }
 
 Testimonials.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string
+  content: PropTypes.array
 };
 
 Testimonials.defaultProps = {
-  title: "",
-  subtitle: ""
+  content: null
 };
 
 export default Testimonials;

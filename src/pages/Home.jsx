@@ -13,7 +13,7 @@ class Home extends Component {
         <Hero title={content.home.hero.title} subtitle={content.home.hero.subtitle} />
         <HomeOverview content={content.home.overview} />
         <Process content={content.home.process} />
-        <Testimonials title="What people are saying" subtitle="Follow these simple steps and you’ll have a brand new site in no time." />
+        <Testimonials content={content.home.testimonials} />
         <Learn title="Expand &amp; Learn" subtitle="Follow these simple steps and you’ll have a brand new site in no time." />
         <GetStarted title="Ready to get started?" subtitle="Are you ready for the next big thing?
 Get started with Shifter today!" />

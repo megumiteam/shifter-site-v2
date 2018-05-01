@@ -65,7 +65,7 @@ PlansTable.propTypes = {
   subtitle: PropTypes.string
 };
 
-PlansTable.propTypes = {
+PlansTable.defaultProps = {
   title: "",
   subtitle: ""
 };

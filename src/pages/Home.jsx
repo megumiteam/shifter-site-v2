@@ -14,7 +14,7 @@ class Home extends Component {
         <HomeOverview content={content.home.overview} />
         <Process content={content.home.process} />
         <Testimonials content={content.home.testimonials} />
-        <Learn title="Expand &amp; Learn" subtitle="Follow these simple steps and you’ll have a brand new site in no time." />
+        <Learn content={content.global.learn} />
         <GetStarted title="Ready to get started?" subtitle="Are you ready for the next big thing?
 Get started with Shifter today!" />
       </div>;

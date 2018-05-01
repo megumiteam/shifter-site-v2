@@ -64,7 +64,7 @@ export const content = {
         { tweetId: "789180722049196033" },
         { tweetId: "834087318298333185" }
       ]
-    }
+    },
   },
   features: {
     hero: {
@@ -131,6 +131,27 @@ export const content = {
           title: "HTTP/2 Enabled",
           subtitle:
             "Shifter serves your always-on static pages with unlimited scalability and runs WordPress in a fully-managed container environment that only runs when you need it."
+        }
+      ]
+    }
+  },
+  global: {
+    learn: {
+      title: "Expand & Learn",
+      items: [
+        {
+          icon: "blog",
+          title: "Blog",
+          subtitle: "Get the latest and greatest updates on Shifter and subscribe for new releases and feature additions to the hosting platform.",
+          url: "/blog",
+          link: "Blog",
+        },
+        {
+          icon: "support",
+          title: "Support",
+          subtitle: "Have a question? Check out our Shifter docs for guides, tips, and information for building you next serverless WordPress site.",
+          url: "https://support.getshifter.io",
+          link: "Docs",
         }
       ]
     }

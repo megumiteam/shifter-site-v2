@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import IconSet from "./../../components/icons/icons";
 import {
@@ -26,60 +26,64 @@ let ProcessItem = props => (
       <CardBody className="icon-card__body">
         <CardTitle>{props.title}</CardTitle>
         <small>
-          <CardText>
-            Choose your plan based on storage, bandwidth, number of users, or
-            Perfered CDN.
-          </CardText>
+          <CardText>{props.subtitle}</CardText>
         </small>
       </CardBody>
     </Card>
   </Col>
 );
 
-const Process = props => (
-  <section className="process bg-gray-100 pt-10 pb-8 section-angle--gray">
-    <Container>
-      <Row className="justify-content-md-center">
-        <Col md="8" className="text-center mb-4">
-          <h4>{props.title}</h4>
-          <div className="mt-3">{props.subtitle}</div>
-        </Col>
-      </Row>
-      <Row className="justify-content-md-center">
-        <Col md="10">
-          <div className="browser-mockup section-angle--gray _gradient-purple-dark">
-            <IconSet icon="code-editor" className="icon-100" />
-          </div>
-        </Col>
-      </Row>
-      <Row className="process__items">
-        <ProcessItem icon="create" title="Create" />
-        <ProcessItem icon="blog-alt" title="Customize" />
-        <ProcessItem icon="power" title="Generate" />
-        <ProcessItem icon="globe" title="Deploy" />
-      </Row>
-      <Row className="justify-content-md-center">
-        <Col md="8" className="text-center mt-5">
-          <a
-            href="https://go.getshifter.io"
-            className="btn text-uppercase btn-gradient-primary btn-lg"
-          >
-            Learn More
-          </a>
-        </Col>
-      </Row>
-    </Container>
-  </section>
-);
+class Process extends Component {
+  render() {
+    let items = this.props.content.items.map((props, index) => {
+      return (
+        <ProcessItem
+          title={props.title}
+          subtitle={props.subtitle}
+          icon={props.icon}
+        />
+      );
+    });
+
+    return (
+      <section className="process bg-gray-100 pt-10 pb-8 section-angle--gray">
+        <Container>
+          <Row className="justify-content-md-center">
+            <Col md="8" className="text-center mb-4">
+              <h4>{this.props.content.title}</h4>
+              <div className="mt-3">{this.props.content.subtitle}</div>
+            </Col>
+          </Row>
+          <Row className="justify-content-md-center">
+            <Col md="10">
+              <div className="browser-mockup section-angle--gray _gradient-purple-dark">
+                <IconSet icon="code-editor" className="icon-100" />
+              </div>
+            </Col>
+          </Row>
+          <Row className="process__items">{items}</Row>
+          <Row className="justify-content-md-center">
+            <Col md="8" className="text-center mt-5">
+              <a
+                href="https://go.getshifter.io"
+                className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow"
+              >
+               Forever Free Trial
+              </a>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    );
+  }
+}
 
 Process.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string
+  content: PropTypes.array
 };
 
 Process.defaultProps = {
-  title: "",
-  subtitle: ""
+  content: null
 };
 
 ProcessItem.propTypes = {
@@ -90,6 +94,6 @@ ProcessItem.propTypes = {
 ProcessItem.defaultProps = {
   title: "",
   subtitle: ""
-}
+};
 
 export default Process;

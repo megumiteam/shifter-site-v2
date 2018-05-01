@@ -16,12 +16,12 @@ class Features extends Component {
         <FeaturesOverview
           title={content.features.overview.title}
           subtitle={content.features.overview.subtitle}
-          featureOverviewItems={content.features.overview.overview_items}
+          featureOverviewItems={content.features.overview.items}
         />
         <FeaturesHighlights
           title={content.features.highlights.title}
           subtitle={content.features.highlights.subtitle}
-          featureHilightItems={content.features.highlights.highlight_items}
+          featureHilightItems={content.features.highlights.items}
         />
         <GetStarted
           layout="centered"

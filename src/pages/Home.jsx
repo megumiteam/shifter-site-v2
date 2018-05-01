@@ -11,8 +11,8 @@ class Home extends Component {
   render() {
     return <div>
         <Hero title={content.home.hero.title} subtitle={content.home.hero.subtitle} />
-        <HomeOverview title={content.home.home_overview.title} />
-        <Process title="How Shifter Works" subtitle="Follow these simple steps and you’ll have a brand new site in no time." />
+        <HomeOverview content={content.home.overview} />
+        <Process content={content.home.process} />
         <Testimonials title="What people are saying" subtitle="Follow these simple steps and you’ll have a brand new site in no time." />
         <Learn title="Expand &amp; Learn" subtitle="Follow these simple steps and you’ll have a brand new site in no time." />
         <GetStarted title="Ready to get started?" subtitle="Are you ready for the next big thing?

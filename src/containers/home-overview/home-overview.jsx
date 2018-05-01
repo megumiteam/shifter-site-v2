@@ -23,12 +23,12 @@ let HomeOverviewItem = props => (
   </Col>
 );
   
-const HeroOverview = props => (
+const HomeOverview = props => (
   <section className="home-overview pt-10 pb-8 section-angle--white">
     <Container>
       <Row className="justify-content-md-center mb-5">
         <Col md="8" className="text-center">
-          <h4>{props.title}</h4>
+          <h4>{props.content.title}</h4>
         </Col>
       </Row>
       <Row className="justify-content-md-center">
@@ -50,10 +50,10 @@ const HeroOverview = props => (
       <Row className="justify-content-md-center">
         <Col md="8" className="text-center mt-5">
           <a
-            href="https://go.getshifter.io"
-            className="btn text-uppercase btn-gradient-primary btn-lg"
+            href="/features"
+            className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow"
           >
-            Learn More
+            View More Features
           </a>
         </Col>
       </Row>
@@ -61,12 +61,16 @@ const HeroOverview = props => (
   </section>
 );
 
-HeroOverview.propTypes = {
+HomeOverview.propTypes = {
+  content: PropTypes.array,
   title: PropTypes.string,
+  items: PropTypes.array
 };
 
-HeroOverview.defaultProps = {
+HomeOverview.defaultProps = {
   title: '',
+  items: false,
+  content: null
 };
 
-export default HeroOverview;
+export default HomeOverview;

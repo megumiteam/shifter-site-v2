@@ -10,13 +10,12 @@ import { content } from "./../content";
 class Home extends Component {
   render() {
     return <div>
-        <Hero title={content.home.hero.title} subtitle={content.home.hero.subtitle} />
+        <Hero content={content.home.hero} />
         <HomeOverview content={content.home.overview} />
         <Process content={content.home.process} />
         <Testimonials content={content.home.testimonials} />
         <Learn content={content.global.learn} />
-        <GetStarted title="Ready to get started?" subtitle="Are you ready for the next big thing?
-Get started with Shifter today!" />
+        <GetStarted content={content.global.get_started} />
       </div>;
   }
 }

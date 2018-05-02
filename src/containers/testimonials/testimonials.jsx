@@ -11,7 +11,25 @@ var settings = {
   centerPadding: "60px",
   slidesToShow: 3,
   autoplaySpeed: 5000,
-  autoplay: false
+  autoplay: false,
+  responsive: [
+    {
+      breakpoint: 903,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 711,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    }
+  ]
 };
 
 function Quote(props) {

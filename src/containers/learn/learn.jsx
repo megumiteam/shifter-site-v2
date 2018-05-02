@@ -11,8 +11,8 @@ import {
 } from "reactstrap";
 
 let ResourceItem = props => (
-  <Col className="d-flex align-items-stretch">
-    <Card className="box-shadow">
+  <Col xs="12" lg="6" className="d-flex align-items-stretch">
+    <Card className="box-shadow align-items-stretch">
       <CardBody>
         <Media>
           <Media>
@@ -52,7 +52,7 @@ class Learn extends Component {
           </Row>
           <Row className="justify-content-md-center">
             <Col md="10">
-              <Row className="mt-5">
+              <Row className="mt-5 mb-gutter-row-md">
                 {items}
               </Row>
             </Col>

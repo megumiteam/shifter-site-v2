@@ -14,7 +14,7 @@ import {
 
 let ProcessItem = props => (
   <Col
-    sm="12"
+    xs="12"
     md="6"
     lg="3"
     className="mb-sm-4 mb-lg-0 d-flex align-items-stretch"
@@ -45,8 +45,7 @@ class Process extends Component {
       );
     });
 
-    return (
-      <section className="process bg-gray-100 pt-10 pb-8 section-angle--gray">
+    return <section className="process bg-gray-100 pt-10 pb-8 section-angle--gray">
         <Container>
           <Row className="justify-content-md-center">
             <Col md="8" className="text-center mb-4">
@@ -61,20 +60,16 @@ class Process extends Component {
               </div>
             </Col>
           </Row>
-          <Row className="process__items">{items}</Row>
+          <Row className="process__items mb-gutter-row-sm">{items}</Row>
           <Row className="justify-content-md-center">
             <Col md="8" className="text-center mt-5">
-              <a
-                href="https://go.getshifter.io"
-                className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow"
-              >
-               Forever Free Trial
+              <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow">
+                Forever Free Trial
               </a>
             </Col>
           </Row>
         </Container>
-      </section>
-    );
+      </section>;
   }
 }
 

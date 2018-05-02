@@ -14,9 +14,9 @@ class GetStarted extends Component {
       return <section className="home-overview py-8 _gradient-purple-dark text-white">
           <Container>
             <Row className="justify-content-md-center text-center">
-              <Col md="10">
-                <h3>{this.props.title}</h3>
-                <div className="mt-3 mb-5">{this.props.subtitle}</div>
+              <Col>
+                <h3>{this.props.content.title}</h3>
+                <div className="mt-3 mb-5 balance-text">{this.props.content.subtitle}</div>
                 <a href="https:go.getshifter.io" className="btn btn-gradient-primary text-uppercase btn-arrow mr-2">
                   Free Trial
                 </a> <a href="https:go.getshifter.io" className="btn btn-outline-white text-uppercase btn-arrow">
@@ -32,12 +32,12 @@ class GetStarted extends Component {
         <Container>
           <Row className="justify-content-md-center">
             <Col md="10">
-              <Row className="justify-content-between">
-                <Col md="5">
-                  <h3>{this.props.title}</h3>
-                  <div className="mt-3">{this.props.subtitle}</div>
+              <Row className="justify-content-between text-center text-lg-left">
+                <Col lg="5" xs="12">
+                  <h3>{this.props.content.title}</h3>
+                  <div className="mt-3 balance-text">{this.props.content.subtitle}</div>
                 </Col>
-                <Col md="5" className="d-flex align-items-end">
+                <Col lg="5" xs="12" className="d-lg-flex align-items-end mt-lg-0 mt-4">
                   <div className="hero__links">
                     <a href="https:go.getshifter.io" className="btn btn-gradient-primary text-uppercase btn-arrow mr-2">
                       Free Trial
@@ -56,13 +56,11 @@ class GetStarted extends Component {
 }
 
 GetStarted.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string
+  content: PropTypes.array,
 };
 
 GetStarted.defaultProps = {
-  title: "Let’s get started!",
-  subtitle: "Follow these simple steps and you’ll have a brand new site in no time."
+  content: null
 };
 
 export default GetStarted;

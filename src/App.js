@@ -18,7 +18,7 @@ class App extends Component {
     return <Router>
         <div>
           <SEO />
-          <PrimaryNav />
+          {/* <PrimaryNav /> */}
           <main>
             <Switch>
               <Route exact component={Home} path="/" />
@@ -28,7 +28,7 @@ class App extends Component {
               <Route path="*" component={NotFound} />
             </Switch>
           </main>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </Router>;
   }

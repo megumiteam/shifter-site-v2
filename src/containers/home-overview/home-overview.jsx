@@ -14,7 +14,7 @@ import {
 
 let HomeOverviewItem = props => (
   <Col xs="12" md="6" className="d-flex align-items-stretch">
-    <Card className="box-shadow">
+    <Card className="box-shadow w-100">
       <CardBody>
         <IconSet icon={props.icon} className="mb-4" />
         <CardTitle>{props.title}</CardTitle>
@@ -40,12 +40,12 @@ class HomeOverview extends Component {
         <Container>
           <Row className="justify-content-md-center mb-5">
             <Col md="8" className="text-center">
-              <h4>{this.props.content.title}</h4>
+              <h4 className="balance-text">{this.props.content.title}</h4>
             </Col>
           </Row>
           <Row className="justify-content-md-center">
             <Col md="10">
-              <Row>{items}</Row>
+              <Row className="mb-gutter-row-sm">{items}</Row>
             </Col>
           </Row>
           <Row className="justify-content-md-center">

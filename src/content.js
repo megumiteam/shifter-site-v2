@@ -154,6 +154,10 @@ export const content = {
           link: "Docs",
         }
       ]
+    },
+    get_started: {
+      title: "Let's get started!",
+      subtitle: "Start your free trial today and transform WordPress to static."
     }
   }
 };

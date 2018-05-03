@@ -9,7 +9,6 @@ import {
   CardBody,
   CardTitle,
   CardText,
-  CardHeader
 } from "reactstrap";
 
 let HomeOverviewItem = props => (
@@ -29,6 +28,7 @@ class HomeOverview extends Component {
     let items = this.props.content.items.map((props, index) => {
       return (
         <HomeOverviewItem
+          key={props.title}
           title={props.title}
           subtitle={props.subtitle}
           icon={props.icon}
@@ -61,9 +61,7 @@ class HomeOverview extends Component {
 }
 
 HomeOverview.propTypes = {
-  content: PropTypes.array,
-  title: PropTypes.string,
-  items: PropTypes.array
+  content: PropTypes.object
 };
 
 HomeOverview.defaultProps = {

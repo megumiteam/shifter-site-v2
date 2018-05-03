@@ -39,7 +39,7 @@ class Learn extends Component {
   render() {
 
     let items = this.props.content.items.map((props, index) => {
-      return <ResourceItem icon={props.icon} title={props.title} subtitle={props.subtitle} link={props.link} url={props.url} />;
+      return <ResourceItem key={props.title} icon={props.icon} title={props.title} subtitle={props.subtitle} link={props.link} url={props.url} />;
     });
 
     return <section className="learn bg-gray-100 pt-10 pb-8 section-angle--gray">
@@ -70,7 +70,7 @@ class Learn extends Component {
 }
 
 Learn.propTypes = {
-  content: PropTypes.array
+  content: PropTypes.object
 };
 
 Learn.defaultProps = {

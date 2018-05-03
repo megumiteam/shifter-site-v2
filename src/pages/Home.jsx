@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import Hero from "./../containers/hero/hero";
 import HomeOverview from "./../containers/home-overview/home-overview";
 import Testimonials from "./../containers/testimonials/testimonials";
@@ -19,5 +20,10 @@ class Home extends Component {
       </div>;
   }
 }
+
+Home.propTypes = {
+  content: PropTypes.object
+};
+
 
 export default Home;

@@ -56,7 +56,7 @@ class GetStarted extends Component {
 }
 
 GetStarted.propTypes = {
-  content: PropTypes.array,
+  content: PropTypes.object
 };
 
 GetStarted.defaultProps = {

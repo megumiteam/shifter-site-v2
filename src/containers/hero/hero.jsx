@@ -28,7 +28,7 @@ class Hero extends Component {
 }
 
 Hero.propTypes = {
-  content: PropTypes.array
+  content: PropTypes.object
 };
 
 Hero.defaultProps = {

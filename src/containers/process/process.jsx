@@ -38,6 +38,7 @@ class Process extends Component {
     let items = this.props.content.items.map((props, index) => {
       return (
         <ProcessItem
+          key={props.title}
           title={props.title}
           subtitle={props.subtitle}
           icon={props.icon}
@@ -74,7 +75,7 @@ class Process extends Component {
 }
 
 Process.propTypes = {
-  content: PropTypes.array
+  content: PropTypes.object
 };
 
 Process.defaultProps = {

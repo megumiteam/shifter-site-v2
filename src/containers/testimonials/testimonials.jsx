@@ -42,7 +42,7 @@ class Testimonials extends Component {
   render() {
 
     let tweets = this.props.content.tweets.map((props, index) => {
-      return <Quote tweetId={props.tweetId} />;
+      return <Quote key={props.tweetId} tweetId={props.tweetId} />;
     });
 
     return <section className="testimonials pt-10 pb-8 section-angle--purple-dark _gradient-purple-dark">
@@ -69,7 +69,7 @@ class Testimonials extends Component {
 }
 
 Testimonials.propTypes = {
-  content: PropTypes.array
+  content: PropTypes.object
 };
 
 Testimonials.defaultProps = {

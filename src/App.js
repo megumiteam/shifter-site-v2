@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import NavPrimary from './containers/header/nav-primary';
-import NavMobile from "./containers/header/nav-mobile";
 import Footer from "./containers/footer/footer";
 
 import Home from "./pages/Home";

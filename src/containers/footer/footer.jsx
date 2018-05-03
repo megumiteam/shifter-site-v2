@@ -3,76 +3,83 @@ import Logo from "./../../assets/dc-pattern-lib/react/components/logos/logos";
 import { Container, Row, Col, Nav, NavLink } from "reactstrap";
 
 class Footer extends Component {
+
   render() {
-    return <footer className="py-5" role="contentinfo">
-        <Container>
-          <Row className="justify-content-md-center">
-            <Col xl="10">
+
+    function launchIntercom(e) {
+      e.preventDefault();
+      window.Intercom('show');
+    }
+
+    return <footer role="contentinfo">
+        <Container className="pt-5 text-center text-md-left">
+          <Row className="justify-content-center">
+            <Col xs="10">
               <Row>
-                <Col sm="12" lg="3" className="mb-sm-5 mb-lg-0">
+                <Col xs="12" lg="3" className="mb-sm-5 mb-lg-0">
                   <Row>
                     <Col>
                       <Logo LogoStyle="primary-color-black" />
                     </Col>
                   </Row>
                 </Col>
-                <Col sm="12" lg="9">
+                <Col xs="12" lg="9">
                   <Row>
-                    <Col sm="12" md="3" className="mb-5">
+                    <Col xs="12" md="3" className="mb-5">
                       <h6 className="text-uppercase mb-3">Product</h6>
                       <Nav vertical className="small">
-                        <NavLink href="#" className="p-0 mb-3 text-black">
-                          Link
+                        <NavLink href="/features" className="p-0 mb-3">
+                          Features
                         </NavLink>
-                        <NavLink href="#" className="p-0 mb-3 text-black">
-                          Link
+                        <NavLink href="/pricing" className="p-0 mb-3">
+                          Pricing
                         </NavLink>
-                        <NavLink href="#" className="p-0 text-black">
-                          Another Link
+                        <NavLink href="https://support.getshifter.io" className="p-0">
+                          Docs
                         </NavLink>
                       </Nav>
                     </Col>
-                    <Col sm="12" md="3" className="mb-5">
+                    <Col xs="12" md="3" className="mb-5">
                       <h6 className="text-uppercase mb-3">
-                        Expand &amp; Learn
+                        Expand & Learn
                       </h6>
                       <Nav vertical className="small">
-                        <NavLink href="#" className="p-0 mb-3 text-black">
-                          Link
+                        <NavLink href="/blog" className="p-0 mb-3">
+                          Blog
                         </NavLink>
-                        <NavLink href="#" className="p-0 mb-3 text-black">
-                          Link
+                        <NavLink href="/blog" className="p-0 mb-3">
+                          Events
                         </NavLink>
-                        <NavLink href="#" className="p-0 text-black">
-                          Another Link
+                        <NavLink href="#" className="p-0">
+                          Newsletter
                         </NavLink>
                       </Nav>
                     </Col>
-                    <Col sm="12" md="3" className="mb-5">
+                    <Col xs="12" md="3" className="mb-5">
                       <h6 className="text-uppercase mb-3">Company</h6>
                       <Nav vertical className="small">
-                        <NavLink href="#" className="p-0 mb-3 text-black">
-                          Link
+                        <NavLink href="https://en.digitalcube.jp/about/" className="p-0 mb-3">
+                          About
                         </NavLink>
-                        <NavLink href="#" className="p-0 mb-3 text-black">
-                          Link
+                        <NavLink href="https://en.digitalcube.jp/privacy-policy/" className="p-0 mb-3">
+                          Privacy Policy
                         </NavLink>
-                        <NavLink href="#" className="p-0 text-black">
-                          Another Link
+                        <NavLink href="#" onClick={launchIntercom} className="p-0">
+                          Contact
                         </NavLink>
                       </Nav>
                     </Col>
-                    <Col sm="12" md="3" className="mb-5">
+                    <Col xs="12" md="3" className="mb-5">
                       <h6 className="text-uppercase mb-3">Stay In Touch</h6>
                       <Nav vertical className="small">
-                        <NavLink href="#" className="p-0 mb-3 text-black">
-                          Link
+                        <NavLink href="https://business.facebook.com/getshifter" className="p-0 mb-3">
+                          Facebook
                         </NavLink>
-                        <NavLink href="#" className="p-0 mb-3 text-black">
-                          Link
+                        <NavLink href="https://twitter.com/getshifter" className="p-0 mb-3">
+                          Twitter
                         </NavLink>
-                        <NavLink href="#" className="p-0 text-black">
-                          Another Link
+                        <NavLink href="https://profiles.wordpress.org/getshifter" className="p-0">
+                          WordPress.org
                         </NavLink>
                       </Nav>
                     </Col>
@@ -83,8 +90,8 @@ class Footer extends Component {
           </Row>
           <Row className="justify-content-md-center">
             <Col md="10">
-              <h6 className="text-uppercase small mt-5">
-                ©2018 Shifter | A DigitalCube Company
+              <h6 className="text-uppercase text-muted small py-5">
+                ©{new Date().getFullYear()} Shifter | A DigitalCube Company
               </h6>
             </Col>
           </Row>

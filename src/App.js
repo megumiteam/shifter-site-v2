@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Intercom from "react-intercom";
 
 import NavPrimary from './containers/header/nav-primary';
 import NavMobile from "./containers/header/nav-mobile";
@@ -31,6 +32,7 @@ class App extends Component {
           </main>
           <Footer />
           <NavMobile />
+          <Intercom appID="w5yiaz2d" />
         </div>
       </Router>;
   }

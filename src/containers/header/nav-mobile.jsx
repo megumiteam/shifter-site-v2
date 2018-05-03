@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import {
   Collapse,
-  NavbarToggler,
   Nav,
   NavItem,
   NavLink,

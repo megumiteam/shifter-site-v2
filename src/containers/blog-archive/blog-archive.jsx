@@ -31,8 +31,12 @@ class BlogArchive extends Component {
 
   render() {
 
+    console.log(this.state.posts);
+
+    // ["0"]._embedded["wp:featuredmedia"]["0"].media_details.sizes.large;
+
     let posts = this.state.posts.map((post, index) => {
-      return <BlogArchivePost key={index} slug={post.slug} title={post.title.rendered} excerpt={$(post.excerpt.rendered).text()} date={new Date(post.date).toUTCString()} />;
+      return <BlogArchivePost key={index} slug={post.slug} title={post.title.rendered} excerpt={$(post.excerpt.rendered).text()} thumbnail={post._embedded["wp:featuredmedia"]["0"].source_url} date={new Date(post.date).toUTCString()} />;
     });
     
     return <div>

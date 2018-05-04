@@ -16,7 +16,7 @@ class Footer extends Component {
           <Row className="justify-content-center">
             <Col xs="10">
               <Row>
-                <Col xs="12" lg="3" className="mb-sm-5 mb-lg-0">
+                <Col xs="12" lg="3" className="mb-5">
                   <Row>
                     <Col>
                       <Logo LogoStyle="primary-color-black" />
@@ -72,7 +72,7 @@ class Footer extends Component {
                     <Col xs="12" md="3" className="mb-5">
                       <h6 className="text-uppercase mb-3">Stay In Touch</h6>
                       <Nav vertical className="small">
-                        <NavLink href="https://business.facebook.com/getshifter" className="p-0 mb-3">
+                        <NavLink href="https://facebook.com/getshifter" className="p-0 mb-3">
                           Facebook
                         </NavLink>
                         <NavLink href="https://twitter.com/getshifter" className="p-0 mb-3">

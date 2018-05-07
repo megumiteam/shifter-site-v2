@@ -2,15 +2,12 @@ import React, { Component } from "react";
 import $ from "jquery";
 import BlogArchiveHeader from "./../../containers/blog-archive-header/blog-archive-header";
 import BlogArchivePost from "./../../components/blog-archive-post/blog-archive-post";
-import { Config } from "./../../config"
-import {
-  Container,
-  Row,
-  Col
-} from "reactstrap";
+import PropTypes from "prop-types";
+import { Config } from "./../../config";
+import { content } from "./../../content";
+import { Container, Row, Col } from "reactstrap";
 
 class BlogArchive extends Component {
-  
   constructor(props) {
     super(props);
     this.state = {
@@ -19,7 +16,7 @@ class BlogArchive extends Component {
   }
 
   componentDidMount() {
-    let dataURL = `${Config.apiUrl}/wp-json/wp/v2/posts?_embed&per_page=100`
+    let dataURL = `${Config.apiUrl}/wp-json/wp/v2/posts?_embed&per_page=100`;
     fetch(dataURL)
       .then(res => res.json())
       .then(res => {
@@ -30,27 +27,22 @@ class BlogArchive extends Component {
   }
 
   render() {
-
-    console.log(this.state.posts);
-
-    // ["0"]._embedded["wp:featuredmedia"]["0"].media_details.sizes.large;
-
     let posts = this.state.posts.map((post, index) => {
-      return <BlogArchivePost key={index} slug={post.slug} title={post.title.rendered} excerpt={$(post.excerpt.rendered).text()} thumbnail={post._embedded["wp:featuredmedia"]["0"].source_url} date={new Date(post.date).toUTCString()} />;
+      return <BlogArchivePost key={index} content={post} />;
     });
-    
+
+    const title = content.blog.title;
+    const subtitle = content.blog.subtitle;
+
     return <div>
-        <BlogArchiveHeader title="Blog" subtitle="Get the latest and greatest updates from team Shifter. And make sure to check back often to learn what’s new and exciting in our world." />
-        <section className="py-5 bg-gray-100">
-          <Container>
-            <Row className="d-flex flex-wrap">
-              {posts}
-            </Row>
-            <Row>
-              <Col className="text-center m-5">
-                <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-primary btn-lg">
-                  Read More
-                </a>
+        <section className="bg-gray-100">
+          <BlogArchiveHeader title={title} subtitle={subtitle} />
+          <Container className="z-1">
+            <Row className="justify-content-md-center">
+              <Col sm="10">
+                <Row className="mb-gutter-row d-flex flex-wrap pb-7">
+                  {posts}
+                </Row>
               </Col>
             </Row>
           </Container>
@@ -58,5 +50,13 @@ class BlogArchive extends Component {
       </div>;
   }
 }
+
+BlogArchive.propTypes = {
+  content: PropTypes.object,
+};
+
+BlogArchive.defaultProps = {
+  content: null
+};
 
 export default BlogArchive;

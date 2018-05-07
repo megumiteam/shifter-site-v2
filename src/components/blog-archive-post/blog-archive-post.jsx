@@ -1,33 +1,45 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import {
-  Col,
-  CardBody,
-  CardImg,
-  CardTitle,
-  CardText,
-} from "reactstrap";
+import { Col, CardBody, CardImg, CardTitle, CardText } from "reactstrap";
+import ReactIntl, { IntlMixin, FormattedDate } from "react-intl";
+
+// var IntlMixin = ReactIntl.IntlMixin;
+// var FormattedDate = ReactIntl.FormattedDate;
 
 class BlogArchivePost extends Component {
   render() {
+    console.log(
+      this.props.content._embedded["wp:featuredmedia"]["0"].media_details.sizes
+        .medium.source_url
+    );
+
+    const slug = `/blog/${this.props.content.slug}`;
+    const title = this.props.content.title.rendered;
+    const excerpt = this.props.excerpt;
+    const thumbnail = this.props.content._embedded["wp:featuredmedia"]["0"]
+      .media_details.sizes.medium.source_url;
+    const date = new Date(this.props.content.date).toUTCString();
+
     return <Col md="6" lg="4" className="d-flex align-items-stretch">
-        <article className="card box-shadow-sm mb-4">
-          <figure className="post-img m-0">
-            <CardImg top className="rounded-top card-img-top--fill" src={this.props.thumbnail} alt="" />
-          </figure>
-          <CardBody>
+        <article className="post card box-shadow-sm">
+          <div className="post-feature m-0">
+            <Link to={slug}>
+              <CardImg top className="post-feature__img rounded-top" src={thumbnail} alt={excerpt} />
+            </Link>
+          </div>
+          <CardBody className="post-content">
             <header>
               <div className="mb-2">
-                <time>April 1, 2018</time>
+                <time>
+                  <FormattedDate value={date} day="numeric" month="long" year="numeric" />
+                </time>
               </div>
               <CardTitle className="h5">
-                <Link className="text-black text-decoration-none" to={`/blog/${this.props.slug}`}>
-                  {this.props.title}
-                </Link>
+                <Link className="text-black text-decoration-none" to={slug} dangerouslySetInnerHTML={{ __html: title }} />
               </CardTitle>
             </header>
-            <CardText className="sr-only">{this.props.excerpt}</CardText>
+            <CardText className="sr-only">{excerpt}</CardText>
           </CardBody>
         </article>
       </Col>;
@@ -35,18 +47,11 @@ class BlogArchivePost extends Component {
 }
 
 BlogArchivePost.propTypes = {
-  title: PropTypes.string,
-  excerpt: PropTypes.string,
-  date: PropTypes.string,
-  thumbnail: PropTypes.string
+  content: PropTypes.object
 };
 
 BlogArchivePost.defaultProps = {
-  title: "",
-  excerpt: "",
-  date: "",
-  thumbnail:
-    "https://getshifter.io/app/uploads/2017/12/release-note-detail@2-1024x391.png"
+  thumbnail: ""
 };
 
 export default BlogArchivePost;

@@ -8,7 +8,7 @@ import {
 
 class BlogArchiveHeader extends Component {
   render() {
-    return <section className="blog-archive-header py-10 _gradient-purple-dark">
+    return <section className="blog-archive-header py-7 _gradient-purple-dark section-angle--purple-dark">
         <Container>
           <Row className="justify-content-md-center mb-5">
             <Col md="8" lg="6" className="text-center text-white">
@@ -16,7 +16,7 @@ class BlogArchiveHeader extends Component {
               <div className="mt-3 small">{this.props.subtitle}</div>
             </Col>
           </Row>
-          <Row>
+          {/* <Row>
             <Col>
               <ul className="text-center text-uppercase font-weight-bold h6 small list-inline blog-archive-header__tags">
                 <li className="list-inline-item blog-archive-header__tag">
@@ -41,7 +41,7 @@ class BlogArchiveHeader extends Component {
                 </li>
               </ul>
             </Col>
-          </Row>
+          </Row> */}
         </Container>
       </section>;
   }

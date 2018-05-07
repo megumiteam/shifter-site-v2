@@ -1,16 +1,8 @@
 import React, { Component } from "react";
 import { Config } from "./../../config";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  CardBody,
-  CardText
-} from "reactstrap";
+import { Container, Row, Col, Card, CardBody, CardText } from "reactstrap";
 
 class BlogSingle extends Component {
-  
   constructor(props) {
     super(props);
     this.state = {
@@ -20,7 +12,9 @@ class BlogSingle extends Component {
 
   componentDidMount() {
     let postSlug = this.props.match.params.slug;
-    let dataURL = `${Config.apiUrl}/wp-json/wp/v2/posts?_embed&slug=${postSlug}`;
+    let dataURL = `${
+      Config.apiUrl
+    }/wp-json/wp/v2/posts?_embed&slug=${postSlug}`;
     fetch(dataURL)
       .then(res => res.json())
       .then(res => {
@@ -31,17 +25,19 @@ class BlogSingle extends Component {
   }
 
   render() {
-
     let postContent = this.state.posts.map((post, index) => {
       var options = { year: "numeric", month: "long", day: "numeric" };
-      var dateFormatted = new Date(post.date).toLocaleDateString("en-US", options);;
-      return <article class="h-entry blog-single">
-          <div className="blog-single__header _gradient-purple-dark section-angle--overlap">
+      var dateFormatted = new Date(post.date).toLocaleDateString(
+        "en-US",
+        options
+      );
+      return <article class="h-entry blog-single bg-gray-100">
+          <div className="blog-single__header _gradient-purple-dark section-angle--purple-dark">
             <Container>
-              <Row className="justify-content-md-center">
-                <Col md="10">
-                  <header>
-                    <h1 className="h2 text-white p-name mt-5">
+              <Row className="justify-content-md-center text-center">
+                <Col sm="10">
+                  <header className="mb-5 mt-7">
+                    <h1 className="h2 text-white p-name balance-text">
                       {post.title.rendered}
                     </h1>
                     <div>
@@ -63,17 +59,21 @@ class BlogSingle extends Component {
               </Row>
             </Container>
           </div>
-          <div className="bg-gray-100">
+          <div className="z-1">
             <Container className="blog-single__content">
               <Row className="justify-content-center">
                 <Col xs="12" md="1">
+                  <div className="socia-list">
+                    <a className="social-list__item" href="https://facebook.com/getshifter">
+                      <i className="fa fa-facebook" />
+                    </a>
+                    <a className="social-list__item" href="https://twitter.com/getshifter">
+                      <i className="fa fa-twitter" />
+                    </a>
+                  </div>
                 </Col>
-                <Col xs="12" md="11">
-                  <Card>
-                    <CardBody>
-                      <CardText dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
-                    </CardBody>
-                  </Card>
+                <Col xs="12" md="9">
+                  <article className="card p-5" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
                 </Col>
               </Row>
             </Container>

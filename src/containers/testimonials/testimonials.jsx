@@ -54,7 +54,9 @@ class Testimonials extends Component {
             </Col>
           </Row>
         </Container>
-        <Slider {...settings}>{tweets}</Slider>
+        <div className="twitter-feed">
+          <Slider {...settings}>{tweets}</Slider>
+        </div>
         <Container>
           <Row className="justify-content-md-center">
             <Col md="8" className="text-center mt-5">

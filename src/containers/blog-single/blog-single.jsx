@@ -26,8 +26,9 @@ class BlogSingle extends Component {
 
   render() {
     let postContent = this.state.posts.map((post, index) => {
-      var options = { year: "numeric", month: "long", day: "numeric" };
-      var dateFormatted = new Date(post.date).toLocaleDateString(
+      const title = post.title.rendered;
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      const dateFormatted = new Date(post.date).toLocaleDateString(
         "en-US",
         options
       );
@@ -37,9 +38,7 @@ class BlogSingle extends Component {
               <Row className="justify-content-md-center text-center">
                 <Col sm="10">
                   <header className="mb-5 mt-7">
-                    <h1 className="h2 text-white p-name balance-text">
-                      {post.title.rendered}
-                    </h1>
+                    <h1 className="h2 text-white p-name balance-text" dangerouslySetInnerHTML={{ __html: title }} />
                     <div>
                       <ul class="text-uppercase font-weight-bold h6 small list-inline blog-archive-header__tags mt-4">
                         <li class="list-inline-item blog-archive-header__tag">

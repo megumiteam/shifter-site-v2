@@ -21,9 +21,9 @@ class BlogArchivePost extends Component {
     return <Col md="6" lg="4" className="d-flex align-items-stretch">
         <article className="post card box-shadow-sm">
           <div className="post-feature m-0">
-            <Link to={slug}>
+            <a as={Link} href={slug}>
               <CardImg top className="post-feature__img rounded-top" src={thumbnail} alt={excerpt} />
-            </Link>
+            </a>
           </div>
           <CardBody className="post-content">
             <header>
@@ -33,7 +33,7 @@ class BlogArchivePost extends Component {
                 </time>
               </div>
               <CardTitle className="h5">
-                <Link className="text-black text-decoration-none" to={slug} dangerouslySetInnerHTML={{ __html: title }} />
+                <a className="text-black text-decoration-none" href={slug} dangerouslySetInnerHTML={{ __html: title }} />
               </CardTitle>
             </header>
             <CardText className="sr-only">{excerpt}</CardText>

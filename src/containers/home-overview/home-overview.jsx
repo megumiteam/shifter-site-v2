@@ -36,7 +36,7 @@ class HomeOverview extends Component {
       );
     });
 
-    return <section className="home-overview pt-10 pb-8 section-angle--white">
+    return <section className="home-overview pt-10 pb-6 section-angle--white">
         <Container>
           <Row className="justify-content-md-center mb-5">
             <Col md="8" className="text-center">

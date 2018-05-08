@@ -9,7 +9,7 @@ import {
 } from "reactstrap";
 
 function PlansOverviewItem(props) {
-  return <Col md="4">
+  return <Col xs="12" sm="6" md="4">
       <Media className="mb-5">
         <Media href="#">
           <IconSet icon={props.icon} className="mr-4 icon-sm" />
@@ -36,7 +36,7 @@ class PlansTable extends Component {
       return <PlansOverviewItem title={props.title} subtitle={props.subtitle} icon={props.icon} />;
     });
 
-    return <section className="py-10">
+    return <section className="py-7">
         <Container>
           <Row className="justify-content-md-center mb-5">
             <Col md="8" className="text-center">

@@ -64,7 +64,7 @@ class Plans extends Component {
     const settings = {
       centerMode: true,
       infinite: false,
-      centerPadding: "60px",
+      centerPadding: "0",
       slidesToShow: 1,
       autoplaySpeed: 5000,
       autoplay: false,
@@ -75,8 +75,7 @@ class Plans extends Component {
     const title = this.props.content.title;
     const subtitle = this.props.content.subtitle;
 
-    return (
-      <section className="pricing-plans py-10 _gradient-purple-dark">
+    return <section className="pricing-plans py-10 _gradient-purple-dark">
         <Container>
           <Row className="justify-content-md-center mb-5 text-white">
             <Col md="8" className="text-center">
@@ -86,85 +85,31 @@ class Plans extends Component {
           </Row>
         </Container>
         <Container>
-          <Row className="plans-slider justify-content-md-center">
-            <div className="pricing-plans__control">
-              <Button
-                className="pricing-plans__control-item left btn-link"
-                onClick={this.previous}
-              >
-                <i className="fa fa-angle-left" />
-              </Button>
-              <Button
-                className="pricing-plans__control-item right btn-link"
-                onClick={this.next}
-              >
-                <i className="fa fa-angle-right" />
-              </Button>
-            </div>
-            <Col xs="12" sm="12" md="6" lg="5" xl="4">
-              <Slider
-                className="plans"
-                ref={c => (this.slider = c)}
-                {...settings}
-              >
-                <PlansItem
-                  plan="Trial"
-                  price="Free"
-                  sites="1 Site"
-                  domain="Shifter Domain"
-                  storage="1GB Storage"
-                  transfer="10GB Transfer"
-                />
-                <PlansItem
-                  plan="Personal"
-                  interval="mo"
-                  price="$15"
-                  sites="3 Sites"
-                  storage="10GB Storage"
-                  transfer="1TB Transfer"
-                  domain="Custom Domain"
-                  https="Free HTTPS"
-                  cdn="Integrated CDN"
-                />
-                <PlansItem
-                  plan="Business"
-                  price="$30"
-                  interval="mo"
-                  sites="10 Sites"
-                  storage="500GB Storage"
-                  transfer="5TB Transfer"
-                  domain="Custom Domain"
-                  https="Free HTTPS"
-                  cdn="Integrated CDN"
-                />
-                <PlansItem
-                  plan="Agency"
-                  price="$60"
-                  interval="mo"
-                  sites="30 Sites"
-                  storage="1TB Storage"
-                  transfer="10TB Transfer"
-                  domain="Custom Domain"
-                  https="Free HTTPS"
-                  cdn="Integrated CDN"
-                />
-                <PlansItem
-                  plan="Agency Plus"
-                  price="$140"
-                  interval="mo"
-                  sites="50 Sites"
-                  storage="1TB Storage"
-                  transfer="10TB Transfer"
-                  domain="Custom Domain"
-                  https="Free HTTPS"
-                  cdn="Integrated CDN"
-                />
-              </Slider>
+          <Row className="justify-content-center">
+            <Col xs="9" sm="12">
+              <Row className="plans-slider justify-content-center">
+                <div className="pricing-plans__control">
+                  <Button className="pricing-plans__control-item left btn-link" onClick={this.previous}>
+                    <i className="fa fa-angle-left" />
+                  </Button>
+                  <Button className="pricing-plans__control-item right btn-link" onClick={this.next}>
+                    <i className="fa fa-angle-right" />
+                  </Button>
+                </div>
+                <Col xs="12" sm="12" md="5" lg="4" xl="3">
+                  <Slider className="plans" ref={c => (this.slider = c)} {...settings}>
+                    <PlansItem plan="Trial" price="Free" sites="1 Site" domain="Shifter Domain" storage="1GB Storage" transfer="10GB Transfer" />
+                    <PlansItem plan="Personal" interval="mo" price="$15" sites="3 Sites" storage="10GB Storage" transfer="1TB Transfer" domain="Custom Domain" https="Free HTTPS" cdn="Integrated CDN" />
+                    <PlansItem plan="Business" price="$30" interval="mo" sites="10 Sites" storage="500GB Storage" transfer="5TB Transfer" domain="Custom Domain" https="Free HTTPS" cdn="Integrated CDN" />
+                    <PlansItem plan="Agency" price="$60" interval="mo" sites="30 Sites" storage="1TB Storage" transfer="10TB Transfer" domain="Custom Domain" https="Free HTTPS" cdn="Integrated CDN" />
+                    <PlansItem plan="Agency Plus" price="$140" interval="mo" sites="50 Sites" storage="1TB Storage" transfer="10TB Transfer" domain="Custom Domain" https="Free HTTPS" cdn="Integrated CDN" />
+                  </Slider>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
-      </section>
-    );
+      </section>;
   }
 }
 

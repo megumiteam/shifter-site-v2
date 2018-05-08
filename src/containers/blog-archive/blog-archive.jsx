@@ -14,8 +14,8 @@ class BlogArchive extends Component {
     };
   }
 
-  componentDidMount() {
-    let dataURL = `${Config.apiUrl}/wp-json/wp/v2/posts?_embed&per_page=100`;
+  componentWillMount() {
+    let dataURL = `${Config.apiUrl}/wp-json/wp/v2/posts?_embed`;
     fetch(dataURL)
       .then(res => res.json())
       .then(res => {
@@ -33,7 +33,8 @@ class BlogArchive extends Component {
     const title = content.blog.title;
     const subtitle = content.blog.subtitle;
 
-    return <div>
+    return (
+      <div>
         <section className="bg-gray-100">
           <BlogArchiveHeader title={title} subtitle={subtitle} />
           <Container className="z-1">
@@ -46,7 +47,8 @@ class BlogArchive extends Component {
             </Row>
           </Container>
         </section>
-      </div>;
+      </div>
+    );
   }
 }
 

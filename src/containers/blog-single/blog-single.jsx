@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Config } from "./../../config";
-import { Container, Row, Col, Card, CardBody, CardText } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 class BlogSingle extends Component {
   constructor(props) {

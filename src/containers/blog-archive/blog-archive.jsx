@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import $ from "jquery";
 import BlogArchiveHeader from "./../../containers/blog-archive-header/blog-archive-header";
 import BlogArchivePost from "./../../components/blog-archive-post/blog-archive-post";
 import PropTypes from "prop-types";

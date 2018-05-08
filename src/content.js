@@ -64,7 +64,7 @@ export const content = {
         { tweetId: "789180722049196033" },
         { tweetId: "834087318298333185" }
       ]
-    },
+    }
   },
   features: {
     hero: {
@@ -135,9 +135,82 @@ export const content = {
       ]
     }
   },
+  pricing: {
+    plans: {
+      title: "Pricing",
+      subtitle:
+        "Get the features of WordPress with the benefits of static hosting."
+    },
+    table: {
+      title: "Many more features, all the details"
+    },
+    overview: {
+      title: "Included in all plans",
+      items: [
+        {
+          icon: "wordpress",
+          title: "WordPress",
+          subtitle:
+            "The famous 5-minute install just got easier with 1-click WordPress installations."
+        },
+        {
+          icon: "checkbox-alt",
+          title: "1-Click Deployment",
+          subtitle:
+            "Create static versions of your WordPress sites and deploy them from the Shifter Dashboard."
+        },
+        {
+          icon: "lock-alt",
+          title: "Secure HTTPS",
+          subtitle:
+            "Secure sites with no certificates to install or configure, just verify your custom domain."
+        },
+        {
+          icon: "globe",
+          title: "Integrated CDN",
+          subtitle:
+            "Serve static content to users over one of largest content delivery networks."
+        },
+        {
+          icon: "lightning",
+          title: "HTTP/2",
+          subtitle:
+            "Next-Gen HTTP/2 protocol delivers more assets at once, without the bottlenecks"
+        },
+        {
+          icon: "shield",
+          title: "DDoS Protection",
+          subtitle:
+            "Always-on protection for the most common attacks and to minimize the risk of downtime."
+        },
+      ]
+    },
+    faqs: {
+      title: 'Frequently Asked Questions',
+      items: [
+        {
+          title: 'Is CDN Included?',
+          subtitle: 'Yes! We use a CDN (CloudFront) at very front of our servers, by default.',
+        },
+        {
+          title: 'Are there any protection against DDoS attacks? ',
+          subtitle: "We've got you covered. We use CloudFront with AWS Shield Standard which enables protection against DDoS attacks by default.",
+        },
+        {
+          title: 'Can I use a custom domain name?',
+          subtitle: "Yes! Custom domains are support on all paid plans.",
+        },
+        {
+          title: 'Is Shifter a hosting service or a static site generator?',
+          subtitle: "Both! Shifter is a WordPress static site generator and a WordPress hosting solution in one. We host the files that Shifter creates and allow you to connect to custom domains. However, we do not offer domain registration at this time.",
+        }
+      ]
+    }
+  },
   blog: {
-    title: 'Blog',
-    subtitle: 'Get the latest and greatest updates from team Shifter. And make sure to check back often to learn what’s new and exciting in our world.'
+    title: "Blog",
+    subtitle:
+      "Get the latest and greatest updates from team Shifter. And make sure to check back often to learn what’s new and exciting in our world."
   },
   global: {
     learn: {
@@ -146,16 +219,18 @@ export const content = {
         {
           icon: "blog",
           title: "Blog",
-          subtitle: "Get the latest and greatest updates on Shifter and subscribe for new releases and feature additions to the hosting platform.",
+          subtitle:
+            "Get the latest and greatest updates on Shifter and subscribe for new releases and feature additions to the hosting platform.",
           url: "/blog",
-          link: "Blog",
+          link: "Blog"
         },
         {
           icon: "support",
           title: "Support",
-          subtitle: "Have a question? Check out our Shifter docs for guides, tips, and information for building you next serverless WordPress site.",
+          subtitle:
+            "Have a question? Check out our Shifter docs for guides, tips, and information for building you next serverless WordPress site.",
           url: "https://support.getshifter.io",
-          link: "Docs",
+          link: "Docs"
         }
       ]
     },

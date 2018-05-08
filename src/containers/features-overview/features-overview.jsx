@@ -32,30 +32,31 @@ let FeatureOverviewItem = props => (
 class FeaturesOverview extends Component {
   render() {
 
-    let features = this.props.featureOverviewItems.map((props, index) => {
+    let features = this.props.content.items.map((props, index) => {
       return <FeatureOverviewItem title={props.title} subtitle={props.subtitle} icon={props.icon} />;
     });
 
+    const title = this.props.content.title;
+    const subtitle = this.props.content.subtitle;
+
     return <section className="features-overview section-angle--gray pt-10 pb-8 bg-gray-100">
         <Container>
-          <Row className="justify-content-md-center">
+          {/* <Row className="justify-content-md-center">
             <Col md="10">
               <div className="browser-mockup _gradient-purple-dark">
                 <IconSet icon="code-editor" className="icon-100" />
               </div>
             </Col>
-          </Row>
+          </Row> */}
           <Row className="justify-content-md-center mt-7 mb-5">
             <Col md="9" className="text-center">
-              <h4>{this.props.title}</h4>
-              <div className="mt-3 small">{this.props.subtitle}</div>
+              <h4>{title}</h4>
+              <div className="mt-3 small">{subtitle}</div>
             </Col>
           </Row>
           <Row className="justify-content-md-center">
             <Col md="10">
-              <Row>
-                {features}
-              </Row>
+              <Row>{features}</Row>
             </Col>
           </Row>
           <Row className="justify-content-md-center">
@@ -71,13 +72,11 @@ class FeaturesOverview extends Component {
 }
 
 FeaturesOverview.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string
+  content: PropTypes.object,
 };
 
 FeaturesOverview.defaultProps = {
-  title: "",
-  subtitle: "",
+  content: null,
   featureOverviewItems: PropTypes.array
 };
 

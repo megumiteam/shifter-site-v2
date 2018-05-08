@@ -65,8 +65,6 @@ HomeOverview.propTypes = {
 };
 
 HomeOverview.defaultProps = {
-  title: "",
-  items: false,
   content: null
 };
 

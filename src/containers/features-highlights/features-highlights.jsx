@@ -27,16 +27,19 @@ let FeatureHighlightItem = props => (
 class FeaturesHighlights extends Component {
   render() {
 
-    let features = this.props.featureHilightItems.map((props, index) => {
+    let features = this.props.content.items.map((props, index) => {
       return <FeatureHighlightItem title={props.title} subtitle={props.subtitle} icon={props.icon} />;
     });
+
+    const title = this.props.content.title;
+    const subtitle = this.props.content.subtitle;
 
     return <section className="home-overview py-10 section-angle">
         <Container>
           <Row className="justify-content-md-center mb-5">
             <Col md="8" className="text-center">
-              <h4>{this.props.title}</h4>
-              <div className="mt-3 small">{this.props.subtitle}</div>
+              <h4>{title}</h4>
+              <div className="mt-3 small">{subtitle}</div>
             </Col>
           </Row>
           <Row className="justify-content-md-center">
@@ -59,14 +62,11 @@ class FeaturesHighlights extends Component {
 }
 
 FeaturesHighlights.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string
+  content: PropTypes.object
 };
 
 FeaturesHighlights.defaultProps = {
-  title: "",
-  subtitle: "",
-  featureHilightItems: PropTypes.array
+  content: null
 };
 
 export default FeaturesHighlights;

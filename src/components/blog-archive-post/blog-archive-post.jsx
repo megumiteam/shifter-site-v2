@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Col, CardBody, CardImg, CardTitle, CardText } from "reactstrap";
-import ReactIntl, { IntlMixin, FormattedDate } from "react-intl";
-
-// var IntlMixin = ReactIntl.IntlMixin;
-// var FormattedDate = ReactIntl.FormattedDate;
+import { FormattedDate } from "react-intl";
 
 class BlogArchivePost extends Component {
   render() {

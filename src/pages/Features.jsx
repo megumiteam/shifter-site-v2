@@ -9,26 +9,10 @@ class Features extends Component {
   render() {
     return (
       <div>
-        <Hero
-          title={content.features.hero.title}
-          subtitle={content.features.hero.subtitle}
-        />
-        <FeaturesOverview
-          title={content.features.overview.title}
-          subtitle={content.features.overview.subtitle}
-          featureOverviewItems={content.features.overview.items}
-        />
-        <FeaturesHighlights
-          title={content.features.highlights.title}
-          subtitle={content.features.highlights.subtitle}
-          featureHilightItems={content.features.highlights.items}
-        />
-        <GetStarted
-          layout="centered"
-          title="Ready to get started?"
-          subtitle="Are you ready for the next big thing?
-Get started with Shifter today!"
-        />
+        <Hero content={content.features.hero} />
+        <FeaturesOverview content={content.features.overview} />
+        <FeaturesHighlights content={content.features.highlights} />
+        <GetStarted content={content.global.get_started} layout="centered" />
       </div>
     );
   }

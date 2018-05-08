@@ -22,7 +22,7 @@ class Accordian extends Component {
             </CardTitle>
             <Collapse isOpen={this.state.collapse}>
               <div className="mt-4">
-                {this.props.body}
+                {this.props.subtitle}
               </div>
             </Collapse>
           </CardBody>
@@ -33,12 +33,12 @@ class Accordian extends Component {
 
 Accordian.propTypes = {
   title: PropTypes.string,
-  body: PropTypes.string
+  subtitle: PropTypes.string
 };
 
 Accordian.propTypes = {
   title: "",
-  body: ""
+  subtitle: ""
 };
 
 export default Accordian;

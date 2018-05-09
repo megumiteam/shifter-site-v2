@@ -6,16 +6,11 @@ import { FormattedDate } from "react-intl";
 
 class BlogArchivePost extends Component {
   render() {
-    console.log(
-      this.props.content._embedded["wp:featuredmedia"]["0"].media_details.sizes
-        .medium.source_url
-    );
 
     const slug = `/blog/${this.props.content.slug}`;
     const title = this.props.content.title.rendered;
     const excerpt = this.props.excerpt;
-    const thumbnail = this.props.content._embedded["wp:featuredmedia"]["0"]
-      .media_details.sizes.medium.source_url;
+    const thumbnail = this.props.content._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url;
     const date = new Date(this.props.content.date).toUTCString();
 
     return <Col md="6" lg="4" className="d-flex align-items-stretch">

@@ -34,7 +34,6 @@ class App extends Component {
             </main>
             <Footer />
             <NavMobile />
-            <Intercom appID="w5yiaz2d" />
           </div>
         </IntlProvider>
       </Router>;

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://getshifter.io/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/features/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/pricing/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/does-page-speed-really-mean-performance/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/wordpress-query-strings-static-site-cdn-hosting/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/straight-a-pagespeed-scores-for-wordpress-sites-on-shifter/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/enhanced-caching-for-static-wordpress-sites-on-shifter-and-custom-domain-updates/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/using-themify-to-create-static-wordpress-sites-on-shifter/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/generate-static-wordpress-sites-faster-on-shifter-with-these-tips/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/easier-domain-validation-for-secure-static-wordpress-sites-and-generator-updates/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/managing-your-wordpress-database-with-ari-adminer-on-shifter/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/featured-site-the-burning-monk/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/wp-serverless-forms-latest-beta-release-now-offers-basic-support-gravity-forms/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-now-supports-xml-sitemaps-wordpress-plugins/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/adding-support-sitemaps/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/introducing-wp-serverless-forms-support-cf7/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/creating-dynamic-ifttt-triggers-wordpress-shifter/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-now-supports-amp-wordpress-automattic/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/support-plugin-updates-new-php-standard-serverless-wordpress-forms/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-sponsors-jaws-days-2018/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/improved-wordpress-pagination-support-shifter-local-updates/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/introducing-shifter-support-plugin-wordpress-static-site-generator/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/announcing-shifter-local-release-version-2-api/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/deploying-wordpress-sites-using-shifter-netlify/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-v1-eol-announcement-migrate-v2/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/project-stats-downloadable-artifacts/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/enhanced-pagination-abilities-php-wp-updates/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/happy-birthday-shifter-turns-one/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/see-aws-reinvent-wordcamp-us/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/retrofitting-monolith-serverless-design-thinking/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/introducing-longer-running-shifter-wordpress-containers/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/31-days-till-amazon-reinvent/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-pricing-agency-sub-users/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/serverlessconf-nyc-shifter-recap/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/wordpress-now-50-times-faster-shifter/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/serverlessconf-nyc-shifter-sponsoring/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/aws-reinvent-wordpress-serverless/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-dashboard-update-serverless-wordpress/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-amazon-alexa-serverless/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/wordcamp-publishers-launch/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/wordcamp-dc-ive-learned-recap/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/wordcamp-dc-speaker-sessions-lineup/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/wordcamp-europe-2017-speaker-sessions-topics-recap/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/wordcamp-kyoto-2017-recap/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/static-site-generator-wordpress-api/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/localhost-insiders-guide-wordcamp-kyoto/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/custom-artifact-names-improved-ui-minor-league-bugs/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/disqus-shifter-wordpress-comments/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/dan-olson-wordcamp-publishers-security/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-sponsoring-wordcamp-kyoto/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/artifacts-shifter-staging-testing/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/release-notes-june-1/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/skip-pages-plugin-domain-options-chat/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/wordpress-faster-amazon-aurora/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/wordpress-contact-forms-plugin-shifter/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/ecommerce-wordpress-plugins-shifter/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-sponsors-wordcamp-publishers/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-performance-test/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/lets-get-site-moving-amazon-aurora/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-pricing-just-got-easier/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-lands-creative-bloqs-10-best-new-web-design-tools/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-on-jamstack-radio/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/replacing-dynamic-php-functions-for-wordpress/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/deploying-to-netlify-from-shifter/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/shifter-in-action/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/recap-wordcamp-us-2016/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/serverless-framework-reports-serverless-hosting-shifter/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/post-status-talked-about-serverless-solution-shifter/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/interview-what-is-serverless-hosting/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/the-cloudacademy-blog-introduced-shifter/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getshifter.io/blog/wp-tavern-introduced-shifter/</loc>
+  <lastmod>2018-05-09T19:32:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+</urlset>

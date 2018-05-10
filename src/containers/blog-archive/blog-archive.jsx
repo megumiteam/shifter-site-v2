@@ -15,8 +15,7 @@ class BlogArchive extends Component {
   }
 
   componentWillMount() {
-    let dataURL = `${Config.apiUrl}/wp-json/wp/v2/posts?_embed&per_page=100`;
-    // let dataURL = 'https://d2znkzoth8y387.cloudfront.net/wp-content/uploads/wp-sls-api/posts.json';
+    let dataURL = `${Config.apiUrl}/wp-json/wp/v2/posts?_embed&per_page=50`;
     fetch(dataURL)
       .then(res => res.json())
       .then(res => {
@@ -28,7 +27,6 @@ class BlogArchive extends Component {
 
   render() {
     let posts = this.state.posts.map((post, index) => {
-      console.log(post);
       return <BlogArchivePost key={index} content={post} />;
     });
 

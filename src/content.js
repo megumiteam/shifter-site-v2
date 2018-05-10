@@ -42,13 +42,13 @@ export const content = {
           icon: "power",
           title: "Generate",
           subtitle:
-            "Using Shifters static site generator for WordPress create an HTML, CSS and JS version of your site in one click."
+            "Using Shifter's static site generator for WordPress create an HTML, CSS and JS version of your site in one click."
         },
         {
           icon: "globe",
           title: "Depoly",
           subtitle:
-            "Go live and deploy your static site that loads at lightning speed with our global CDN and nothing to install HTTPS."
+            "Go live and deploy your static site which loads at lightning speed with our global CDN and nothing-to-install HTTPS."
         }
       ]
     },
@@ -81,7 +81,7 @@ export const content = {
           icon: "lock",
           title: "Safe and secure",
           subtitle:
-            "We deliver a completely static version of your site via free and automated HTTPS that behaves exactly the same for your users but won’t bots or cybervillains gain access."
+            "We deliver a completely static version of your site via free and automated HTTPS that behaves exactly the same for your users but won’t let bots or cybervillains gain access."
         },
         {
           icon: "lightning",
@@ -118,7 +118,7 @@ export const content = {
           icon: "globe",
           title: "Integrated CDN",
           subtitle:
-            "We deliver a completely static version of your site via free and automated HTTPS that behaves exactly the same for your users but won’t bots or cybervillains gain access."
+            "We deliver a completely static version of your site via free and automated HTTPS that behaves exactly the same for your users but won’t let bots or cybervillains gain access."
         },
         {
           icon: "lock-alt",
@@ -228,7 +228,7 @@ export const content = {
           icon: "support",
           title: "Support",
           subtitle:
-            "Have a question? Check out our Shifter docs for guides, tips, and information for building you next serverless WordPress site.",
+            "Have a question? Check out our Shifter docs for guides, tips, and information for building your next serverless WordPress site.",
           url: "https://support.getshifter.io",
           link: "Docs"
         }

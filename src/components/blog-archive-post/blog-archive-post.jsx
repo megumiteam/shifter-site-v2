@@ -6,7 +6,6 @@ import { FormattedDate } from "react-intl";
 
 class BlogArchivePost extends Component {
   render() {
-
     const slug = `/blog/${this.props.content.slug}`;
     const title = this.props.content.title.rendered;
     const excerpt = this.props.excerpt;

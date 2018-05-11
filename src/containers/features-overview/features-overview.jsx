@@ -9,7 +9,7 @@ import {
 } from "reactstrap";
 
 let FeatureOverviewItem = props => (
-  <Col className="align-items-stretch icon-card">
+  <Col xs="12" lg="4" className="align-items-stretch icon-card">
     <Media top>
       <Media
         className="icon-card__header d-flex align-items-center"
@@ -55,7 +55,7 @@ class FeaturesOverview extends Component {
             </Col>
           </Row>
           <Row className="justify-content-md-center">
-            <Col md="10">
+            <Col xs="12" xl="10">
               <Row>{features}</Row>
             </Col>
           </Row>

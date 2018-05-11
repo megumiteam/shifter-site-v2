@@ -6,11 +6,18 @@ import { Config } from "./../../config";
 import { content } from "./../../content";
 import { Container, Row, Col } from "reactstrap";
 
+class Loading extends Component {
+  render() {
+    return <h1 className="text-white">Loading</h1>;
+  }
+}
+
 class BlogArchive extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: []
+      posts: [],
+      data: false
     };
   }
 
@@ -20,7 +27,8 @@ class BlogArchive extends Component {
       .then(res => res.json())
       .then(res => {
         this.setState({
-          posts: res
+          posts: res,
+          data: true
         });
       });
   }
@@ -29,31 +37,28 @@ class BlogArchive extends Component {
     let posts = this.state.posts.map((post, index) => {
       return <BlogArchivePost key={index} content={post} />;
     });
+    
 
     const title = content.blog.title;
     const subtitle = content.blog.subtitle;
 
-    return (
-      <div>
-        <section className="bg-gray-100">
-          <BlogArchiveHeader title={title} subtitle={subtitle} />
-          <Container className="z-1">
-            <Row className="justify-content-md-center">
-              <Col sm="10">
-                <Row className="mb-gutter-row d-flex flex-wrap pb-7">
-                  {posts}
-                </Row>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-      </div>
-    );
+    return <section className="bg-gray-100">
+        <BlogArchiveHeader title={title} subtitle={subtitle} />
+        <Container className="z-1">
+          <Row className="justify-content-md-center">
+            <Col sm="11">
+              <Row className="mb-gutter-row d-flex flex-wrap pb-7">
+                {posts}
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      </section>;
   }
 }
 
 BlogArchive.propTypes = {
-  content: PropTypes.object,
+  content: PropTypes.object
 };
 
 BlogArchive.defaultProps = {

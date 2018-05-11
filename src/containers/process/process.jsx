@@ -16,8 +16,8 @@ let ProcessItem = props => (
   <Col
     xs="12"
     md="6"
-    lg="3"
-    className="mb-sm-4 mb-lg-0 d-flex align-items-stretch"
+    xl="3"
+    className="mb-sm-4 mb-xl-0 d-flex align-items-stretch"
   >
     <Card className="box-shadow text-center icon-card">
       <CardHeader className="icon-card__header d-flex justify-content-center align-items-center">
@@ -49,23 +49,27 @@ class Process extends Component {
     return <section className="process bg-gray-100 pt-10 pb-8 section-angle--gray">
         <Container>
           <Row className="justify-content-md-center">
-            <Col md="8" className="text-center mb-4">
+            <Col className="text-center mb-4">
               <h4>{this.props.content.title}</h4>
               <div className="mt-3">{this.props.content.subtitle}</div>
             </Col>
           </Row>
-          <Row className="justify-content-md-center">
-            <Col md="10">
+          <Row className="justify-content-center">
+            <Col md="7">
               <div className="browser-mockup section-angle--gray _gradient-purple-dark">
                 <IconSet icon="code-editor" className="icon-100" />
               </div>
             </Col>
           </Row>
-          <Row className="process__items mb-gutter-row-sm">{items}</Row>
-          <Row className="justify-content-md-center">
-            <Col md="8" className="text-center mt-5">
+          <Row className="justify-content-center">
+            <Col xs="12">
+              <Row className="process__items mb-gutter-row-sm">{items}</Row>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col className="text-center mt-5">
               <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow">
-                Forever Free Trial
+                Free Trial
               </a>
             </Col>
           </Row>

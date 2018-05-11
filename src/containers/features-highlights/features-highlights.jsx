@@ -34,7 +34,7 @@ class FeaturesHighlights extends Component {
     const title = this.props.content.title;
     const subtitle = this.props.content.subtitle;
 
-    return <section className="home-overview py-10 section-angle">
+    return <section className="feature-highlights py-10 section-angle--white">
         <Container>
           <Row className="justify-content-md-center mb-5">
             <Col md="8" className="text-center">
@@ -44,9 +44,7 @@ class FeaturesHighlights extends Component {
           </Row>
           <Row className="justify-content-md-center">
             <Col md="8">
-              <Row>
-                {features}
-              </Row>
+              <Row>{features}</Row>
             </Col>
           </Row>
           <Row className="justify-content-md-center">

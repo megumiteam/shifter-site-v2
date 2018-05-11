@@ -1,18 +1,23 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import BlogArchive from "./../containers/blog-archive/blog-archive";
 import BlogSingle from "./../containers/blog-single/blog-single";
-
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import GetStarted from "./../containers/get-started/get-started";
+import { content } from "./../content";
 
 class Blog extends Component {
   
 
   render () {
 
-    return <Switch>
-        <Route exact path="/blog" component={BlogArchive} />
-        <Route path="/blog/:slug" component={BlogSingle} />
-      </Switch>;
+    return <div>
+        <Switch>
+          <Route exact path="/blog" component={BlogArchive} />
+          <Route path="/blog/:slug" component={BlogSingle} />
+        </Switch>
+        <GetStarted content={content.global.get_started} layout="centered" />
+      </div>;
   }
 }
 

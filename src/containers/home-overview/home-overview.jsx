@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import IconSet from "./../../components/icons/icons";
+import IconSet from "./../../components/icons/icons"
 import {
   Container,
   Row,
@@ -44,7 +44,7 @@ class HomeOverview extends Component {
             </Col>
           </Row>
           <Row className="justify-content-md-center">
-            <Col md="10">
+            <Col xl="10">
               <Row className="mb-gutter-row-sm">{items}</Row>
             </Col>
           </Row>

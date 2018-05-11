@@ -51,17 +51,10 @@ class Learn extends Component {
             </Col>
           </Row>
           <Row className="justify-content-md-center">
-            <Col md="10">
+            <Col sm="12" xl="10">
               <Row className="mt-5 mb-gutter-row-md">
                 {items}
               </Row>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col md="8" className="text-center mt-5">
-              <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-primary btn-lg">
-                Learn More
-              </a>
             </Col>
           </Row>
         </Container>

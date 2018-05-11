@@ -25,7 +25,7 @@ class NavPrimaryMobile extends Component {
   }
 
   render() {
-    return <nav className="nav-mobile d-block d-md-none">
+    return <nav className="nav-mobile d-block d-lg-none">
         <Button className="nav-mobile-toggle" onClick={this.toggle}>
           <i className="fa fa-bars mr-2" />Menu
         </Button>

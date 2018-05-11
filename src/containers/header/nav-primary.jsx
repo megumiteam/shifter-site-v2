@@ -27,7 +27,7 @@ class PrimaryNavItems extends Component {
   }
 
   render() {
-    return <div className="nav-primary__wrapper d-none d-md-flex">
+    return <div className="nav-primary__wrapper d-none d-lg-flex">
         <Nav navbar className="ml-md-5 d-flex mr-md-auto">
           <NavItem>
             <NavLink href="/features/">Features</NavLink>

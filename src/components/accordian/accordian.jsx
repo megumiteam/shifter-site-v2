@@ -17,13 +17,12 @@ class Accordian extends Component {
     return <article className="accordian mb-3">
         <Card onClick={this.toggle}>
           <CardBody>
-            <CardTitle className="mb-0">
+            <CardTitle className="mb-0 d-flex justify-content-between" isOpen={this.state.collapse}>
               <h3 className="mb-0 h6">{this.props.title}</h3>
+              <i className={this.state.collapse ? "fa fa-angle-up" : "fa fa-angle-down"} />
             </CardTitle>
             <Collapse isOpen={this.state.collapse}>
-              <div className="mt-4">
-                {this.props.subtitle}
-              </div>
+              <div className="mt-4">{this.props.subtitle}</div>
             </Collapse>
           </CardBody>
         </Card>

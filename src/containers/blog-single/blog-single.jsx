@@ -26,17 +26,19 @@ class BlogSingle extends Component {
 
   render() {
     let postContent = this.state.posts.map((post, index) => {
+
       const title = post.title.rendered;
       const options = { year: "numeric", month: "long", day: "numeric" };
       const dateFormatted = new Date(post.date).toLocaleDateString(
         "en-US",
         options
       );
+      
       return <article class="h-entry blog-single bg-gray-100">
-          <div className="blog-single__header _gradient-purple-dark section-angle--purple-dark">
+          <div className="blog-single__header _gradient-purple-dark">
             <Container>
-              <Row className="justify-content-md-center text-center">
-                <Col sm="10">
+              <Row className="justify-content-center text-center">
+                <Col>
                   <header className="mb-5 mt-7">
                     <h1 className="h2 text-white p-name balance-text" dangerouslySetInnerHTML={{ __html: title }} />
                     <div>
@@ -58,21 +60,25 @@ class BlogSingle extends Component {
               </Row>
             </Container>
           </div>
-          <div className="z-1">
+          <div className="z-1 section-angle--gray">
             <Container className="blog-single__content">
               <Row className="justify-content-center">
-                <Col xs="12" md="1">
-                  <div className="socia-list">
-                    <a className="social-list__item" href="https://facebook.com/getshifter">
-                      <i className="fa fa-facebook" />
-                    </a>
-                    <a className="social-list__item" href="https://twitter.com/getshifter">
-                      <i className="fa fa-twitter" />
-                    </a>
-                  </div>
-                </Col>
-                <Col xs="12" md="9">
-                  <article className="card p-5" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                <Col md="11">
+                  <Row className="justify-content-center">
+                    <Col xs="12" md="1">
+                      <div className="socia-list">
+                        <a className="social-list__item" href="https://facebook.com/getshifter">
+                          <i className="fa fa-facebook" />
+                        </a>
+                        <a className="social-list__item" href="https://twitter.com/getshifter">
+                          <i className="fa fa-twitter" />
+                        </a>
+                      </div>
+                    </Col>
+                    <Col xs="12" md="11">
+                      <article className="card p-5" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                    </Col>
+                  </Row>
                 </Col>
               </Row>
             </Container>

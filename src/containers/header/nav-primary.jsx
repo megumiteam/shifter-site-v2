@@ -49,7 +49,7 @@ class PrimaryNavItems extends Component {
             <NavLink href="https://go.getshifter.io">Login</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="px-0 text-lowercase" href="https://go.getshifter.io">
+            <NavLink disabled className="px-0 text-lowercase text-white" href="https://go.getshifter.io">
               or
             </NavLink>
           </NavItem>

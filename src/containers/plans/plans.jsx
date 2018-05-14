@@ -58,7 +58,7 @@ class Plans extends Component {
     this.onCheckboxBtnClick = this.onCheckboxBtnClick.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.setState({
       rSelected: 'month'
     })

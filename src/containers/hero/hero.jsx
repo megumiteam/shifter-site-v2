@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col } from "reactstrap";
-import IconSet from "./../../components/icons/icons";
 
 class Hero extends Component {
 

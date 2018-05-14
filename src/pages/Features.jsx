@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Helmet} from "react-helmet";
 import Hero from "./../containers/hero/hero";
 import FeaturesOverview from "./../containers/features-overview/features-overview";
 import FeaturesHighlights from "./../containers/features-highlights/features-highlights";
@@ -7,8 +8,10 @@ import { content } from "./../content";
 
 class Features extends Component {
   render() {
+
     return (
       <div>
+        <Helmet title={content.features.hero.title + ' | Shifter'} />
         <Hero content={content.features.hero} />
         <FeaturesOverview content={content.features.overview} />
         <FeaturesHighlights content={content.features.highlights} />

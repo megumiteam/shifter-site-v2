@@ -5,28 +5,13 @@ import { Config } from "./../../config";
 
 
 const seoImages = {
-  openGraph: [
-    "open-graph-blue.png",
-    "open-graph-green.png",
-    "open-graph-red.png",
-    "open-graph-yellow.png"
-  ],
-  twitter: [
-    "twitter-card-blue.png",
-    "twitter-card-green.png",
-    "twitter-card-red.png",
-    "twitter-card-yellow.png"
-  ],
-  google: [
-    "google-blue.png",
-    "google-green.png",
-    "google-red.png",
-    "google-yellow.png"
-  ]
+  openGraph: "2018/05/Shifter-OpenGraph_Facebook.jpg",
+  twitter:  "2018/05/Shifter-OpenGraph_Twitter.jpg",
+  google: "2018/05/Shifter-OpenGraph_Facebook.jpg",
 };
 
 const seoImageURL = file =>
-  `https://s3.amazonaws.com/tmc-site-assets/graphics/${file}`;
+  `https://getshifter.io/app/uploads/${file}`;
 
 const getMetaTags = ({
   title,
@@ -41,9 +26,9 @@ const getMetaTags = ({
   twitter
 }) => {
   const metaTags = [
-    { itemprop: "name", content: title },
-    { itemprop: "description", content: description },
-    { itemprop: "image", content: seoImageURL(seoImages.google) },
+    { name: "name", content: title },
+    { name: "description", content: description },
+    { name: "image", content: seoImageURL(seoImages.google) },
     { name: "description", content: description },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:site", content: `@${twitter}` },
@@ -51,7 +36,7 @@ const getMetaTags = ({
     { name: "twitter:description", content: description },
     { name: "twitter:creator", content: `@${twitter}` },
     {
-      name: "twitter:image:src",
+      name: "twitter:image",
       content: seoImageURL(seoImages.twitter)
     },
     { name: "og:title", content: title },
@@ -60,7 +45,7 @@ const getMetaTags = ({
     { name: "og:image", content: seoImageURL(seoImages.openGraph) },
     { name: "og:description", content: description },
     { name: "og:site_name", content: site_name },
-    { name: "fb:app_id", content: "1645952115430593" }
+    { name: "fb:app_id", content: "1896326020616793" }
   ];
 
   if (published)

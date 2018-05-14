@@ -22,7 +22,9 @@ let ResourceItem = props => (
             <Media heading tag="h5" className="mb-4">
               {props.title}
             </Media>
-            <small>{props.subtitle}</small>
+            <div className="small">
+              {props.subtitle}
+            </div>
             <div className="mt-3">
               <a href={props.url} className="text-uppercase btn-arrow small">
                 {props.link}

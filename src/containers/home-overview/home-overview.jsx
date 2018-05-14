@@ -17,7 +17,7 @@ let HomeOverviewItem = props => (
       <CardBody>
         <IconSet icon={props.icon} className="mb-4" />
         <CardTitle>{props.title}</CardTitle>
-        <CardText>{props.subtitle}</CardText>
+        <CardText className="small">{props.subtitle}</CardText>
       </CardBody>
     </Card>
   </Col>

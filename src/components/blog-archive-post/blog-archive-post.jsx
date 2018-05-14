@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { Col, CardBody, CardImg, CardTitle, CardText } from "reactstrap";
+import { Col, CardBody, CardImg, CardTitle } from "reactstrap";
 import { FormattedDate } from "react-intl";
 
 class BlogArchivePost extends Component {
@@ -30,7 +30,6 @@ class BlogArchivePost extends Component {
                 <a className="text-black text-decoration-none" href={slug} dangerouslySetInnerHTML={{ __html: title }} />
               </CardTitle>
             </header>
-            <CardText className="sr-only">{excerpt}</CardText>
           </CardBody>
         </article>
       </Col>;

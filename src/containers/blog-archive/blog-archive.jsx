@@ -34,10 +34,10 @@ class BlogArchive extends Component {
   }
 
   render() {
+    
     let posts = this.state.posts.map((post, index) => {
       return <BlogArchivePost key={index} content={post} />;
     });
-    
 
     const title = content.blog.title;
     const subtitle = content.blog.subtitle;

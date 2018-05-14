@@ -4,9 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "bootstrap-sass": "^3.3.7",
     "dc-pattern-lib": "https://github.com/megumiteam/dc-pattern-lib.git#refactor/framework",
-    "jquery": "^3.3.1",
     "moment": "^2.22.1",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.1.2",
@@ -32,9 +30,8 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
-    "build": "npm-run-all build-css build-js",
+    "build": "npm-run-all build-css build-js && echo '/*    /index.html   200' > build/_redirects",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "devDependencies": {}
+  }
 }

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Config } from "./../../config";
 import { Container, Row, Col } from "reactstrap";
+import {Helmet} from "react-helmet";
+import SEO from "./../../components/seo/seo";
 
 class BlogSingle extends Component {
   constructor(props) {
@@ -28,13 +30,22 @@ class BlogSingle extends Component {
     let postContent = this.state.posts.map((post, index) => {
 
       const title = post.title.rendered;
+      const canonical = Config.canonicalUrl + 'blog/' + post.slug;
+      const shareImage = post._embedded["wp:featuredmedia"]["0"].media_details.sizes.full.source_url
+      const id = post.id;
       const options = { year: "numeric", month: "long", day: "numeric" };
       const dateFormatted = new Date(post.date).toLocaleDateString(
         "en-US",
         options
       );
       
-      return <article class="h-entry blog-single bg-gray-100">
+      return <article key={id} className="h-entry blog-single bg-gray-100">
+          <SEO canonical={canonical} title={title + ' | Shifter'} oGimage="https://placehole.it/1500" />
+          <Helmet>
+            <meta name="image" content={shareImage} />
+            <meta name="twitter:image" content={shareImage} />
+            <meta name="og:image" content={shareImage} />
+          </Helmet>
           <div className="blog-single__header _gradient-purple-dark">
             <Container>
               <Row className="justify-content-center text-center">
@@ -42,14 +53,14 @@ class BlogSingle extends Component {
                   <header className="mb-5 mt-7">
                     <h1 className="h2 text-white p-name balance-text" dangerouslySetInnerHTML={{ __html: title }} />
                     <div>
-                      <ul class="text-uppercase font-weight-bold h6 small list-inline blog-archive-header__tags mt-4">
-                        <li class="list-inline-item blog-archive-header__tag">
+                      <ul className="text-uppercase font-weight-bold h6 small list-inline blog-archive-header__tags mt-4">
+                        <li className="list-inline-item blog-archive-header__tag">
                           <a className="text-white text-decoration-none p-category" rel="tag">
                             #Blog
                           </a>
                         </li>
-                        <li class="list-inline-item blog-archive-header__tag">
-                          <time datetime={post.date} class="text-white dt-published">
+                        <li className="list-inline-item blog-archive-header__tag">
+                          <time dateTime={post.date} className="text-white dt-published">
                             {dateFormatted}
                           </time>
                         </li>

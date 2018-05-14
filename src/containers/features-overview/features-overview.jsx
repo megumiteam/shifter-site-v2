@@ -39,19 +39,19 @@ class FeaturesOverview extends Component {
     const title = this.props.content.title;
     const subtitle = this.props.content.subtitle;
 
-    return <section className="features-overview section-angle--gray pt-10 pb-8 bg-gray-100">
+    return <section className="features-overview section-angle--gray pt-10 pb-7 bg-gray-100">
         <Container>
-          {/* <Row className="justify-content-md-center">
-            <Col md="10">
-              <div className="browser-mockup _gradient-purple-dark">
-                <IconSet icon="code-editor" className="icon-100" />
-              </div>
-            </Col>
-          </Row> */}
+          <Row className="justify-content-md-center">
+          <Col md="10">
+            <div className="browser-mockup _gradient-purple-dark">
+              <img className="w-100 rounded-bottom" src="https://getshifter.io/app/uploads/2018/05/shifter-dashboard.png" alt="Shifter Dashboard" />
+            </div>
+          </Col>
+        </Row>
           <Row className="justify-content-md-center mt-7 mb-5">
-            <Col md="9" className="text-center">
+            <Col md="8" className="text-center">
               <h4>{title}</h4>
-              <div className="mt-3 small">{subtitle}</div>
+              <div className="mt-3 small balance-text">{subtitle}</div>
             </Col>
           </Row>
           <Row className="justify-content-md-center">

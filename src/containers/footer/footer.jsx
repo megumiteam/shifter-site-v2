@@ -52,7 +52,7 @@ class Footer extends Component {
                         <NavLink href="/blog" className="p-0 mb-3">
                           Events
                         </NavLink>
-                        <NavLink href="#" className="p-0">
+                      <NavLink target="_blank" href="https://confirmsubscription.com/h/j/B547D3210F66E486" className="p-0">
                           Newsletter
                         </NavLink>
                       </Nav>

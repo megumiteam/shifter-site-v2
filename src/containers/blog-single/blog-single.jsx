@@ -40,7 +40,7 @@ class BlogSingle extends Component {
       );
       
       return <article key={id} className="h-entry blog-single bg-gray-100">
-          <SEO canonical={canonical} title={title + ' | Shifter'} oGimage="https://placehole.it/1500" />
+          <SEO canonical={canonical} />
           <Helmet>
             <meta name="image" content={shareImage} />
             <meta name="twitter:image" content={shareImage} />

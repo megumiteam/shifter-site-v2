@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Col, CardBody, CardImg, CardTitle } from "reactstrap";
-import { FormattedDate } from "react-intl";
 
 class BlogArchivePost extends Component {
   render() {
     const slug = `/blog/${this.props.content.slug}`;
     const title = this.props.content.title.rendered;
     const thumbnail = this.props.content._embedded["wp:featuredmedia"]["0"].source_url;
-    const date = new Date(this.props.content.date).toUTCString();
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    const dateFormatted = new Date(this.props.content.date).toLocaleDateString(
+      "en-US",
+      options
+    );
 
     return <Col md="6" lg="4" className="d-flex align-items-stretch">
         <article className="post card box-shadow-sm">
@@ -21,7 +24,7 @@ class BlogArchivePost extends Component {
             <header>
               <div className="mb-2">
                 <time>
-                  <FormattedDate value={date} day="numeric" month="long" year="numeric" />
+                  {dateFormatted}
                 </time>
               </div>
               <CardTitle className="h5">

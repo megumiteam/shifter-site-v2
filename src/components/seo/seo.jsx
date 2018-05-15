@@ -11,7 +11,7 @@ const seoImages = {
 };
 
 const seoImageURL = file =>
-  `https://getshifter.io/app/uploads/${file}`;
+  `https://api.digitalcube.jp/wp-content/uploads/${file}`;
 
 const getMetaTags = ({
   title,

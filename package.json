@@ -6,8 +6,6 @@
     "bootstrap": "^4.0.0",
     "dc-pattern-lib": "git+https://df76411071f9de0a344edfbb65faeefe13235f4f:x-oauth-basic@github.com/megumiteam/dc-pattern-lib.git#v1.0.1",
     "moment": "^2.22.1",
-    "node-sass-chokidar": "^0.0.3",
-    "npm-run-all": "^4.1.2",
     "react": "^16.2.0",
     "react-datetime": "^2.14.0",
     "react-dom": "^16.2.0",
@@ -21,7 +19,11 @@
     "react-slick": "^0.23.1",
     "react-twitter-widgets": "^1.7.1",
     "reactstrap": "^5.0.0-beta",
-    "redux": "^3.7.2",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.1.2",
     "serverless-finch": "^1.4.0"
   },
   "scripts": {

@@ -39,13 +39,13 @@ const getMetaTags = ({
       name: "twitter:image",
       content: seoImageURL(seoImages.twitter)
     },
-    { name: "og:title", content: title },
-    { name: "og:type", content: contentType },
-    { name: "og:url", content: url },
-    { name: "og:image", content: seoImageURL(seoImages.openGraph) },
-    { name: "og:description", content: description },
-    { name: "og:site_name", content: site_name },
-    { name: "fb:app_id", content: "1896326020616793" }
+    { property: "og:title", content: title },
+    { property: "og:type", content: contentType },
+    { property: "og:url", content: url },
+    { property: "og:image", content: seoImageURL(seoImages.openGraph) },
+    { property: "og:description", content: description },
+    { property: "og:site_name", content: site_name },
+    { property: "fb:app_id", content: "1896326020616793" }
   ];
 
   if (published)

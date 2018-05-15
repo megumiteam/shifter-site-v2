@@ -26,9 +26,9 @@ const getMetaTags = ({
   twitter
 }) => {
   const metaTags = [
-    { name: "name", content: title },
-    { name: "description", content: description },
-    { name: "image", content: seoImageURL(seoImages.google) },
+    { itemprop: "name", content: title },
+    { itemprop: "description", content: description },
+    { itemprop: "image", content: seoImageURL(seoImages.google) },
     { name: "description", content: description },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:site", content: `@${twitter}` },
@@ -39,13 +39,13 @@ const getMetaTags = ({
       name: "twitter:image",
       content: seoImageURL(seoImages.twitter)
     },
-    { property: "og:title", content: title },
-    { property: "og:type", content: contentType },
-    { property: "og:url", content: url },
-    { property: "og:image", content: seoImageURL(seoImages.openGraph) },
-    { property: "og:description", content: description },
-    { property: "og:site_name", content: site_name },
-    { property: "fb:app_id", content: "1896326020616793" }
+    { itemprop: "og:title", content: title },
+    { itemprop: "og:type", content: contentType },
+    { itemprop: "og:url", content: url },
+    { itemprop: "og:image", content: seoImageURL(seoImages.openGraph) },
+    { itemprop: "og:description", content: description },
+    { itemprop: "og:site_name", content: site_name },
+    { itemprop: "fb:app_id", content: "1896326020616793" }
   ];
 
   if (published)

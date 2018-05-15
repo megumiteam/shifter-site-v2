@@ -16,7 +16,6 @@ import NotFound from "./pages/NotFound";
 import SEO from "./components/seo/seo";
 
 class App extends Component {
-
   render() {
     return <Router>
         <IntlProvider locale="en">

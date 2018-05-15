@@ -9,6 +9,9 @@ import Process from "./../containers/process/process";
 import { content } from "./../content";
 
 class Home extends Component {
+  componentDidMount() {
+    window.prerenderReady = true;
+  }
   render() {
     return <div>
         <Hero content={content.home.hero} />

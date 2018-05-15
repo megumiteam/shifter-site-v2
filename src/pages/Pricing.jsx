@@ -8,8 +8,10 @@ import SEO from "./../components/seo/seo";
 import { content } from "./../content";
 
 class Pricing extends Component {
+  componentDidMount() {
+    window.prerenderReady = true;
+  }
   render() {
-
     return <div>
         <SEO title={content.pricing.plans.title + ' | Shifter'} />
         <Plans content={content.pricing.plans} />

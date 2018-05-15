@@ -49,7 +49,7 @@ class BlogSingle extends Component {
           <div className="blog-single__header _gradient-purple-dark">
             <Container>
               <Row className="justify-content-center text-center">
-                <Col>
+                <Col md="10">
                   <header className="mb-5 mt-7">
                     <h1 className="h2 text-white p-name balance-text" dangerouslySetInnerHTML={{ __html: title }} />
                     <div>

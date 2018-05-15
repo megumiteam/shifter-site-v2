@@ -216,7 +216,7 @@ export const content = {
   },
   blog: {
     title: "Blog",
-    subtitle: "Get the latest and greatest updates from team Shifter. And make sure to check back often to learn what’s new and exciting in our world."
+    subtitle: "The latest news, events, and updates from Shifter."
   },
   global: {
     learn: {

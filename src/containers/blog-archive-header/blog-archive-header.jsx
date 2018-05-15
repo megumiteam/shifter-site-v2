@@ -13,7 +13,7 @@ class BlogArchiveHeader extends Component {
           <Row className="justify-content-md-center mb-5">
             <Col md="8" lg="6" className="text-center text-white">
               <h1 className="h2">{this.props.title}</h1>
-              <div className="mt-3 small">{this.props.subtitle}</div>
+              <div className="mt-3">{this.props.subtitle}</div>
             </Col>
           </Row>
           {/* <Row>

@@ -52,10 +52,10 @@ class NavPrimaryMobile extends Component {
           </Nav>
           <Nav navbar className="d-flex">
             <NavItem>
-              <NavLink href="https://go.getshifter.io">Login</NavLink>
+              <NavLink href="https://go.getshifter.io/login">Login</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink>
+              <NavLink href="https://go.getshifter.io/register">
                 <Button className="btn btn-gradient-primary text-uppercase btn-arrow btn-signup">
                   Sign Up
                 </Button>

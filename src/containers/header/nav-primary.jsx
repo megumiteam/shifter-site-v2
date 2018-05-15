@@ -46,15 +46,15 @@ class PrimaryNavItems extends Component {
         </Nav>
         <Nav navbar className="d-flex">
           <NavItem>
-            <NavLink href="https://go.getshifter.io">Login</NavLink>
+            <NavLink href="https://go.getshifter.io/login">Login</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink disabled className="px-0 text-lowercase text-white" href="https://go.getshifter.io">
+            <NavLink disabled className="px-0 text-lowercase text-white" href="#">
               or
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="pr-md-0" href="#">
+            <NavLink className="pr-md-0" href="https://go.getshifter.io/register">
               <Button className="btn btn-gradient-primary text-uppercase btn-arrow btn-signup">
                 Sign Up
               </Button>

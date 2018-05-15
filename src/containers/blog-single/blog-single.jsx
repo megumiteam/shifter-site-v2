@@ -87,7 +87,10 @@ class BlogSingle extends Component {
                       </div>
                     </Col>
                     <Col xs="12" md="11">
-                      <article className="card p-5" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                      <article className="card p-5">
+                      <img className="w-100 mb-5" src={shareImage} alt=""/>
+                      <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                      </article>
                     </Col>
                   </Row>
                 </Col>

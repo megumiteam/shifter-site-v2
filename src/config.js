@@ -1,6 +1,6 @@
 export const Config = {
   canonicalUrl: "https://getshifter.io",
-  apiUrl: "https://getshifter.io",
+  apiUrl: "https://api.digitalcube.jp",
   supportUrl: "https://support.getshifter.io",
   twitterHandle: "getshifter",
   title: "Shifter: Static Site Generator & WordPress Hosting",

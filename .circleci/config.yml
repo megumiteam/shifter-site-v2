@@ -28,14 +28,15 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       # run tests!
-      - run:
-          name: Run unit test
-          command: yarn run test:ci
-      - run:
-          name: Check coding standard by ESLint
-          command: yarn run lint
+      # - run:
+      #     name: Run unit test
+      #     command: yarn run test:ci
+      # - run:
+      #     name: Check coding standard by ESLint
+      #     command: yarn run lint
 
       - deploy:
           name: Deploy to Netlify
           command: |
+            yarn run build
             echo "Not master branch so not deploying"

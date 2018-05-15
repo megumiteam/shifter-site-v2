@@ -7,8 +7,10 @@ import GetStarted from "./../containers/get-started/get-started";
 import { content } from "./../content";
 
 class Features extends Component {
+  componentDidMount() {
+    window.prerenderReady = true;
+  }
   render() {
-
     return (
       <div>
         <Helmet title={content.features.hero.title + ' | Shifter'} />

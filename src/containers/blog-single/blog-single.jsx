@@ -23,6 +23,7 @@ class BlogSingle extends Component {
         this.setState({
           posts: res
         });
+        window.prerenderReady = true
       });
   }
 
@@ -38,7 +39,7 @@ class BlogSingle extends Component {
         "en-US",
         options
       );
-      
+
       return <article key={id} className="h-entry blog-single bg-gray-100">
           <SEO canonical={canonical} />
           <Helmet>

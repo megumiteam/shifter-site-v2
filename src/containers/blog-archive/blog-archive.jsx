@@ -32,6 +32,7 @@ class BlogArchive extends Component {
           posts: res,
           data: true
         });
+        window.prerenderReady = true;
       });
   }
 

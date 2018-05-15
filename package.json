@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.0.0",
     "dc-pattern-lib": "git+https://df76411071f9de0a344edfbb65faeefe13235f4f:x-oauth-basic@github.com/megumiteam/dc-pattern-lib.git#v1.0.2",
     "moment": "^2.22.1",
@@ -11,7 +12,6 @@
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
     "react-intercom": "^1.0.14",
-    "react-intl": "^2.4.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",

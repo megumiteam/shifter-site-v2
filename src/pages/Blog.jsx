@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import BlogArchive from "./../containers/blog-archive/blog-archive";
 import BlogSingle from "./../containers/blog-single/blog-single";

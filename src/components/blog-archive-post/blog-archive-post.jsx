@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 import { Col, CardBody, CardImg, CardTitle } from "reactstrap";
 import { FormattedDate } from "react-intl";
 
@@ -11,12 +10,10 @@ class BlogArchivePost extends Component {
     const thumbnail = this.props.content._embedded["wp:featuredmedia"]["0"].source_url;
     const date = new Date(this.props.content.date).toUTCString();
 
-    console.log(thumbnail);
-
     return <Col md="6" lg="4" className="d-flex align-items-stretch">
         <article className="post card box-shadow-sm">
           <div className="post-feature m-0">
-            <a as={Link} href={slug}>
+            <a href={slug}>
               <CardImg top className="post-feature__img rounded-top" src={thumbnail} alt={title} />
             </a>
           </div>

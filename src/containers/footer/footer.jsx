@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from "./../../assets/dc-pattern-lib/react/components/logos/logos";
+import Logo from "../../components/logo";
 import { Container, Row, Col, Nav, NavLink } from "reactstrap";
 
 class Footer extends Component {

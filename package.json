@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "dc-pattern-lib": "https://github.com/megumiteam/dc-pattern-lib.git#refactor/framework",
+    "dc-pattern-lib": "git+https://df76411071f9de0a344edfbb65faeefe13235f4f:x-oauth-basic@github.com/megumiteam/dc-pattern-lib.git#v1.0.1",
     "moment": "^2.22.1",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.1.2",

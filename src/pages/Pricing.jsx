@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Helmet } from "react-helmet";
 import Plans from "./../containers/plans/plans";
 import PlansTable from "./../containers/plans-table/plans-table";
 import PlansOverview from "./../containers/plans-overview/plans-overview";

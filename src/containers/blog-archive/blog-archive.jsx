@@ -6,11 +6,13 @@ import { Config } from "./../../config";
 import { content } from "./../../content";
 import { Container, Row, Col } from "reactstrap";
 
+/*
 class Loading extends Component {
   render() {
     return <h1 className="text-white">Loading</h1>;
   }
 }
+*/
 
 class BlogArchive extends Component {
   constructor(props) {
@@ -34,7 +36,7 @@ class BlogArchive extends Component {
   }
 
   render() {
-    
+
     let posts = this.state.posts.map((post, index) => {
       return <BlogArchivePost key={index} content={post} />;
     });

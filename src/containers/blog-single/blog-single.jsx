@@ -31,7 +31,7 @@ class BlogSingle extends Component {
     let postContent = this.state.posts.map((post, index) => {
 
       const title = post.title.rendered;
-      const canonical = Config.canonicalUrl + 'blog/' + post.slug;
+      const canonical = Config.canonicalUrl + '/blog/' + post.slug;
       const description = post.excerpt.rendered;
       const shareImage = post._embedded["wp:featuredmedia"]["0"].media_details.sizes.full.source_url
       const id = post.id;
@@ -80,16 +80,16 @@ class BlogSingle extends Component {
                   <Row className="justify-content-center">
                     <Col xs="12" md="1">
                       <div className="socia-list">
-                        <a className="social-list__item" href="https://facebook.com/getshifter">
+                        <a className="social-list__item" target="_blank" title="Facebook Share" href={`https://www.facebook.com/sharer.php?u=${canonical}`}>
                           <i className="fa fa-facebook" />
                         </a>
-                        <a className="social-list__item" href="https://twitter.com/getshifter">
+                        <a className="social-list__item" target="_blank" title="Twitter Share" href={`https://twitter.com/share?url=${canonical}&amp;text=${title}&amp;hashtags=getshifter`}>
                           <i className="fa fa-twitter" />
                         </a>
                       </div>
                     </Col>
                     <Col xs="12" md="11">
-                      <article className="card p-5" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                      <article className="card p-4 box-shadow-sm" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
                     </Col>
                   </Row>
                 </Col>

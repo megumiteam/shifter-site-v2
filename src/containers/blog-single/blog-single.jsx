@@ -42,7 +42,7 @@ class BlogSingle extends Component {
       );
 
       return <article key={id} className="h-entry blog-single bg-gray-100">
-          <SEO title={title} description={description} canonical={canonical} />
+          <SEO title={title + ' | Shifter'} description={description} canonical={canonical} />
           <Helmet>
             <meta name="image" content={shareImage} />
             <meta name="twitter:image" content={shareImage} />

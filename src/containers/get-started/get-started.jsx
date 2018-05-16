@@ -19,9 +19,9 @@ class GetStarted extends Component {
               <Col>
                 <h3>{title}</h3>
                 <div className="mt-3 mb-5 balance-text">{subtitle}</div>
-                <a href="https:go.getshifter.io" className="btn btn-gradient-primary text-uppercase btn-arrow mr-2">
+                <a href="https://go.getshifter.io" className="btn btn-gradient-primary text-uppercase btn-arrow mr-2">
                   Free Trial
-                </a> <a href="https:go.getshifter.io" className="btn btn-outline-white text-uppercase btn-arrow">
+                </a> <a href="https://go.getshifter.io" className="btn btn-outline-white text-uppercase btn-arrow">
                   Sign Up
                 </a>
               </Col>
@@ -41,10 +41,10 @@ class GetStarted extends Component {
                 </Col>
                 <Col lg="4" xs="12" className="d-lg-flex align-items-end mt-lg-0 mt-4">
                   <div className="hero__links">
-                    <a href="https:go.getshifter.io" className="btn btn-gradient-primary text-uppercase btn-arrow mr-2">
+                    <a href="https://go.getshifter.io" className="btn btn-gradient-primary text-uppercase btn-arrow mr-2">
                       Free Trial
                     </a>
-                    <a href="https:go.getshifter.io" className="btn btn-secondary text-uppercase btn-arrow">
+                    <a href="https://go.getshifter.io" className="btn btn-secondary text-uppercase btn-arrow">
                       Sign Up
                     </a>
                   </div>

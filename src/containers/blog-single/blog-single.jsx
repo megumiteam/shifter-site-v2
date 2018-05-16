@@ -32,6 +32,7 @@ class BlogSingle extends Component {
 
       const title = post.title.rendered;
       const canonical = Config.canonicalUrl + 'blog/' + post.slug;
+      const description = post.excerpt.rendered;
       const shareImage = post._embedded["wp:featuredmedia"]["0"].media_details.sizes.full.source_url
       const id = post.id;
       const options = { year: "numeric", month: "long", day: "numeric" };
@@ -41,7 +42,7 @@ class BlogSingle extends Component {
       );
 
       return <article key={id} className="h-entry blog-single bg-gray-100">
-          <SEO canonical={canonical} />
+          <SEO title={title} description={description} canonical={canonical} />
           <Helmet>
             <meta name="image" content={shareImage} />
             <meta name="twitter:image" content={shareImage} />

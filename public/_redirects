@@ -1,1 +1,4 @@
-/get-started https://getshifter.io/features/ 301
+/get-started /features/ 301
+/feed* https://api.digitalcube.jp/feed/:splat 200
+/wp-json* https://api.digitalcube.jp/wp-json:splat 200
+/* /index.html 200

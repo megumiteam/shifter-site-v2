@@ -197,10 +197,10 @@ export const content = {
       title: 'Frequently Asked Questions',
       items: [{
           title: 'Is CDN Included?',
-          subtitle: 'Yes! We use a CDN (CloudFront) at very front of our servers, by default.',
+          subtitle: 'Yes! Amazon CloudFront CDN is included with every site, by default.',
         },
         {
-          title: 'Are there any protection against DDoS attacks? ',
+          title: 'Is there any protection against DDoS attacks? ',
           subtitle: "We've got you covered. We use CloudFront with AWS Shield Standard which enables protection against DDoS attacks by default.",
         },
         {

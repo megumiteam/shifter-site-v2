@@ -3,15 +3,14 @@ import Logo from "../../components/logo";
 import { Container, Row, Col, Nav, NavLink } from "reactstrap";
 
 class Footer extends Component {
-
   render() {
-
     function launchIntercom(e) {
       e.preventDefault();
-      window.Intercom('show');
+      window.Intercom("show");
     }
 
-    return <footer className="footer" role="contentinfo">
+    return (
+      <footer className="footer" role="contentinfo">
         <Container className="pt-5 text-center text-md-left">
           <Row className="justify-content-center">
             <Col>
@@ -26,9 +25,7 @@ class Footer extends Component {
                 <Col xs="12" lg="9">
                   <Row>
                     <Col xs="12" md="3" className="mb-5">
-                      <h6 className="text-uppercase mb-3 footer__title">
-                        Product
-                      </h6>
+                      <h6 className="text-uppercase mb-3 ">Product</h6>
                       <Nav vertical className="footer__links">
                         <NavLink href="/features" className="p-0 mb-3">
                           Features
@@ -36,15 +33,16 @@ class Footer extends Component {
                         <NavLink href="/pricing" className="p-0 mb-3">
                           Pricing
                         </NavLink>
-                        <NavLink href="https://support.getshifter.io" className="p-0">
+                        <NavLink
+                          href="https://support.getshifter.io"
+                          className="p-0"
+                        >
                           Docs
                         </NavLink>
                       </Nav>
                     </Col>
                     <Col xs="12" md="3" className="mb-5">
-                      <h6 className="text-uppercase mb-3 ">
-                        Expand & Learn
-                      </h6>
+                      <h6 className="text-uppercase mb-3 ">Expand & Learn</h6>
                       <Nav vertical className="footer__links">
                         <NavLink href="/blog" className="p-0 mb-3">
                           Blog
@@ -52,7 +50,11 @@ class Footer extends Component {
                         <NavLink href="/blog" className="p-0 mb-3">
                           Events
                         </NavLink>
-                      <NavLink target="_blank" href="https://confirmsubscription.com/h/j/B547D3210F66E486" className="p-0">
+                        <NavLink
+                          target="_blank"
+                          href="https://confirmsubscription.com/h/j/B547D3210F66E486"
+                          className="p-0"
+                        >
                           Newsletter
                         </NavLink>
                       </Nav>
@@ -60,13 +62,23 @@ class Footer extends Component {
                     <Col xs="12" md="3" className="mb-5">
                       <h6 className="text-uppercase mb-3 ">Company</h6>
                       <Nav vertical className="footer__links">
-                        <NavLink href="https://en.digitalcube.jp/about/" className="p-0 mb-3">
+                        <NavLink
+                          href="https://en.digitalcube.jp/about/"
+                          className="p-0 mb-3"
+                        >
                           About
                         </NavLink>
-                        <NavLink href="https://en.digitalcube.jp/privacy-policy/" className="p-0 mb-3">
+                        <NavLink
+                          href="https://en.digitalcube.jp/privacy-policy/"
+                          className="p-0 mb-3"
+                        >
                           Privacy Policy
                         </NavLink>
-                        <NavLink href="#" onClick={launchIntercom} className="p-0">
+                        <NavLink
+                          href="#"
+                          onClick={launchIntercom}
+                          className="p-0"
+                        >
                           Contact
                         </NavLink>
                       </Nav>
@@ -74,13 +86,22 @@ class Footer extends Component {
                     <Col xs="12" md="3" className="mb-5">
                       <h6 className="text-uppercase mb-3 ">Stay In Touch</h6>
                       <Nav vertical className="footer__links">
-                        <NavLink href="https://facebook.com/getshifter" className="p-0 mb-3">
+                        <NavLink
+                          href="https://facebook.com/getshifter"
+                          className="p-0 mb-3"
+                        >
                           Facebook
                         </NavLink>
-                        <NavLink href="https://twitter.com/getshifter" className="p-0 mb-3">
+                        <NavLink
+                          href="https://twitter.com/getshifter"
+                          className="p-0 mb-3"
+                        >
                           Twitter
                         </NavLink>
-                        <NavLink href="https://profiles.wordpress.org/getshifter" className="p-0">
+                        <NavLink
+                          href="https://profiles.wordpress.org/getshifter"
+                          className="p-0"
+                        >
                           WordPress.org
                         </NavLink>
                       </Nav>
@@ -98,7 +119,8 @@ class Footer extends Component {
             </Col>
           </Row>
         </Container>
-      </footer>;
+      </footer>
+    );
   }
 }
 

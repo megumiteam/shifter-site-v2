@@ -208,6 +208,10 @@ export const content = {
           subtitle: "Yes! Custom domains are support on all paid plans.",
         },
         {
+          title: 'Can I use a page builder like Divi or Visual Composer?',
+          subtitle: "Yep! Page builder plugins work great on Shifter and run faster too since they won't require database calls to layout the page.",
+        },
+        {
           title: 'Is Shifter a hosting service or a static site generator?',
           subtitle: "Both! Shifter is a WordPress static site generator and a WordPress hosting solution in one. We host the files that Shifter creates and allow you to connect to custom domains. However, we do not offer domain registration at this time.",
         }

@@ -38,7 +38,7 @@ export const content = {
         },
         {
           icon: "globe",
-          title: "Depoly",
+          title: "Deploy",
           subtitle: "Deploy your static site which loads at lightning speed with our global CDN and nothing-to-install HTTPS."
         }
       ]

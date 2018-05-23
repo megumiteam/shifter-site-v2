@@ -29,17 +29,17 @@ export const content = {
         {
           icon: "blog-alt",
           title: "Customize",
-          subtitle: "Import an existing site or start fresh by adding Themes, Plugins and blog to your heart's content."
+          subtitle: "Import an existing site or start fresh by adding themes and plugins then blog to your heart's content."
         },
         {
           icon: "power",
           title: "Generate",
-          subtitle: "Using Shifter's static site generator for WordPress create an HTML, CSS and JS version of your site in one click."
+          subtitle: "Use Shifter's static site generator for WordPress to create an HTML, CSS, and JS version of your site in one click."
         },
         {
           icon: "globe",
           title: "Deploy",
-          subtitle: "Deploy your static site which loads at lightning speed with our global CDN and nothing-to-install HTTPS."
+          subtitle: "After deploying your static site will load at lightning speed with our global CDN and automatic HTTPS."
         }
       ]
     },
@@ -74,7 +74,7 @@ export const content = {
     },
     overview: {
       title: "WordPress hosting, reimagined.",
-      subtitle: "Shifter works with existing themes and plugins so you can create fast static sites using WordPress and without writing code.",
+      subtitle: "Shifter works with existing themes and plugins so you can create fast static sites using WordPress without writing any code.",
       items: [{
           icon: "lock",
           title: "Safe and secure",
@@ -88,13 +88,13 @@ export const content = {
         {
           icon: "hammer",
           title: "Maintenance free",
-          subtitle: "Stop worrying about security vulnerabilities from WordPress Core, Themes, and outdated Plugins."
+          subtitle: "Stop worrying about security vulnerabilities from WordPress Core, themes, and outdated plugins."
         }
       ]
     },
     highlights: {
       title: "More than just WordPress hosting.",
-      subtitle: "We built Shifter because we care about WordPress and believe hosting should be more than just, basic. With Shifter get premium features for your WordPress sites at no additional cost.",
+      subtitle: "We built Shifter because we care about WordPress and believe hosting should be more than just basic. With Shifter you get premium features for your WordPress sites at no additional cost.",
       items: [{
           icon: "globe",
           title: "Integrated CDN",
@@ -125,8 +125,8 @@ export const content = {
         },
         {
           icon: "blog",
-          title: "Works Contact Form 7",
-          subtitle: "Using our WP Serverless Forms Plugin, enable support for Contact Form 7 and beta support for Gravity Forms. It's Open Source too!"
+          title: "Works With Contact Form 7",
+          subtitle: "Using our WP Serverless Forms Plugin you can enable support for Contact Form 7 and beta support for Gravity Forms. It's open source too!"
         },
         {
           icon: "bricks",
@@ -179,17 +179,17 @@ export const content = {
         {
           icon: "globe",
           title: "Integrated CDN",
-          subtitle: "Serve static content to users over one of largest content delivery networks."
+          subtitle: "Serve static content to users over one of the largest content delivery networks."
         },
         {
           icon: "lightning",
           title: "HTTP/2",
-          subtitle: "Next-Gen HTTP/2 protocol delivers more assets at once, without the bottlenecks"
+          subtitle: "Next-Gen HTTP/2 protocol delivers more assets at once, without the bottlenecks."
         },
         {
           icon: "shield",
           title: "DDoS Protection",
-          subtitle: "Always-on protection for the most common attacks and to minimize the risk of downtime."
+          subtitle: "Always-on protection for the most common attacks to minimize the risk of downtime."
         },
       ]
     },

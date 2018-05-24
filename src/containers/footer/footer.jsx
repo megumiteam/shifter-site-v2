@@ -35,9 +35,12 @@ class Footer extends Component {
                         </NavLink>
                         <NavLink
                           href="https://support.getshifter.io"
-                          className="p-0"
+                          className="p-0 mb-3"
                         >
                           Docs
+                        </NavLink>
+                        <NavLink href="https://go.getshifter.io" className="p-0">
+                          Dashboard Login
                         </NavLink>
                       </Nav>
                     </Col>
@@ -53,9 +56,12 @@ class Footer extends Component {
                         <NavLink
                           target="_blank"
                           href="https://confirmsubscription.com/h/j/B547D3210F66E486"
-                          className="p-0"
+                          className="p-0 mb-3"
                         >
                           Newsletter
+                        </NavLink>
+                        <NavLink href="https://support.getshifter.io/user-guide" className="p-0">
+                          User Guide
                         </NavLink>
                       </Nav>
                     </Col>
@@ -74,10 +80,13 @@ class Footer extends Component {
                         >
                           Privacy Policy
                         </NavLink>
+                        <NavLink href="https://en.digitalcube.jp/tos/" className="p-0 mb-3">
+                          Terms of Service
+                        </NavLink>
                         <NavLink
                           href="#"
                           onClick={launchIntercom}
-                          className="p-0"
+                          className="p-0 mb-3"
                         >
                           Contact
                         </NavLink>
@@ -100,9 +109,12 @@ class Footer extends Component {
                         </NavLink>
                         <NavLink
                           href="https://profiles.wordpress.org/getshifter"
-                          className="p-0"
+                          className="p-0 mb-3"
                         >
                           WordPress.org
+                        </NavLink>
+                        <NavLink href="https://github.com/getshifter" className="p-0">
+                          Github
                         </NavLink>
                       </Nav>
                     </Col>
@@ -112,7 +124,7 @@ class Footer extends Component {
             </Col>
           </Row>
           <Row className="justify-content-md-center">
-            <Col md="10">
+            <Col>
               <h6 className="text-uppercase text-muted small py-5">
                 ©{new Date().getFullYear()} Shifter | A DigitalCube Company
               </h6>

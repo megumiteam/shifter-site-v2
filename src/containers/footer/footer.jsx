@@ -18,7 +18,9 @@ class Footer extends Component {
                 <Col xs="12" lg="3" className="mb-5">
                   <Row>
                     <Col>
-                      <Logo LogoStyle="primary-color-black" />
+                      <a href="/">
+                        <Logo LogoStyle="primary-color-black" />
+                      </a>
                     </Col>
                   </Row>
                 </Col>
@@ -80,7 +82,7 @@ class Footer extends Component {
                         >
                           Privacy Policy
                         </NavLink>
-                        <NavLink href="https://en.digitalcube.jp/tos/" className="p-0 mb-3">
+                        <NavLink href="https://en.digitalcube.jp/privacy-policy/terms-of-service/" className="p-0 mb-3">
                           Terms of Service
                         </NavLink>
                         <NavLink

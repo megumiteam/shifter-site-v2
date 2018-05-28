@@ -90,9 +90,6 @@ export const content = {
         },
         {
           tweetId: "792504034515091456",
-        },
-        {
-          tweetId: "792504034515091456",
         }
       ]
     }

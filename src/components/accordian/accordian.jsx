@@ -15,7 +15,7 @@ class Accordian extends Component {
 
   render() {
     return <article className="accordian mb-3">
-        <Card onClick={this.toggle}>
+        <Card className="box-shadow-sm" onClick={this.toggle}>
           <CardBody>
             <CardTitle className="mb-0 d-flex justify-content-between" isOpen={this.state.collapse}>
               <h3 className="mb-0 h6">{this.props.title}</h3>

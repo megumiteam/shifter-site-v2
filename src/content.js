@@ -235,7 +235,7 @@ export const content = {
           subtitle: "Yes! Custom domains are support on all paid plans.",
         },
         {
-          title: 'Can I use a page builder like Divi or Visual Composer?',
+          title: 'Can I use a page builders like Divi or Visual Composer?',
           subtitle: "Yep! Page builder plugins work great on Shifter and run faster too since they won't require database calls to layout the page.",
         },
         {

@@ -63,9 +63,29 @@ class Testimonials extends Component {
     return <section className="testimonials pt-10 pb-8 section-angle--purple-dark _gradient-purple-dark">
         <Container>
           <Row className="justify-content-md-center">
-            <Col md="8" className="text-center text-white mb-4">
+            <Col md="8" className="text-center text-white mb-5">
               <h4>{this.props.content.title}</h4>
               <div className="mt-3">{this.props.content.subtitle}</div>
+            </Col>
+          </Row>
+          <Row className="justify-content-md-center text-center">
+            <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
+              <img src="./assets/images/easypay.png" alt="easypay"/>
+            </Col>
+            <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
+              <img src="./assets/images/hde.png" alt="hde"/>
+            </Col>
+            <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
+              <img src="./assets/images/heptagon.png" alt="heptagon"/>
+            </Col>
+            <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
+              <img src="./assets/images/monstarlab.png" alt="monstarlab"/>
+            </Col>
+            <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
+              <img src="./assets/images/ntt-docomo.png" alt="Docomo"/>
+            </Col>
+            <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
+              <img src="./assets/images/section-9.png" alt="Section9"/>
             </Col>
           </Row>
         </Container>

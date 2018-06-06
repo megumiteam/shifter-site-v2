@@ -3,6 +3,7 @@ import { Config } from "./../../config";
 import { Container, Row, Col } from "reactstrap";
 import {Helmet} from "react-helmet";
 import SEO from "./../../components/seo/seo";
+import BlogRecent from "./../blog-recent/blog-recent";
 
 class BlogSingle extends Component {
   constructor(props) {
@@ -48,7 +49,7 @@ class BlogSingle extends Component {
             <meta name="twitter:image" content={shareImage} />
             <meta name="og:image" content={shareImage} />
           </Helmet>
-          <div className="blog-single__header _gradient-purple-dark">
+          <div className="blog-single__header _gradient-purple-dark section-angle--purple-dark">
             <Container>
               <Row className="justify-content-center text-center">
                 <Col md="10">
@@ -95,6 +96,7 @@ class BlogSingle extends Component {
                 </Col>
               </Row>
             </Container>
+            <BlogRecent />
           </div>
         </article>;
     });

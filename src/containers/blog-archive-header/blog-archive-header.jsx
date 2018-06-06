@@ -8,7 +8,7 @@ import {
 
 class BlogArchiveHeader extends Component {
   render() {
-    return <section className="blog-archive-header py-7 _gradient-purple-dark section-angle--purple-dark">
+    return <section className="blog-archive-header pt-7 pb-4 _gradient-purple-dark section-angle--purple-dark">
         <Container>
           <Row className="justify-content-md-center mb-5">
             <Col md="8" lg="6" className="text-center text-white">

@@ -14,7 +14,7 @@ class Faqs extends Component {
       return <Accordian key={props.title}  title={props.title} subtitle={props.subtitle} />;
     });
 
-    return <section className="py-7 bg-gray-100">
+    return <section className="py-7 bg-gray-100 section-angle--gray">
         <Container>
           <Row className="justify-content-md-center mb-5">
             <Col md="8" className="text-center">

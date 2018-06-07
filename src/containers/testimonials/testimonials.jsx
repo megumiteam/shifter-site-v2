@@ -70,22 +70,46 @@ class Testimonials extends Component {
           </Row>
           <Row className="justify-content-md-center text-center">
             <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
-              <img src="./assets/images/easypay.png" alt="easypay"/>
+              <img
+                src="./assets/images/easypay.png"
+                srcset="./assets/images/easypay.png 1x, ./assets/images/easypay@2x.png 2x"
+                alt="easypay"
+              />
             </Col>
             <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
-              <img src="./assets/images/hde.png" alt="hde"/>
+              <img
+                src="./assets/images/hde.png"
+                srcset="./assets/images/hde.png 1x, ./assets/images/hde@2x.png 2x"
+                alt="hde"
+              />
             </Col>
             <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
-              <img src="./assets/images/heptagon.png" alt="heptagon"/>
+              <img
+                src="./assets/images/heptagon.png"
+                srcset="./assets/images/heptagon.png 1x,./assets/images/heptagon@2x.png 2x"
+                alt="heptagon"
+              />
             </Col>
             <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
-              <img src="./assets/images/monstarlab.png" alt="monstarlab"/>
+              <img
+                src="./assets/images/monstarlab.png"
+                srcset="./assets/images/monstarlab.png 1x,./assets/images/monstarlab@2x.png 2x"
+                alt="monstarlab"
+              />
             </Col>
             <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
-              <img src="./assets/images/ntt-docomo.png" alt="Docomo"/>
+              <img
+                src="./assets/images/ntt-docomo.png"
+                srcset="./assets/images/ntt-docomo.png 1x,./assets/images/ntt-docomo@2x.png 2x"
+                alt="Docomo"
+              />
             </Col>
             <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
-              <img src="./assets/images/section-9.png" alt="Section9"/>
+              <img
+                src="./assets/images/section-9.png"
+                srcset="./assets/images/section-9.png 1x,./assets/images/section-9@2x.png 2x"
+                alt="Section9"
+              />
             </Col>
           </Row>
         </Container>

@@ -1,0 +1,3 @@
+[submodule "src/assets/dc-pattern-lib"]
+	path = src/assets/dc-pattern-lib
+	url = git@github.com:megumiteam/dc-pattern-lib.git

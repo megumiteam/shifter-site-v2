@@ -44,7 +44,7 @@ class FeaturesOverview extends Component {
           <Row className="justify-content-md-center">
           <Col md="10">
             <div className="browser-mockup _gradient-purple-dark">
-              <img className="w-100 rounded-bottom" src="https://api.digitalcube.jp/wp-content/uploads/2018/05/shifter-dashboard.png" alt="Shifter Dashboard" />
+              <img className="w-100 rounded-bottom" src="/assets/images/shifter-dashboard.png" alt="Shifter Dashboard" />
             </div>
           </Col>
         </Row>

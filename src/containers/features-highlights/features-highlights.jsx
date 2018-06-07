@@ -30,7 +30,7 @@ class FeaturesHighlights extends Component {
   render() {
 
     let features = this.props.content.items.map((props, index) => {
-      return <FeatureHighlightItem title={props.title} subtitle={props.subtitle} icon={props.icon} />;
+      return <FeatureHighlightItem title={props.title} subtitle={props.subtitle} icon={props.icon} key={index} />;
     });
 
     const title = this.props.content.title;

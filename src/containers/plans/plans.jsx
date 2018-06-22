@@ -103,7 +103,7 @@ class Plans extends Component {
     let personal = this.state.rSelected === 'month' ? '$20' : '$15';
     let business = this.state.rSelected === "month" ? '$40' : '$30';
     let agency = this.state.rSelected === "month" ? '$90' : '$60';
-    let agencyPlus = this.state.rSelected === "month" ? '$210' : '$140';
+    let agencyPlus = this.state.rSelected === "month" ? '$150' : '$100';
 
     return <section className="pricing-plans py-7 _gradient-purple-dark">
         <Container>

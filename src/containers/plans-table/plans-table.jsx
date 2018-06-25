@@ -39,19 +39,19 @@ class PlansTable extends Component {
                       </th>
                       <th className="personal">
                         Personal
-                        <div className="h3">$15</div>
+                        <div className="h3">$20</div>
                       </th>
                       <th>
                         Business
-                        <div className="h3">$30</div>
+                        <div className="h3">$40</div>
                       </th>
                       <th>
                         Agency
-                        <div className="h3">$60</div>
+                        <div className="h3">$90</div>
                       </th>
                       <th>
                         Agency Plus
-                        <div className="h3">$140</div>
+                        <div className="h3">$150</div>
                       </th>
                     </tr>
                   </thead>

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-
-import { Container, Row, Col, Table } from "reactstrap";
+import { Container, Row, Col, Table, Button, ButtonGroup } from "reactstrap";
 
 let PlansTableFeature = props => (
   <tr>
@@ -15,15 +14,49 @@ let PlansTableFeature = props => (
 );
 
 class PlansTable extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { rSelected: null };
+    this.onRadioBtnClick = this.onRadioBtnClick.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({
+      rSelected: 'month'
+    })
+  }
+
+  onRadioBtnClick(rSelected) {
+    this.setState({ rSelected });
+  }
+
   render() {
     
     const title = this.props.content.title;
+
+    let personal = this.state.rSelected === 'month' ? '$20' : '$15';
+    let business = this.state.rSelected === "month" ? '$40' : '$30';
+    let agency = this.state.rSelected === "month" ? '$90' : '$60';
+    let agencyPlus = this.state.rSelected === "month" ? '$150' : '$100';
 
     return <section className="py-7 bg-gray-100">
         <Container>
           <Row className="justify-content-md-center mb-5">
             <Col md="8" className="text-center">
               <h4>{title}</h4>
+            </Col>
+          </Row>
+          <Row className="text-center mb-7">
+            <Col>
+              <ButtonGroup className="">
+                <Button className="btn-outline-secondary" onClick={() => this.onRadioBtnClick("year")} active={this.state.rSelected === "year"}>
+                  Annual
+                </Button>
+                <Button className="btn-outline-secondary" onClick={() => this.onRadioBtnClick("month")} active={this.state.rSelected === "month"}>
+                  Monthly
+                </Button>
+              </ButtonGroup>
             </Col>
           </Row>
           <Row>
@@ -39,19 +72,19 @@ class PlansTable extends Component {
                       </th>
                       <th className="personal">
                         Personal
-                        <div className="h3">$20</div>
+                        <div className="h3">{personal}</div>
                       </th>
                       <th>
                         Business
-                        <div className="h3">$40</div>
+                        <div className="h3">{business}</div>
                       </th>
                       <th>
                         Agency
-                        <div className="h3">$90</div>
+                        <div className="h3">{agency}</div>
                       </th>
                       <th>
                         Agency Plus
-                        <div className="h3">$150</div>
+                        <div className="h3">{agencyPlus}</div>
                       </th>
                     </tr>
                   </thead>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Config } from "./../../config";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Card, CardBody } from "reactstrap";
 import {Helmet} from "react-helmet";
 import SEO from "./../../components/seo/seo";
 import BlogRecent from "./../blog-recent/blog-recent";
@@ -76,10 +76,8 @@ class BlogSingle extends Component {
           </div>
           <div className="z-1 section-angle--gray">
             <Container className="blog-single__content">
-              <Row className="justify-content-center">
-                <Col md="11">
-                  <Row className="justify-content-center">
-                    <Col xs="12" md="1">
+              <Row className="">
+              <Col xs="12" md="1">
                       <div className="socia-list">
                         <a className="social-list__item" target="_blank" title="Facebook Share" href={`https://www.facebook.com/sharer.php?u=${canonical}`}>
                           <i className="fa fa-facebook" />
@@ -89,10 +87,12 @@ class BlogSingle extends Component {
                         </a>
                       </div>
                     </Col>
-                    <Col xs="12" md="11">
-                      <article className="card p-4 m-md-5 box-shadow-sm" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
-                    </Col>
-                  </Row>
+                <Col xs="12" md="10">
+                <Card>
+                  <CardBody>
+                    <article dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                  </CardBody>
+                  </Card>
                 </Col>
               </Row>
             </Container>

@@ -90,7 +90,7 @@ class BlogSingle extends Component {
                       </div>
                     </Col>
                     <Col xs="12" md="11">
-                      <article className="card p-4 box-shadow-sm" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                      <article className="card p-4 m-md-5 box-shadow-sm" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
                     </Col>
                   </Row>
                 </Col>

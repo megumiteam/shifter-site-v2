@@ -50,7 +50,7 @@ class HomeOverview extends Component {
           </Row>
           <Row className="justify-content-md-center">
             <Col md="8" className="text-center mt-5">
-              <a href="/features" className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow">
+              <a href="/features" className="btn text-uppercase btn-gradient-purple btn-lg btn-arrow">
                 All The Features
               </a>
             </Col>

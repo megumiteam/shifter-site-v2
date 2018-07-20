@@ -100,27 +100,27 @@ class PlansTable extends Component {
                     <tr>
                       <th scope="row">Select Plan</th>
                       <td>
-                        <a class="btn btn-gradient-primary" href="https://go.getshifter.io">
+                        <a class="btn btn-gradient-purple" href="https://go.getshifter.io">
                           Select
                         </a>
                       </td>
                       <td>
-                        <a class="btn btn-gradient-primary" href="https://go.getshifter.io">
+                        <a class="btn btn-gradient-purple" href="https://go.getshifter.io">
                           Select
                         </a>
                       </td>
                       <td>
-                        <a class="btn btn-gradient-primary" href="https://go.getshifter.io">
+                        <a class="btn btn-gradient-purple" href="https://go.getshifter.io">
                           Select
                         </a>
                       </td>
                       <td>
-                        <a class="btn btn-gradient-primary" href="https://go.getshifter.io">
+                        <a class="btn btn-gradient-purple" href="https://go.getshifter.io">
                           Select
                         </a>
                       </td>
                       <td>
-                        <a class="btn btn-gradient-primary" href="https://go.getshifter.io">
+                        <a class="btn btn-gradient-purple" href="https://go.getshifter.io">
                           Select
                         </a>
                       </td>

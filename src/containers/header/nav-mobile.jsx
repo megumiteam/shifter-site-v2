@@ -56,7 +56,7 @@ class NavPrimaryMobile extends Component {
             </NavItem>
             <NavItem>
               <NavLink href="https://go.getshifter.io/register">
-                <Button className="btn btn-gradient-primary text-uppercase btn-arrow btn-signup">
+                <Button className="btn btn-gradient-purple text-uppercase btn-arrow btn-signup">
                   Sign Up
                 </Button>
               </NavLink>

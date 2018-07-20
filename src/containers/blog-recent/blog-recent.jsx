@@ -49,7 +49,7 @@ class BlogRecent extends Component {
           </Row>
           <Row className="justify-content-md-center text-center">
             <Col>
-              <a href="/blog" className="btn btn-gradient-primary text-uppercase btn-arrow">
+              <a href="/blog" className="btn btn-gradient-purple text-uppercase btn-arrow">
                 Read More
               </a>
             </Col>

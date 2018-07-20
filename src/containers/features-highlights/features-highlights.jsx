@@ -51,7 +51,7 @@ class FeaturesHighlights extends Component {
           </Row>
           <Row className="justify-content-md-center">
             <Col md="8" className="text-center mt-5">
-              <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow">
+              <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-purple btn-lg btn-arrow">
                 Get Started
               </a>
             </Col>

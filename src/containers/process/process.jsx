@@ -66,7 +66,7 @@ class Process extends Component {
           </Row>
           <Row className="justify-content-center">
             <Col className="text-center mt-5">
-              <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow">
+              <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-purple btn-lg btn-arrow">
                 Free Trial
               </a>
             </Col>

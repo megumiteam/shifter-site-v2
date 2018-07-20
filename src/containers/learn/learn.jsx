@@ -22,7 +22,7 @@ let ResourceItem = props => (
             <Media heading tag="h5" className="mb-4">
               {props.title}
             </Media>
-            <div className="small">
+            <div>
               {props.subtitle}
             </div>
             <div className="mt-3">

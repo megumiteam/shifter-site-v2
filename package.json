@@ -5,7 +5,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.0.0",
-    "dc-pattern-lib": "git+https://df76411071f9de0a344edfbb65faeefe13235f4f:x-oauth-basic@github.com/megumiteam/dc-pattern-lib.git#v1.0.9",
+    "dc-pattern-lib": "git+https://df76411071f9de0a344edfbb65faeefe13235f4f:x-oauth-basic@github.com/megumiteam/dc-pattern-lib.git#v1.1.5",
     "moment": "^2.22.1",
     "react": "^16.2.0",
     "react-datetime": "^2.14.0",

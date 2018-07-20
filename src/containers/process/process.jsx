@@ -16,8 +16,8 @@ let ProcessItem = props => (
   <Col
     xs="12"
     md="6"
-    xl="3"
-    className="mb-sm-4 mb-xl-0 d-flex align-items-stretch"
+    // xl="3"
+    className="mb-sm-4 d-flex align-items-stretch"
   >
     <Card className="box-shadow text-center icon-card">
       <CardHeader className="icon-card__header d-flex justify-content-center align-items-center">
@@ -25,9 +25,7 @@ let ProcessItem = props => (
       </CardHeader>
       <CardBody className="icon-card__body">
         <CardTitle>{props.title}</CardTitle>
-        <small>
-          <CardText>{props.subtitle}</CardText>
-        </small>
+        <CardText>{props.subtitle}</CardText>
       </CardBody>
     </Card>
   </Col>

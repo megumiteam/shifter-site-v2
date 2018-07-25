@@ -17,7 +17,7 @@ class Hero extends Component {
                 {this.props.content.subtitle}
               </div>
               <div className="hero__links mt-5">
-                <a href="https://go.getshifter.io" className="btn btn-gradient-primary text-uppercase mr-2 btn-arrow">
+                <a href="https://go.getshifter.io" className="btn btn-gradient-purple text-uppercase mr-2 btn-arrow">
                   Free Trial
                 </a>
                 <a href="/pricing" className="btn btn-link btn-outline-white text-uppercase">

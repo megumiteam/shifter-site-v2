@@ -78,18 +78,18 @@ class BlogSingle extends Component {
             <Container className="blog-single__content">
               <Row className="">
               <Col xs="12" md="1">
-                      <div className="socia-list">
-                        <a className="social-list__item" target="_blank" title="Facebook Share" href={`https://www.facebook.com/sharer.php?u=${canonical}`}>
+                      <div className="socia-list text-center">
+                        <a className="social-list__item box-shadow-sm" target="_blank" title="Facebook Share" href={`https://www.facebook.com/sharer.php?u=${canonical}`}>
                           <i className="fa fa-facebook" />
                         </a>
-                        <a className="social-list__item" target="_blank" title="Twitter Share" href={`https://twitter.com/share?url=${canonical}&amp;text=${title}&amp;hashtags=getshifter`}>
+                        <a className="social-list__item box-shadow-sm" target="_blank" title="Twitter Share" href={`https://twitter.com/share?url=${canonical}&amp;text=${title}&amp;hashtags=getshifter`}>
                           <i className="fa fa-twitter" />
                         </a>
                       </div>
                     </Col>
                 <Col xs="12" md="10">
-                <Card>
-                  <CardBody>
+                <Card className="box-shadow-sm">
+                  <CardBody className="p-4 p-lg-5">
                     <article dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
                   </CardBody>
                   </Card>

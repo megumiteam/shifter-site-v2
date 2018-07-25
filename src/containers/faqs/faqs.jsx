@@ -24,7 +24,7 @@ class Faqs extends Component {
           {items}
           <Row className="justify-content-md-center">
             <Col className="text-center mt-5">
-              <a href="https://support.getshifter.io/faqs" className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow">
+              <a href="https://support.getshifter.io/faqs" className="btn text-uppercase btn-gradient-purple btn-lg btn-arrow">
                 More FAQs
               </a>
             </Col>

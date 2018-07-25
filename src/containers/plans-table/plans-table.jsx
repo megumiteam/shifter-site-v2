@@ -88,7 +88,7 @@ class PlansTable extends Component {
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="small">
+                  <tbody>
                     <PlansTableFeature title="WordPress Sites" trial="1" personal="3" business="10" agency="30" plus="50" />
                     <PlansTableFeature title="Custom Domain" trial="Disabled" personal="Enabled" business="Enabled" agency="Enabled" plus="Enabled" />
                     <PlansTableFeature title="Storage" trial="1GB" personal="10GB" business="500GB" agency="1TB" plus="1TB" />
@@ -100,27 +100,27 @@ class PlansTable extends Component {
                     <tr>
                       <th scope="row">Select Plan</th>
                       <td>
-                        <a class="btn btn-gradient-primary" href="https://go.getshifter.io">
+                        <a class="btn btn-gradient-purple" href="https://go.getshifter.io">
                           Select
                         </a>
                       </td>
                       <td>
-                        <a class="btn btn-gradient-primary" href="https://go.getshifter.io">
+                        <a class="btn btn-gradient-purple" href="https://go.getshifter.io">
                           Select
                         </a>
                       </td>
                       <td>
-                        <a class="btn btn-gradient-primary" href="https://go.getshifter.io">
+                        <a class="btn btn-gradient-purple" href="https://go.getshifter.io">
                           Select
                         </a>
                       </td>
                       <td>
-                        <a class="btn btn-gradient-primary" href="https://go.getshifter.io">
+                        <a class="btn btn-gradient-purple" href="https://go.getshifter.io">
                           Select
                         </a>
                       </td>
                       <td>
-                        <a class="btn btn-gradient-primary" href="https://go.getshifter.io">
+                        <a class="btn btn-gradient-purple" href="https://go.getshifter.io">
                           Select
                         </a>
                       </td>

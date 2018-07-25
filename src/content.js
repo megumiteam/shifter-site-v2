@@ -50,6 +50,18 @@ export const content = {
           tweetId: "925062079773585411"
         },
         {
+          tweetId: "1012770008085118976"
+        },
+        {
+          tweetId: "1018885668674637825"
+        },
+        {
+          tweetId: "1019400197598633984"
+        },
+        {
+          tweetId: "1019339025965043714"
+        },
+        {
           tweetId: "822127402851581953"
         },
         {
@@ -121,7 +133,7 @@ export const content = {
     },
     highlights: {
       title: "More than just WordPress hosting.",
-      subtitle: "We built Shifter because we care about WordPress and believe hosting should be more than just basic. With Shifter you get premium features for your WordPress sites at no additional cost.",
+      subtitle: "We built Shifter because we believe hosting should be more than just basic.",
       items: [{
           icon: "globe",
           title: "Integrated CDN",

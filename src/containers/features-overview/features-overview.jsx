@@ -21,9 +21,9 @@ let FeatureOverviewItem = props => (
         <Media heading tag="h5">
           {props.title}
         </Media>
-        <small>
+        <div>
           <p>{props.subtitle}</p>
-        </small>
+        </div>
       </Media>
     </Media>
   </Col>
@@ -51,7 +51,7 @@ class FeaturesOverview extends Component {
           <Row className="justify-content-md-center mt-7 mb-5">
             <Col md="8" className="text-center">
               <h4>{title}</h4>
-              <div className="mt-3 small balance-text">{subtitle}</div>
+              <div className="mt-3 balance-text">{subtitle}</div>
             </Col>
           </Row>
           <Row className="justify-content-md-center">
@@ -61,7 +61,7 @@ class FeaturesOverview extends Component {
           </Row>
           <Row className="justify-content-md-center">
             <Col className="text-center mt-5">
-              <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow">
+              <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-purple btn-lg btn-arrow">
                 Learn More
               </a>
             </Col>

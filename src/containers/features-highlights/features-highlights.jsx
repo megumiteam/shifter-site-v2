@@ -18,9 +18,9 @@ let FeatureHighlightItem = props => (
         <Media heading tag="h5" className="mb-4">
           {props.title}
         </Media>
-        <small>
+        <div>
           <p>{props.subtitle}</p>
-        </small>
+        </div>
       </Media>
     </Media>
   </Col>
@@ -41,7 +41,7 @@ class FeaturesHighlights extends Component {
           <Row className="justify-content-md-center mb-5">
           <Col md="8" className="text-center balance-text">
             <h4 className="balance-text">{title}</h4>
-              <div className="mt-3 small">{subtitle}</div>
+              <div className="mt-3">{subtitle}</div>
             </Col>
           </Row>
           <Row className="justify-content-md-center">
@@ -51,7 +51,7 @@ class FeaturesHighlights extends Component {
           </Row>
           <Row className="justify-content-md-center">
             <Col md="8" className="text-center mt-5">
-              <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-primary btn-lg btn-arrow">
+              <a href="https://go.getshifter.io" className="btn text-uppercase btn-gradient-purple btn-lg btn-arrow">
                 Get Started
               </a>
             </Col>

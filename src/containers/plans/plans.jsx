@@ -40,7 +40,7 @@ function PlansItem(props) {
             </small>
           </CardText>
         </div>
-        <a className="btn btn-gradient-primary" href="https://go.getshifter.io">
+        <a className="btn btn-gradient-purple" href="https://go.getshifter.io">
           Select
         </a>
       </CardBody>
@@ -110,7 +110,7 @@ class Plans extends Component {
           <Row className="justify-content-md-center mb-5 text-white">
             <Col md="8" className="text-center">
               <h2>{title}</h2>
-              <div className="mt-3 small">{subtitle}</div>
+              <div className="mt-3">{subtitle}</div>
             </Col>
           </Row>
           <Row className="text-center mb-7">

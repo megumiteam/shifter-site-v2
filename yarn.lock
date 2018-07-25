@@ -1934,9 +1934,9 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
-"dc-pattern-lib@git+https://df76411071f9de0a344edfbb65faeefe13235f4f:x-oauth-basic@github.com/megumiteam/dc-pattern-lib.git#v1.1.5":
+"dc-pattern-lib@git+https://df76411071f9de0a344edfbb65faeefe13235f4f:x-oauth-basic@github.com/megumiteam/dc-pattern-lib.git#v1.1.6":
   version "1.0.2"
-  resolved "git+https://df76411071f9de0a344edfbb65faeefe13235f4f:x-oauth-basic@github.com/megumiteam/dc-pattern-lib.git#302e6fdd80cd3d6e8cf0373821d273a92e2c038b"
+  resolved "git+https://df76411071f9de0a344edfbb65faeefe13235f4f:x-oauth-basic@github.com/megumiteam/dc-pattern-lib.git#da7c321e480f7b5d91e3e03cac78cb844fabae1c"
 
 debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.6, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"

@@ -71,9 +71,9 @@ class Testimonials extends Component {
           <Row className="justify-content-md-center text-center">
             <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
               <img
-                src="./assets/images/easypay.png"
-                srcset="./assets/images/easypay.png 1x, ./assets/images/easypay@2x.png 2x"
-                alt="easypay"
+                src="./assets/images/amon.png"
+                srcset="./assets/images/amon.png 1x, ./assets/images/amon@2x.png 2x"
+                alt="amon"
               />
             </Col>
             <Col xs="6" sm="4" md="3" lg="2" className="mb-5">

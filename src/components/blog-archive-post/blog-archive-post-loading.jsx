@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Col, CardBody, CardImg, CardTitle } from "reactstrap";
+import { Col, CardBody } from "reactstrap";
 import ContentLoader from "react-content-loader";
 
 class BlogArchivePost extends Component {

@@ -30,8 +30,8 @@ const withFetchPosts = (WrappedComponent) => {
     fetchPosts = () => {
       let { currentPage, totalPages } = this.state;
       if (currentPage === totalPages) return
-      currentPage += 0
-      const promise = wp.posts().embed().page(currentPage).perPage( 9 )
+      currentPage += 1
+      const promise = wp.posts().embed().page(currentPage - 1).perPage( 9 )
       return promise.then(nextPosts => {
         const { totalPages } = nextPosts._paging
         const { posts } = this.state

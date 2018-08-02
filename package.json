@@ -8,6 +8,7 @@
     "dc-pattern-lib": "git+https://df76411071f9de0a344edfbb65faeefe13235f4f:x-oauth-basic@github.com/megumiteam/dc-pattern-lib.git#v1.1.6",
     "moment": "^2.22.1",
     "react": "^16.2.0",
+    "react-content-loader": "^3.1.2",
     "react-datetime": "^2.14.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",

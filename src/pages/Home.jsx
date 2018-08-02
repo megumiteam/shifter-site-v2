@@ -6,7 +6,6 @@ import Testimonials from "./../containers/testimonials/testimonials";
 import Learn from "./../containers/learn/learn";
 import GetStarted from "./../containers/get-started/get-started";
 import Process from "./../containers/process/process";
-import BlogRecent from "./../containers/blog-recent/blog-recent";
 import { content } from "./../content";
 
 class Home extends Component {

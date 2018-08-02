@@ -1,18 +1,11 @@
 import React, { Component } from "react";
 import BlogArchiveHeader from "./../../containers/blog-archive-header/blog-archive-header";
 import BlogArchivePost from "./../../components/blog-archive-post/blog-archive-post";
+import BlogArchiveLoading from "./../../components/blog-archive-post/blog-archive-post-loading";
 import PropTypes from "prop-types";
 import { Config } from "./../../config";
 import { content } from "./../../content";
 import { Container, Row, Col } from "reactstrap";
-
-/*
-class Loading extends Component {
-  render() {
-    return <h1 className="text-white">Loading</h1>;
-  }
-}
-*/
 
 class BlogArchive extends Component {
   constructor(props) {
@@ -42,21 +35,34 @@ class BlogArchive extends Component {
       return <BlogArchivePost key={index} content={post} />;
     });
 
+    console.log(posts.length);
+
+    const BlogPosts = () => {
+      return posts.length ?
+        <Row className="mb-gutter-row d-flex flex-wrap pb-7">
+          {posts}
+        </Row>
+        : <Row className="mb-gutter-row d-flex flex-wrap pb-7">
+          <BlogArchiveLoading />
+          <BlogArchiveLoading />
+          <BlogArchiveLoading />
+        </Row>
+    }
+
+
     const title = content.blog.title;
     const subtitle = content.blog.subtitle;
 
     return <section className="bg-gray-100">
-        <BlogArchiveHeader title={title} subtitle={subtitle} />
-        <Container className="z-1">
-          <Row className="justify-content-md-center">
-            <Col sm="11">
-              <Row className="mb-gutter-row d-flex flex-wrap pb-7">
-                {posts}
-              </Row>
-            </Col>
-          </Row>
-        </Container>
-      </section>;
+      <BlogArchiveHeader title={title} subtitle={subtitle} />
+      <Container className="z-1">
+        <Row className="justify-content-md-center">
+          <Col sm="11">
+            <BlogPosts />
+          </Col>
+        </Row>
+      </Container>
+    </section>;
   }
 }
 

@@ -5,30 +5,43 @@ import BlogArchiveLoading from "./../../components/blog-archive-post/blog-archiv
 import PropTypes from "prop-types";
 import { content } from "./../../content";
 import { Container, Row, Col } from "reactstrap";
+
+import InfiniteScroll from 'react-infinite-scroll-component';
+
 // fetch
 import wp from '../../wp';
 
-const BlogPosts = ({posts, hasLoadPosts}) => {
-  return hasLoadPosts ?
-    <Row className="mb-gutter-row d-flex flex-wrap pb-7">
-      {posts.map((post, index) => <BlogArchivePost key={index} content={post} />)}
-    </Row>
-    : <Row className="mb-gutter-row d-flex flex-wrap pb-7">
-      <BlogArchiveLoading />
-      <BlogArchiveLoading />
-      <BlogArchiveLoading />
-    </Row>
-}
+const BlogPostLoading = () => (
+  <Row className="mb-gutter-row d-flex flex-wrap pb-7">
+    <BlogArchiveLoading />
+    <BlogArchiveLoading />
+    <BlogArchiveLoading />
+  </Row>
+)
 
 const withFetchPosts = (WrappedComponent) => {
   return class extends Component {
     state = {
       posts: [],
+      currentPage: 1,
+      totalPages: 0,
       hasLoadPosts: false,
     }
-    fetchPosts()  {
-      const promise = wp.posts().embed()
-      return promise.then(posts => {this.setState({posts})})
+    fetchPosts = () => {
+      let { currentPage, totalPages } = this.state;
+      if (currentPage === totalPages) return
+      currentPage += 1
+      const promise = wp.posts().embed().page(currentPage)
+      return promise.then(nextPosts => {
+        const { totalPages } = nextPosts._paging
+        const { posts } = this.state
+        Array.prototype.push.apply(posts, nextPosts)
+        this.setState({
+          posts,
+          totalPages: Number(totalPages),
+          currentPage
+        })
+      })
     }
     componentDidMount() {
       this.fetchPosts()
@@ -39,11 +52,11 @@ const withFetchPosts = (WrappedComponent) => {
           window.prerenderReady = true;
         })
     }
-    render = () => <WrappedComponent {...this.props} {...this.state} />
+    render = () => <WrappedComponent {...this.props} {...this.state} fetchPosts={this.fetchPosts}/>
   }
 }
 
-const BlogArchive  = (props) => {
+const BlogArchive  = ({currentPage,totalPages, posts, fetchPosts}) => {
   const title = content.blog.title;
   const subtitle = content.blog.subtitle;
 
@@ -52,7 +65,16 @@ const BlogArchive  = (props) => {
     <Container className="z-1">
       <Row className="justify-content-md-center">
         <Col sm="11">
-          <BlogPosts {...props} />
+          <InfiniteScroll
+            dataLength={posts.length}
+            next={fetchPosts}
+            hasMore={!(currentPage === totalPages)}
+            loader={<BlogPostLoading />}
+          >
+            <Row className="mb-gutter-row d-flex flex-wrap pb-7">
+             {posts.map((post, index) => <BlogArchivePost key={index} content={post} />)}
+            </Row>
+          </InfiniteScroll>
         </Col>
       </Row>
     </Container>

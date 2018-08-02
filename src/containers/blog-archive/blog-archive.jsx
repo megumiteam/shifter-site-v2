@@ -25,16 +25,23 @@ const withFetchPosts = (WrappedComponent, api) => {
       posts: [],
       hasLoadPosts: false,
     }
-    componentDidMount () {
-      fetch(api)
+    fetchPosts(api)  {
+      return fetch(api)
         .then(res => res.json())
         .then(res => {
           this.setState({
             posts: res,
+          });
+        });
+    }
+    componentDidMount() {
+      this.fetchPosts(api)
+        .then(() => {
+          this.setState({
             hasLoadPosts: true,
           });
           window.prerenderReady = true;
-        });
+        })
     }
     render = () => <WrappedComponent {...this.props} {...this.state} />
   }

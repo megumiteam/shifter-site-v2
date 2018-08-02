@@ -19,40 +19,41 @@ const BlogPosts = ({posts, hasLoadPosts}) => {
     </Row>
 }
 
-class BlogArchive extends Component {
-  state = {
-    posts: [],
-    hasLoadPosts: false,
-  };
-
-  componentWillMount() {
-    let dataURL = `${Config.apiUrl}/wp-json/wp/v2/posts?_embed&per_page=50`;
-    fetch(dataURL)
-      .then(res => res.json())
-      .then(res => {
-        this.setState({
-          posts: res,
-          hasLoadPosts: true,
+const withFetchPosts = (WrappedComponent, api) => {
+  return class extends Component {
+    state = {
+      posts: [],
+      hasLoadPosts: false,
+    }
+    componentDidMount () {
+      fetch(api)
+        .then(res => res.json())
+        .then(res => {
+          this.setState({
+            posts: res,
+            hasLoadPosts: true,
+          });
+          window.prerenderReady = true;
         });
-        window.prerenderReady = true;
-      });
+    }
+    render = () => <WrappedComponent {...this.props} {...this.state} />
   }
+}
 
-  render() {
-    const title = content.blog.title;
-    const subtitle = content.blog.subtitle;
+const BlogArchive  = (props) => {
+  const title = content.blog.title;
+  const subtitle = content.blog.subtitle;
 
-    return <section className="bg-gray-100">
-      <BlogArchiveHeader title={title} subtitle={subtitle} />
-      <Container className="z-1">
-        <Row className="justify-content-md-center">
-          <Col sm="11">
-            <BlogPosts {...this.state} />
-          </Col>
-        </Row>
-      </Container>
-    </section>;
-  }
+  return <section className="bg-gray-100">
+    <BlogArchiveHeader title={title} subtitle={subtitle} />
+    <Container className="z-1">
+      <Row className="justify-content-md-center">
+        <Col sm="11">
+          <BlogPosts {...props} />
+        </Col>
+      </Row>
+    </Container>
+  </section>;
 }
 
 BlogArchive.propTypes = {
@@ -63,4 +64,4 @@ BlogArchive.defaultProps = {
   content: null
 };
 
-export default BlogArchive;
+export default withFetchPosts(BlogArchive , `${Config.apiUrl}/wp-json/wp/v2/posts?_embed&per_page=50`);

@@ -30,7 +30,7 @@ const withFetchPosts = (WrappedComponent) => {
     fetchPosts = () => {
       let { currentPage, totalPages } = this.state;
       if (currentPage === totalPages) return
-      currentPage += 1
+      currentPage += 0
       const promise = wp.posts().embed().page(currentPage)
       return promise.then(nextPosts => {
         const { totalPages } = nextPosts._paging
@@ -64,7 +64,7 @@ const BlogArchive  = ({currentPage,totalPages, posts, fetchPosts}) => {
     <BlogArchiveHeader title={title} subtitle={subtitle} />
     <Container className="z-1">
       <Row className="justify-content-md-center">
-        <Col sm="11">
+        <Col md="11">
           <InfiniteScroll
             dataLength={posts.length}
             next={fetchPosts}

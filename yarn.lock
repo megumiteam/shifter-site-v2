@@ -5988,6 +5988,10 @@ react-helmet@^5.2.0:
     prop-types "^15.5.4"
     react-side-effect "^1.1.0"
 
+react-infinite-scroll-component@^4.1.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-infinite-scroll-component/-/react-infinite-scroll-component-4.2.0.tgz#605227dd213987c8d785157a87178acc26d465e1"
+
 react-intercom@^1.0.14:
   version "1.0.14"
   resolved "https://registry.yarnpkg.com/react-intercom/-/react-intercom-1.0.14.tgz#d6e8f88a6d9826b4aa7a40bf6db2feb9b6f1eefd"

@@ -3,9 +3,10 @@ import BlogArchiveHeader from "./../../containers/blog-archive-header/blog-archi
 import BlogArchivePost from "./../../components/blog-archive-post/blog-archive-post";
 import BlogArchiveLoading from "./../../components/blog-archive-post/blog-archive-post-loading";
 import PropTypes from "prop-types";
-import { Config } from "./../../config";
 import { content } from "./../../content";
 import { Container, Row, Col } from "reactstrap";
+// fetch
+import wp from '../../wp';
 
 const BlogPosts = ({posts, hasLoadPosts}) => {
   return hasLoadPosts ?
@@ -19,23 +20,18 @@ const BlogPosts = ({posts, hasLoadPosts}) => {
     </Row>
 }
 
-const withFetchPosts = (WrappedComponent, api) => {
+const withFetchPosts = (WrappedComponent) => {
   return class extends Component {
     state = {
       posts: [],
       hasLoadPosts: false,
     }
-    fetchPosts(api)  {
-      return fetch(api)
-        .then(res => res.json())
-        .then(res => {
-          this.setState({
-            posts: res,
-          });
-        });
+    fetchPosts()  {
+      const promise = wp.posts().embed()
+      return promise.then(posts => {this.setState({posts})})
     }
     componentDidMount() {
-      this.fetchPosts(api)
+      this.fetchPosts()
         .then(() => {
           this.setState({
             hasLoadPosts: true,
@@ -71,4 +67,4 @@ BlogArchive.defaultProps = {
   content: null
 };
 
-export default withFetchPosts(BlogArchive , `${Config.apiUrl}/wp-json/wp/v2/posts?_embed&per_page=50`);
+export default withFetchPosts(BlogArchive);

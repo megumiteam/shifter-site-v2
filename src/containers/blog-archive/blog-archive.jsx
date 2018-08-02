@@ -7,14 +7,23 @@ import { Config } from "./../../config";
 import { content } from "./../../content";
 import { Container, Row, Col } from "reactstrap";
 
+const BlogPosts = ({posts, hasLoadPosts}) => {
+  return hasLoadPosts ?
+    <Row className="mb-gutter-row d-flex flex-wrap pb-7">
+      {posts.map((post, index) => <BlogArchivePost key={index} content={post} />)}
+    </Row>
+    : <Row className="mb-gutter-row d-flex flex-wrap pb-7">
+      <BlogArchiveLoading />
+      <BlogArchiveLoading />
+      <BlogArchiveLoading />
+    </Row>
+}
+
 class BlogArchive extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      posts: [],
-      data: false
-    };
-  }
+  state = {
+    posts: [],
+    hasLoadPosts: false,
+  };
 
   componentWillMount() {
     let dataURL = `${Config.apiUrl}/wp-json/wp/v2/posts?_embed&per_page=50`;
@@ -23,33 +32,13 @@ class BlogArchive extends Component {
       .then(res => {
         this.setState({
           posts: res,
-          data: true
+          hasLoadPosts: true,
         });
         window.prerenderReady = true;
       });
   }
 
   render() {
-
-    let posts = this.state.posts.map((post, index) => {
-      return <BlogArchivePost key={index} content={post} />;
-    });
-
-    console.log(posts.length);
-
-    const BlogPosts = () => {
-      return posts.length ?
-        <Row className="mb-gutter-row d-flex flex-wrap pb-7">
-          {posts}
-        </Row>
-        : <Row className="mb-gutter-row d-flex flex-wrap pb-7">
-          <BlogArchiveLoading />
-          <BlogArchiveLoading />
-          <BlogArchiveLoading />
-        </Row>
-    }
-
-
     const title = content.blog.title;
     const subtitle = content.blog.subtitle;
 
@@ -58,7 +47,7 @@ class BlogArchive extends Component {
       <Container className="z-1">
         <Row className="justify-content-md-center">
           <Col sm="11">
-            <BlogPosts />
+            <BlogPosts {...this.state} />
           </Col>
         </Row>
       </Container>

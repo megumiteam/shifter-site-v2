@@ -19,7 +19,8 @@
     "react-slick": "^0.23.1",
     "react-twitter-widgets": "^1.7.1",
     "reactstrap": "^5.0.0-beta",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "wpapi": "^1.1.2"
   },
   "devDependencies": {
     "node-sass-chokidar": "^0.0.3",

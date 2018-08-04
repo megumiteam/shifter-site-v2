@@ -60,6 +60,10 @@ const BlogArchive  = ({currentPage,totalPages, posts, fetchPosts}) => {
   const title = content.blog.title;
   const subtitle = content.blog.subtitle;
 
+  const InfiniteScrollCSS = {
+    'overflow-x': 'hidden'
+  };
+
   return <section className="bg-gray-100">
     <BlogArchiveHeader title={title} subtitle={subtitle} />
     <Container className="z-1">
@@ -70,6 +74,7 @@ const BlogArchive  = ({currentPage,totalPages, posts, fetchPosts}) => {
             next={fetchPosts}
             hasMore={!(currentPage === totalPages)}
             loader={<BlogPostLoading />}
+            style={InfiniteScrollCSS}
           >
             <Row className="mb-gutter-row d-flex flex-wrap pb-7">
              {posts.map((post, index) => <BlogArchivePost key={index} content={post} />)}

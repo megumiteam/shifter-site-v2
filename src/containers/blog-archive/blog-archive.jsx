@@ -30,7 +30,7 @@ const withFetchPosts = (WrappedComponent) => {
     fetchPosts = () => {
       let { currentPage, totalPages } = this.state;
       if (currentPage === totalPages) return
-        currentPage += 1
+      currentPage += 1
       const promise = wp.posts().embed().page(currentPage).perPage(9)
       return promise.then(nextPosts => {
         const { totalPages } = nextPosts._paging
@@ -44,9 +44,12 @@ const withFetchPosts = (WrappedComponent) => {
       })
     }
     componentDidMount() {
-      this.fetchPosts()
-        .then(() => {
+      wp.posts().embed().perPage(9)
+        .then(posts => {
+          const { totalPages } = posts._paging
           this.setState({
+            posts,
+            totalPages: Number(totalPages),
             hasLoadPosts: true,
           });
           window.prerenderReady = true;

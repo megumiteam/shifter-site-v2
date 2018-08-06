@@ -3,7 +3,8 @@ module.exports = {
   "globPatterns": [
     "**/*.{json,png,ico,html,js,xml,css}"
   ],
-  "swDest": "public/sw.js",
+  "swDest": "build/sw.js",
+  "navigateFallback": '/index.html',
   "runtimeCaching": [
     {
       urlPattern: /^https:\/\/cdnjs\.cloudflare\.com\/ajax\/libs\/slick-carousel\/1\.6\.0\/slick\.min\.css/,
@@ -47,6 +48,23 @@ module.exports = {
           maxEntries: 80,
           maxAgeSeconds: 60 * 60 * 24
         }
+      }
+    },{
+      urlPattern: /^https:\/\/api\.digitalcube\.jp\/wp-content\/uploads\/.*\.(jpeg|jpg|png)/,
+      handler: 'cacheFirst',
+      options: {
+        cacheName: 'wp-images',
+        expiration: {
+          maxEntries: 80,
+          maxAgeSeconds: 60 * 60 * 24
+        }
+      }
+    },
+    {
+      urlPattern: /^https:\/\/api\.digitalcube\.jp\/wp-json\/wp/,
+      handler: 'staleWhileRevalidate',
+      options: {
+        cacheName: 'wp-api'
       }
     }
   ]

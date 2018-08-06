@@ -11,7 +11,7 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.0.0/workbox-sw.js");
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "asset-manifest.json",
-    "revision": "864bf6100558f100771d1b1fbc56c27d"
+    "revision": "a6a5976ec0daec25d1e0b5ed2fbd8413"
   },
   {
     "url": "assets/favicon/favicon-16x16.png",
@@ -34,10 +34,6 @@ self.__precacheManifest = [
   {
     "url": "assets/favicon/favicon.ico",
     "revision": "6679c88c1fc7f22dc32f0b2558b3653b"
-  },
-  {
-    "url": "assets/favicon/manifest.json",
-    "revision": "b47110decc9e456af6c1270620a24a44"
   },
   {
     "url": "assets/images/amon.png",
@@ -136,10 +132,6 @@ self.__precacheManifest = [
     "revision": "aa4e8b57fc0d13d2eb7f12482a418f5c"
   },
   {
-    "url": "assets/images/shifter-512.png",
-    "revision": "56c3cb5eb6bb1355b3ad4bc866190b15"
-  },
-  {
     "url": "assets/images/shifter-dashboard.png",
     "revision": "22301052f1512c58e520385248914df6"
   },
@@ -152,16 +144,24 @@ self.__precacheManifest = [
     "revision": "cefb12a5243c530dd7bcd01c8e848518"
   },
   {
+    "url": "assets/manifest.json",
+    "revision": "7555549cfc2b7aa423fe107335c843c7"
+  },
+  {
+    "url": "assets/shifter-512.png",
+    "revision": "56c3cb5eb6bb1355b3ad4bc866190b15"
+  },
+  {
     "url": "favicon.ico",
     "revision": "c92b85a5b907c70211f4ec25e29a8c4a"
   },
   {
     "url": "index.html",
-    "revision": "f76fefa22fceca980b7f67f16c3e69c9"
+    "revision": "138944614065b7691866b6809eae8043"
   },
   {
     "url": "service-worker.js",
-    "revision": "826966f009d37b6168ca6c5100a35a29"
+    "revision": "b7ab657c3354ae344dd2b93bdde14310"
   },
   {
     "url": "sitemap.xml",
@@ -176,14 +176,16 @@ self.__precacheManifest = [
     "revision": "3646d8e77540fa18b3d79934ab3f5aa5"
   },
   {
-    "url": "static/js/main.7914c730.js",
-    "revision": "3bf6c4f279da6ac110c53e666755c8d8"
+    "url": "static/js/main.6f25baa5.js",
+    "revision": "f9571fae9f9f16cc9d59df56df590b41"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute(/^https:\/\/cdnjs\.cloudflare\.com\/ajax\/libs\/slick-carousel\/1\.6\.0\/slick\.min\.css/, workbox.strategies.cacheFirst({ cacheName: "slick-min", plugins: [new workbox.expiration.Plugin({"maxEntries":80,"maxAgeSeconds":86400,"purgeOnQuotaError":false})] }), 'GET');
-workbox.routing.registerRoute(/^https:\/\/cdnjs\.cloudflare\.com\/ajax\/libs\/font-awesome\/4.7.0\/css\/font-awesome.min.css/, workbox.strategies.cacheFirst({ cacheName: "font-awesome", plugins: [new workbox.expiration.Plugin({"maxEntries":80,"maxAgeSeconds":86400,"purgeOnQuotaError":false})] }), 'GET');
-workbox.routing.registerRoute(/^https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/slick-carousel\/1.6.0\/slick-theme.min.css/, workbox.strategies.cacheFirst({ cacheName: "slick-theme", plugins: [new workbox.expiration.Plugin({"maxEntries":80,"maxAgeSeconds":86400,"purgeOnQuotaError":false})] }), 'GET');
-workbox.routing.registerRoute(/^https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/balance-text\/3.2.0\/balancetext.min.js/, workbox.strategies.cacheFirst({ cacheName: "balancetext", plugins: [new workbox.expiration.Plugin({"maxEntries":80,"maxAgeSeconds":86400,"purgeOnQuotaError":false})] }), 'GET');
+workbox.routing.registerNavigationRoute("/index.html");
+
+workbox.routing.registerRoute(/^https:\/\/cdnjs\.cloudflare\.com\/ajax\/libs\/slick-carousel\/1\.6\.0\/slick\.min\.css/, workbox.strategies.cacheFirst({ cacheName: "slick-min", plugins: [new workbox.expiration.Plugin({"maxEntries":80,"maxAgeSeconds":86400})] }), 'GET');
+workbox.routing.registerRoute(/^https:\/\/cdnjs\.cloudflare\.com\/ajax\/libs\/font-awesome\/4.7.0\/css\/font-awesome.min.css/, workbox.strategies.cacheFirst({ cacheName: "font-awesome", plugins: [new workbox.expiration.Plugin({"maxEntries":80,"maxAgeSeconds":86400})] }), 'GET');
+workbox.routing.registerRoute(/^https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/slick-carousel\/1.6.0\/slick-theme.min.css/, workbox.strategies.cacheFirst({ cacheName: "slick-theme", plugins: [new workbox.expiration.Plugin({"maxEntries":80,"maxAgeSeconds":86400})] }), 'GET');
+workbox.routing.registerRoute(/^https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/balance-text\/3.2.0\/balancetext.min.js/, workbox.strategies.cacheFirst({ cacheName: "balancetext", plugins: [new workbox.expiration.Plugin({"maxEntries":80,"maxAgeSeconds":86400})] }), 'GET');

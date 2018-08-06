@@ -37,7 +37,7 @@ self.__precacheManifest = [
   },
   {
     "url": "assets/favicon/manifest.json",
-    "revision": "f16d818905bcd39ebaab1f7dd1a37eed"
+    "revision": "b47110decc9e456af6c1270620a24a44"
   },
   {
     "url": "assets/images/amon.png",
@@ -136,6 +136,10 @@ self.__precacheManifest = [
     "revision": "aa4e8b57fc0d13d2eb7f12482a418f5c"
   },
   {
+    "url": "assets/images/shifter-512.png",
+    "revision": "56c3cb5eb6bb1355b3ad4bc866190b15"
+  },
+  {
     "url": "assets/images/shifter-dashboard.png",
     "revision": "22301052f1512c58e520385248914df6"
   },
@@ -154,10 +158,6 @@ self.__precacheManifest = [
   {
     "url": "index.html",
     "revision": "f76fefa22fceca980b7f67f16c3e69c9"
-  },
-  {
-    "url": "manifest.json",
-    "revision": "730915ec2725cf6721080a6516b23f15"
   },
   {
     "url": "service-worker.js",

@@ -31,7 +31,7 @@ const withFetchPosts = (WrappedComponent) => {
       let { currentPage, totalPages } = this.state;
       if (currentPage === totalPages) return
         currentPage += 1
-      const promise = wp.posts().embed().page(currentPage - 1).perPage(9)
+      const promise = wp.posts().embed().page(currentPage).perPage(9)
       return promise.then(nextPosts => {
         const { totalPages } = nextPosts._paging
         const { posts } = this.state
@@ -61,7 +61,7 @@ const BlogArchive  = ({currentPage,totalPages, posts, fetchPosts}) => {
   const subtitle = content.blog.subtitle;
 
   const InfiniteScrollCSS = {
-    'overflow-x': 'hidden'
+    'overflowX': 'hidden'
   };
 
   return <section className="bg-gray-100">

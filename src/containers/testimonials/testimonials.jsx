@@ -67,42 +67,42 @@ class Testimonials extends Component {
           <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
             <img
               src="./assets/images/amon.png"
-              srcset="./assets/images/amon.png 1x, ./assets/images/amon@2x.png 2x"
+              srcSet="./assets/images/amon.png 1x, ./assets/images/amon@2x.png 2x"
               alt="amon"
             />
           </Col>
           <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
             <img
               src="./assets/images/hde.png"
-              srcset="./assets/images/hde.png 1x, ./assets/images/hde@2x.png 2x"
+              srcSet="./assets/images/hde.png 1x, ./assets/images/hde@2x.png 2x"
               alt="hde"
             />
           </Col>
           <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
             <img
               src="./assets/images/heptagon.png"
-              srcset="./assets/images/heptagon.png 1x,./assets/images/heptagon@2x.png 2x"
+              srcSet="./assets/images/heptagon.png 1x,./assets/images/heptagon@2x.png 2x"
               alt="heptagon"
             />
           </Col>
           <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
             <img
               src="./assets/images/monstarlab.png"
-              srcset="./assets/images/monstarlab.png 1x,./assets/images/monstarlab@2x.png 2x"
+              srcSet="./assets/images/monstarlab.png 1x,./assets/images/monstarlab@2x.png 2x"
               alt="monstarlab"
             />
           </Col>
           <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
             <img
               src="./assets/images/ntt-docomo.png"
-              srcset="./assets/images/ntt-docomo.png 1x,./assets/images/ntt-docomo@2x.png 2x"
+              srcSet="./assets/images/ntt-docomo.png 1x,./assets/images/ntt-docomo@2x.png 2x"
               alt="Docomo"
             />
           </Col>
           <Col xs="6" sm="4" md="3" lg="2" className="mb-5">
             <img
               src="./assets/images/section-9.png"
-              srcset="./assets/images/section-9.png 1x,./assets/images/section-9@2x.png 2x"
+              srcSet="./assets/images/section-9.png 1x,./assets/images/section-9@2x.png 2x"
               alt="Section9"
             />
           </Col>
@@ -120,7 +120,7 @@ class Testimonials extends Component {
             <a href="https://www.creativebloq.com/features/10-best-new-web-design-tools-for-march-2017">
               <img
                 src="./assets/images/cb.png"
-                srcset="./assets/images/cb.png 1x, ./assets/images/cb@2x.png 2x"
+                srcSet="./assets/images/cb.png 1x, ./assets/images/cb@2x.png 2x"
                 alt="Creative Bloq"
               />
             </a>
@@ -129,7 +129,7 @@ class Testimonials extends Component {
             <a href="https://cloudacademy.com/blog/wordpress-cloud-hosting-shifter/">
               <img
                 src="./assets/images/codeacademy.png"
-                srcset="./assets/images/codeacademy.png 1x, ./assets/images/codeacademy@2x.png 2x"
+                srcSet="./assets/images/codeacademy.png 1x, ./assets/images/codeacademy@2x.png 2x"
                 alt="Code Academy"
               />
             </a>
@@ -138,7 +138,7 @@ class Testimonials extends Component {
             <a href="https://www.netlify.com/blog/2017/02/23/shifting-wordpress-to-the-jamstack/">
               <img
                 src="./assets/images/jamstack.png"
-                srcset="./assets/images/jamstack.png 1x,./assets/images/jamstack@2x.png 2x"
+                srcSet="./assets/images/jamstack.png 1x,./assets/images/jamstack@2x.png 2x"
                 alt="JAMStack Radio"
               />
             </a>
@@ -147,7 +147,7 @@ class Testimonials extends Component {
             <a href="https://poststatus.com/footnotes/shifter-is-a-serverless-hosting-solution/">
               <img
                 src="./assets/images/poststatus.png"
-                srcset="./assets/images/poststatus.png 1x,./assets/images/poststatus@2x.png 2x"
+                srcSet="./assets/images/poststatus.png 1x,./assets/images/poststatus@2x.png 2x"
                 alt="PostStatus"
               />
             </a>
@@ -156,7 +156,7 @@ class Testimonials extends Component {
             <a href="https://serverless.com/blog/serverless-wordpress-hosting-with-shifter/">
               <img
                 src="./assets/images/serverless.png"
-                srcset="./assets/images/serverless.png 1x,./assets/images/serverless@2x.png 2x"
+                srcSet="./assets/images/serverless.png 1x,./assets/images/serverless@2x.png 2x"
                 alt="Serverless Framework Blog"
               />
             </a>
@@ -165,7 +165,7 @@ class Testimonials extends Component {
             <a href="https://wptavern.com/digitalcube-launches-shifter-serverless-hosting-for-wordpress">
               <img
                 src="./assets/images/wptavern.png"
-                srcset="./assets/images/wptavern.png 1x,./assets/images/wptavern@2x.png 2x"
+                srcSet="./assets/images/wptavern.png 1x,./assets/images/wptavern@2x.png 2x"
                 alt="WP Tavern"
               />
             </a>

@@ -44,7 +44,7 @@ const withFetchPosts = (WrappedComponent) => {
       })
     }
     componentDidMount() {
-      wp.posts().embed().perPage(9)
+      wp.posts().embed().perPage(3)
         .then(posts => {
           const { totalPages } = posts._paging
           this.setState({

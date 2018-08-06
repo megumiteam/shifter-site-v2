@@ -1,25 +1,32 @@
 {
   "short_name": "Shifter",
   "name": "Shifter - Serverless-Static WordPress Hosting",
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#f80759",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "./favicon/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
       {
-      "src": "/favicon-16x16.png",
+      "src": "./favicon/favicon-16x16.png",
       "sizes": "16x16",
       "type": "image/png",
       "density": "0.75"
     },
     {
-      "src": "/favicon-32x32.png",
+      "src": "./favicon/favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/png",
       "density": "0.75"
+    },
+    {
+      "src": "./shifter-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }

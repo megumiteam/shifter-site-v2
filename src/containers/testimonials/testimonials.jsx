@@ -111,7 +111,7 @@ class Testimonials extends Component {
           <Col md="8" className="text-center text-white mb-5">
             <h4>{this.props.content.title}</h4>
             <div className="mt-3">
-            Drop us a line with <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgetshifter.io&hashtags=getshifter">#getshifter</a> and let us know what you think
+            Drop us a line with <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgetshifter.io&hashtags=GetShifter">#GetShifter</a> and let us know what you think
             </div>
           </Col>
         </Row>

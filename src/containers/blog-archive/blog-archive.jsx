@@ -11,6 +11,8 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 // fetch
 import wp from '../../wp';
 
+const PER_PAGE = 9
+
 const BlogPostLoading = () => (
   <Row className="mb-gutter-row d-flex flex-wrap pb-7">
     <BlogArchiveLoading />
@@ -31,7 +33,7 @@ const withFetchPosts = (WrappedComponent) => {
       let { currentPage, totalPages } = this.state;
       if (currentPage === totalPages) return
       currentPage += 1
-      const promise = wp.posts().embed().page(currentPage).perPage(9)
+      const promise = wp.posts().embed().page(currentPage).perPage(PER_PAGE)
       return promise.then(nextPosts => {
         const { totalPages } = nextPosts._paging
         const { posts } = this.state
@@ -44,7 +46,7 @@ const withFetchPosts = (WrappedComponent) => {
       })
     }
     componentDidMount() {
-      wp.posts().embed().perPage(3)
+      wp.posts().embed().perPage(PER_PAGE)
         .then(posts => {
           const { totalPages } = posts._paging
           this.setState({

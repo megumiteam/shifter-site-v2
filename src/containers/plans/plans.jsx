@@ -43,6 +43,9 @@ function PlansItem(props) {
         <a className="btn btn-gradient-purple" href="https://go.getshifter.io">
           Select
         </a>
+        <div className="mt-3">
+          <a href="#details">Details</a>
+        </div>
       </CardBody>
     </Card>
   );

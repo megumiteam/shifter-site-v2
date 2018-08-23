@@ -40,7 +40,11 @@ class PlansTable extends Component {
     let agency = this.state.rSelected === "month" ? '$90' : '$60';
     let agencyPlus = this.state.rSelected === "month" ? '$150' : '$100';
 
-    return <section className="py-7 bg-gray-100">
+    function scrollTo(hash) {
+      window.location.hash = "#" + hash;
+    }
+
+    return <section id="details" className="py-7 bg-gray-100">
         <Container>
           <Row className="justify-content-md-center mb-5">
             <Col md="8" className="text-center">

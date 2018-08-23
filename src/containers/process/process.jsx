@@ -19,7 +19,7 @@ let ProcessItem = props => (
     // xl="3"
     className="mb-sm-4 d-flex align-items-stretch"
   >
-    <Card className="box-shadow text-center icon-card">
+    <Card className="box-shadow text-center icon-card pt-4">
       <CardHeader className="icon-card__header d-flex justify-content-center align-items-center">
         <IconSet icon={props.icon} />
       </CardHeader>

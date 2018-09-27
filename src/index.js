@@ -11,6 +11,12 @@ if ( hostname === 'localhost' ) {
   import('../src/assets/main.css');
 }
 
+console.log(window.location.host);
+
+if (window.location.host === 'getshifter.io') {
+  window.location.replace('https://www.getshifter.io/' . window.location.pathname);
+}
+
 document.body.classList.add("shifter--main");
 
 ReactDOM.render(<App />, document.getElementById('root'));
